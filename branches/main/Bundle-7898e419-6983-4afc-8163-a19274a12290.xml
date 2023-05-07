@@ -97,7 +97,7 @@
           <profile value="http://example.com/fhir/example/StructureDefinition/med-request-profile"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="e22942f3-a461-40b9-8449-30f7a7e9d0d5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-med-request-profile.html">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="Medication/a87cddf3-01de-4241-b9b27209f5f2bcab">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href="Patient/3616b380-01be-465a-aa29906337c6e7a4">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="e22942f3-a461-40b9-8449-30f7a7e9d0d5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-med-request-profile.html">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="a87cddf3-01de-4241-b9b27209f5f2bcab">a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href="3616b380-01be-465a-aa29906337c6e7a4">3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>
         </text>
         <groupIdentifier>
           <system value="http://spms.min-saude.pt/his/&lt;id-rnuentidade&gt;/identifiers/local-prescription-id"/>
@@ -106,10 +106,10 @@
         <status value="active"/>
         <intent value="order"/>
         <medicationReference>
-          <reference value="Medication/a87cddf3-01de-4241-b9b27209f5f2bcab"/>
+          <reference value="a87cddf3-01de-4241-b9b27209f5f2bcab"/>
         </medicationReference>
         <subject>
-          <reference value="Patient/3616b380-01be-465a-aa29906337c6e7a4"/>
+          <reference value="3616b380-01be-465a-aa29906337c6e7a4"/>
         </subject>
         <authoredOn value="2019-07-14T23:10:23+00:00"/>
         <note>
@@ -217,7 +217,7 @@
         <identifier>
           <type>
             <coding>
-              <system value="http://h17.org/fhir/v2/0203"/>
+              <system value="http://hl7.org/fhir/v2/0203"/>
               <code value="MD"/>
               <display value="Medical License number"/>
             </coding>
@@ -302,9 +302,10 @@
           <profile value="http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Coverage</b><a name="219eb473-8ee3-4e3d-b785-b204b71de77f"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-coverage-pemh-profile.html">Perfil Coverage</a></p></div><p><b>identifier</b>: id: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/STU3/v3/ActCode/cs.html">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href="dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace">dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Coverage</b><a name="219eb473-8ee3-4e3d-b785-b204b71de77f"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-coverage-pemh-profile.html">Perfil Coverage</a></p></div><p><b>identifier</b>: id: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/STU3/v3/ActCode/cs.html">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/STU3/codesystem-policyholder-relationship.html">Policyholder Relationship Codes</a>#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href="#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
         </text>
         <identifier>
+          <system value="http://spms.min-saude.pt/rnu/identifiers/nbu"/>
           <value value="131255890"/>
         </identifier>
         <status value="active"/>
@@ -324,7 +325,7 @@
         </beneficiary>
         <relationship>
           <coding>
-            <system value="http://h17.org/fhir/policyholder-relationship"/>
+            <system value="http://hl7.org/fhir/policyholder-relationship"/>
             <code value="self"/>
             <display value="The Beneficiary is the Policyholder"/>
           </coding>
@@ -334,7 +335,7 @@
           <end value="2022-01-27"/>
         </period>
         <payor>
-          <reference value="dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"/>
+          <reference value="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"/>
         </payor>
       </Coverage>
     </resource>
@@ -348,7 +349,7 @@
           <profile value="http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="2d3f8e19-205e-40c6-aeec7b17cbef8045"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-encounter-pemh-profile.html">Perfil Episódio</a></p></div><p><b>identifier</b>: id: 1243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href="f644ab44-7e324e05-972c-1f14bebf27a8">f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href="#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="2d3f8e19-205e-40c6-aeec7b17cbef8045"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-encounter-pemh-profile.html">Perfil Episódio</a></p></div><p><b>identifier</b>: id: 1243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href="#Patient_3616b380-01be-465a-aa29-906337c6e7a4">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href="#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>
         </text>
         <identifier>
           <system value="http://spms.min-saude.pt/iop/identifiers/encounter"/>
@@ -365,7 +366,7 @@
         </subject>
         <participant>
           <individual>
-            <reference value="f644ab44-7e324e05-972c-1f14bebf27a8"/>
+            <reference value="Patient/3616b380-01be-465a-aa29-906337c6e7a4"/>
           </individual>
         </participant>
         <period>

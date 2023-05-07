@@ -8,7 +8,7 @@
   "identifier" : [{
     "type" : {
       "coding" : [{
-        "system" : "http://h17.org/fhir/v2/0203",
+        "system" : "http://hl7.org/fhir/v2/0203",
         "code" : "MD",
         "display" : "Medical License number"
       }]

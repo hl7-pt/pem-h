@@ -13,9 +13,10 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: id: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: id: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/codesystem-policyholder-relationship.html\">Policyholder Relationship Codes</a>#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a> &quot;Sclinico Hospitalar&quot;</p></div>"
   ] ; # 
   fhir:identifier ( [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/rnu/identifiers/nbu"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "131255890" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -37,7 +38,7 @@
   ] ; # 
   fhir:relationship [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://h17.org/fhir/policyholder-relationship"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "http://hl7.org/fhir/policyholder-relationship"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "self" ] ;
        fhir:display [ fhir:v "The Beneficiary is the Policyholder" ]
      ] )
@@ -47,7 +48,8 @@
      fhir:end [ fhir:v "2022-01-27"^^xsd:date ]
   ] ; # 
   fhir:payor ( [
-     fhir:reference [ fhir:v "dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" ]
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------
