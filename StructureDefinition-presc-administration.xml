@@ -14,7 +14,7 @@
   <name value="presc-administration"/>
   <title value="ADMINISTRAÇÃO"/>
   <status value="active"/>
-  <date value="2023-05-07T23:26:27+00:00"/>
+  <date value="2023-05-07T23:39:48+00:00"/>
   <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
@@ -37,8 +37,8 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  <contextType value="resource"/>
-  <context value="DataElement"/>
+  <contextType value="datatype"/>
+  <context value="Resource"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>

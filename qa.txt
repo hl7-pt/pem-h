@@ -1,11 +1,11 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 240, warn = 88, info = 38
+err = 233, warn = 88, info = 38
 IG Publisher Version: 1.3.8
-Generated Sun May 07 23:27:23 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
+Generated Sun May 07 23:40:44 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
  Build Errors : 13 / 16 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 45 / 10 / 39
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 41 / 10 / 39
  /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 0 / 1 / 2
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 0 / 0 / 1
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 0 / 0 / 2
@@ -17,7 +17,7 @@ Generated Sun May 07 23:27:23 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pe
  /github/workspace/input/examples/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Patient-3616b380-01be-465a-aa29-906337c6e7a4 : 0 / 1 / 2
  /github/workspace/input/examples/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8 : 0 / 0 / 1
- /github/workspace/input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 3 / 0 / 2
+ /github/workspace/input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 0 / 0 / 2
  /github/workspace/input/extensions/StructureDefinition-CardInfo : 8 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-contactObservations : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-contactPreference : 2 / 2 / 1
@@ -120,12 +120,9 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*Me
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.focus[0]: Unable to find a match for profile RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df among choices: http://example.com/fhir/example/StructureDefinition/content-profile
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.focus[0]: Details for RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df matching against profile http://example.com/fhir/example/StructureDefinition/content-profile|0.1.0-test
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.meta.profile[1]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/: The extension http://spms.min-saude.pt/iop/extensions/prescription-duplicate is not allowed to be used at this point (allowed = e:DataElement; this element is [Bundle.entry.resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/, BackboneElement.resource, RequestGroup])
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/: The extension http://spms.min-saude/pe/top/extensions/med-request-modality is not allowed to be used at this point (allowed = e:DataElement; this element is [Bundle.entry.resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/, BackboneElement.resource, RequestGroup])
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.action[0]: Rule rqg-1: 'Must have resource or action but not both' Failed
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/: The extension http://spms.min-saude.pt/iop/extensions/prescription-duplicate is not allowed to be used at this point (allowed = e:DataElement; this element is [Bundle.entry.resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/, Bundle.entry.RequestGroup, RequestGroup])
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/: The extension http://spms.min-saude/pe/top/extensions/med-request-modality is not allowed to be used at this point (allowed = e:DataElement; this element is [Bundle.entry.resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/, Bundle.entry.RequestGroup, RequestGroup])
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.action[0].resource: Unable to find a match for profile MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5 among choices: http://example.com/fhir/example/StructureDefinition/med-request-profile
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.action[0].resource: Details for MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5 matching against profile http://example.com/fhir/example/StructureDefinition/med-request-profile|0.1.0-test
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resource/*MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5*/.subject: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resource/*MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5*/.subject: Invalid Resource target type. Found Encounter, but expected one of ([Group, Patient])
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[2].resource/*MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5*/.dosageInstruction[0].route.coding[0]: Code System URI 'http://www.infarmed.pt' is unknown so the code cannot be validated
@@ -153,7 +150,6 @@ WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.signature: Signature.who[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Signature)
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.signature: Bundle.signature.who[x]: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest|0.1.0-test)
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.signature: Bundle.signature.who[x]:whoReference: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest|0.1.0-test)
-INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[12]: Entry 'http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5' isn't reachable by traversing forwards from the MessageHeader. Check that this is meant to be included (needed to process the message)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[12]: Entry 'http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4' isn't reachable by traversing forwards from the MessageHeader. Check that this is meant to be included (needed to process the message)
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.meta.profile[1]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json ==
@@ -183,10 +179,7 @@ INFORMATION: Patient/3616b380-01be-465a-aa29-906337c6e7a4: Patient.identifier[0]
 WARNING: Patient/3616b380-01be-465a-aa29-906337c6e7a4: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'Identifier Type Codes' (http://hl7.org/fhir/ValueSet/identifier-type|3.0.2)
 == input/examples/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.json ==
 == input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json ==
-ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup: The extension http://spms.min-saude.pt/iop/extensions/prescription-duplicate is not allowed to be used at this point (allowed = e:DataElement; this element is [RequestGroup])
-ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup: The extension http://spms.min-saude/pe/top/extensions/med-request-modality is not allowed to be used at this point (allowed = e:DataElement; this element is [RequestGroup])
 INFORMATION: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
-ERROR: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.action[0]: Rule rqg-1: 'Must have resource or action but not both' Failed
 == input/extensions/StructureDefinition-CardInfo.json ==
 ERROR: StructureDefinition.differential.element[5].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.differential.element[9].binding: Unrecognized property 'valueSet'
