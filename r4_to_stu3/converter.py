@@ -99,6 +99,7 @@ def transform_msh(data):
     del data["eventCoding"]
     data["receiver"] = data["destination"][0]["receiver"]
     del data["destination"]
+    data["timestamp"] = "2019-07-14T23:10:23+00:00"
     return data
 
 

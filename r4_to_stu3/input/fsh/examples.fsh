@@ -67,7 +67,7 @@ Description: "Exemplo Message Header"
 * destination.receiver.display = "Organização Origem"
 * sender = Reference(ExemploOrganization1)
 * sender.display = "Organização Origem"
-// * timestamp = "2019-07-14T23:10:23+00:00"
+//* timestamp = "2019-07-14T23:10:23+00:00"
 * source.name = "Aplicação Origem"
 * source.endpoint = "Endpont_Aplicação_Origem"
 * focus = Reference(ExemploRequestGroup)
