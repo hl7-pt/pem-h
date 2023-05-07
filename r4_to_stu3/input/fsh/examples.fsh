@@ -166,7 +166,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * participant.individual = Reference(Patient/3616b380-01be-465a-aa29-906337c6e7a4)
 
 * period.end = "2019-01-27"
-* serviceProvider = Reference(fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* serviceProvider = Reference(ExemploOrganization1)
 
 Instance: ExemploCoverage
 InstanceOf: PEMHCoverage
@@ -186,7 +186,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 * beneficiary = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
 * relationship =  http://hl7.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
-* payor = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* payor = Reference(ExemploOrganization1)
 * period.start = "2019-01-14"
 * period.end = "2022-01-27"
 * status = #active
@@ -202,7 +202,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Location"
 * name = "Hospital São João"
 * alias = "Centro Hospitalar Universitário de São João"
 * type = http://spms.min-saude.pt/prvr/valueset/location-type#urgencia "Urgência"
-* managingOrganization = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* managingOrganization = Reference(ExemploOrganization1)
 
 Instance: ExemploOrganization1
 InstanceOf: Organization
@@ -217,13 +217,13 @@ Instance: ExemploOrganization2
 InstanceOf: Organization
 Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
 
-* id = "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+* id = "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac"
 * identifier.system = "http://spms.min-saude.pt/sges/identifiers/entity-id"
 * identifier.value = "3113408"
 * name = "Provedor de Serviços de Cardiologia"
 * telecom.system = #email
 * telecom.value = "PedroAlvaresCabral@dominio.pt"
-* partOf = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* partOf = Reference(ExemploOrganization1)
 
 
 

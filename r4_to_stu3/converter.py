@@ -102,11 +102,17 @@ def transform_msh(data):
     return data
 
 
+def transfrom_location(data):
+    data["type"] = data["type"][0]
+    return data
+
+
 def transform_to_stu3(data, resourcetype):
     # print(resourcetype)
     if resourcetype == "MessageHeader":
         return transform_msh(data)
-
+    if resourcetype == "Location":
+        return transfrom_location(data)
     return data
 
 
