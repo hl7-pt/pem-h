@@ -60,7 +60,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RequestGroup</b><a name=\"25f1ea48-e0ef-405e-86fc-498ae907f6df\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RequestGroup &quot;25f1ea48-e0ef-405e-86fc-498ae907f6df&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>NÚMERO DE VIAS</b>: 1</p><p><b>MODALIDADE DE PRESCRIÇÃO</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (med-request-modality#RSP)</span></p><p><b>groupIdentifier</b>: id:\u00a06789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RequestGroup</b><a name=\"25f1ea48-e0ef-405e-86fc-498ae907f6df\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RequestGroup &quot;25f1ea48-e0ef-405e-86fc-498ae907f6df&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>NÚMERO DE VIAS</b>: 1</p><p><b>MODALIDADE DE PRESCRIÇÃO</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (med-request-modality#RSP)</span></p><p><b>groupIdentifier</b>: id:\u00a06789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td><td><b>Resource</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td><td><a href=\"#MedicationRequest_e22942f3-a461-40b9-8449-30f7a7e9d0d5\">See above (MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5)</a></td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
@@ -85,6 +85,9 @@
       "action" : [{
         "timingPeriod" : {
           "end" : "2019-01-27"
+        },
+        "resource" : {
+          "reference" : "MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"
         }
       }]
     }
