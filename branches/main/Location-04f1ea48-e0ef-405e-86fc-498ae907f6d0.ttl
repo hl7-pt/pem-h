@@ -13,7 +13,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>managingOrganization</b>: <a href=\"Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a> &quot;Sclinico Hospitalar&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>type</b>: Urgência <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (location-type#urgencia)</span></p><p><b>managingOrganization</b>: <a href=\"Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a> &quot;Sclinico Hospitalar&quot;</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://spms.min-saude.pt/sges/identifiers/entity-id"^^xsd:anyURI ] ;
@@ -21,6 +21,13 @@
   ] ) ; # 
   fhir:name [ fhir:v "Hospital São João"] ; # 
   fhir:alias ( [ fhir:v "Centro Hospitalar Universitário de São João"] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://spms.min-saude.pt/prvr/valueset/location-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urgencia" ] ;
+       fhir:display [ fhir:v "Urgência" ]
+     ] )
+  ] ; # 
   fhir:managingOrganization [
      fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]

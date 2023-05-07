@@ -1,14 +1,14 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 253, warn = 90, info = 33
+err = 251, warn = 90, info = 35
 IG Publisher Version: 1.3.8
-Generated Sun May 07 23:00:44 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
+Generated Sun May 07 23:09:38 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
  Build Errors : 14 / 15 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 52 / 13 / 35
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 51 / 13 / 36
  /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 0 / 1 / 2
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 2 / 0 / 1
- /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 1 / 0 / 1
+ /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 0 / 0 / 2
  /github/workspace/input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 4
  /github/workspace/input/examples/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5 : 3 / 0 / 3
  /github/workspace/input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1 : 2 / 1 / 3
@@ -84,7 +84,6 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
 ERROR: Bundle.entry[2].resource.dosageInstruction[0]: Unrecognized property 'doseAndRate'
-ERROR: Bundle.entry[8].resource.type: The property type must be an Object, not an Array (at Bundle.entry[8].resource.type)
 ERROR: Bundle.signature: Unrecognized property 'data'
 ERROR: Bundle.signature: Unrecognized property 'sigFormat'
 ERROR: Bundle.signature: Unrecognized property 'who'
@@ -141,6 +140,7 @@ INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[3].resour
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4].resource/*Patient/3616b380-01be-465a-aa29-906337c6e7a4*/.identifier[0].type: No code provided, and a code should be provided from the value set 'Identifier Type Codes' (http://hl7.org/fhir/ValueSet/identifier-type|3.0.2)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4].resource/*Patient/3616b380-01be-465a-aa29-906337c6e7a4*/.identifier[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/patient-pemh-profile|0.1.0-test
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6].resource/*Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace*/.partOf: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource/*Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0*/.type.coding[0]: Code System URI 'http://spms.min-saude.pt/prvr/valueset/location-type' is unknown so the code cannot be validated
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource/*Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0*/.managingOrganization: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Invalid Resource target type. Found Encounter, but expected one of ([Patient, RelatedPerson])
@@ -169,7 +169,7 @@ WARNING: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.relationship.co
 ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.participant[0].individual: Unable to find a match for profile Patient/3616b380-01be-465a-aa29-906337c6e7a4 (by type) among choices: ; [CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]
 ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.participant[0].individual: Invalid Resource target type. Found Patient, but expected one of ([Practitioner, RelatedPerson])
 == input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.json ==
-ERROR: Location.type: The property type must be an Object, not an Array (at Location.type)
+INFORMATION: Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0: Location.type.coding[0]: Code System URI 'http://spms.min-saude.pt/prvr/valueset/location-type' is unknown so the code cannot be validated
 == input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.json ==
 INFORMATION: Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab: Medication.code.coding[0]: Code System URI 'http://infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab: Medication.code.coding[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/med-pemh-profile|0.1.0-test
