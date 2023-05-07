@@ -1,17 +1,17 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 271, warn = 87, info = 27
+err = 267, warn = 88, info = 28
 IG Publisher Version: 1.3.8
-Generated Sun May 07 21:53:34 UTC 2023. FHIR version 3.0.2 for pem-h.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
+Generated Sun May 07 22:08:39 UTC 2023. FHIR version 3.0.2 for pem-h.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
  Build Errors : 363 / 16 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 59 / 10 / 36
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 56 / 11 / 37
  /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 5 / 0 / 4
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 1 / 0 / 1
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 1 / 0 / 1
  /github/workspace/input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 4
  /github/workspace/input/examples/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5 : 3 / 0 / 3
- /github/workspace/input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1 : 3 / 1 / 3
+ /github/workspace/input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1 : 2 / 1 / 3
  /github/workspace/input/examples/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Patient-3616b380-01be-465a-aa29-906337c6e7a4 : 6 / 1 / 1
@@ -80,9 +80,9 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.change.history.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.json.html#/html/body/div/div/div/p/a at Line 739, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.ttl.html#/html/body/div/div/div/p/a at Line 600, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.xml.html#/html/body/div/div/div/p/a at Line 704, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.json.html#/html/body/div/div/div/p/a at Line 741, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.ttl.html#/html/body/div/div/div/p/a at Line 604, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/Bundle-7898e419-6983-4afc-8163-a19274a12290.xml.html#/html/body/div/div/div/p/a at Line 709, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.change.history.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 814: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
 ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 980: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
@@ -117,9 +117,9 @@ ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.xml.html#/html/body/div/div/div/p/a at Line 319, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.change.history.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/div/p/a at Line 310, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json.html#/html/body/div/div/div/p/a at Line 305, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.ttl.html#/html/body/div/div/div/p/a at Line 306, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.xml.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.change.history.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
 ERROR: /github/workspace/output/Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "HL7 TC" cannot be resolved
@@ -433,8 +433,6 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290.json ==
-ERROR: Bundle.entry[0].resource.destination[0]: Unrecognized property 'receiver'
-ERROR: Bundle.entry[0].resource: Unrecognized property 'eventCoding'
 ERROR: Bundle.entry[2].resource.dosageInstruction[0]: Unrecognized property 'doseAndRate'
 ERROR: Bundle.entry[8].resource.type: The property type must be an Object, not an Array (at Bundle.entry[8].resource.type)
 ERROR: Bundle.signature: Unrecognized property 'data'
@@ -465,9 +463,10 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9]: Slicing can
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest on element Bundle.entry:request, looking in profile http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest (@char 1)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: Bundle.entry:messageheader: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest|0.1.0-test)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle: Bundle.entry:request: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest|0.1.0-test)
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/: MessageHeader.event: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/: MessageHeader.timestamp: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MessageHeader)
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.event: Code System URI 'http://spms.min-saude.pt/iop/events' is unknown so the code cannot be validated
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.receiver: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.sender: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/: MessageHeader.timestamp: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/msh-profile|0.1.0-test)
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.meta.tag[0]: The Coding provided (http://spms.min-saude.pt/iop/event-meta-tags#10911) is not in the value set 'Common Tags' (http://hl7.org/fhir/ValueSet/common-tags|3.0.2), and a code is required from this value set.  (error message = The provided code http://spms.min-saude.pt/iop/event-meta-tags#10911: MED PRESCRIPTION NEW is not in the value set 'http://hl7.org/fhir/ValueSet/common-tags')
@@ -541,7 +540,6 @@ ERROR: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://www.infarmed.pt' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5: MedicationRequest.dispenseRequest.quantity: Code System URI 'https://www.infarmed.pt' is unknown so the code cannot be validated
 == input/examples/MessageHeader-db6428bf-1e58-48d4-9102-b85d6c716bb1.json ==
-ERROR: MessageHeader.destination[0]: Unrecognized property 'receiver'
 ERROR: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader: MessageHeader.timestamp: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/msh-profile|0.1.0-test)
 INFORMATION: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.meta.tag[0]: Code System URI 'http://spms.min-saude.pt/iop/event-meta-tags' is unknown so the code cannot be validated
 ERROR: MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1: MessageHeader.meta.tag[0]: The Coding provided (http://spms.min-saude.pt/iop/event-meta-tags#10911) is not in the value set 'Common Tags' (http://hl7.org/fhir/ValueSet/common-tags|3.0.2), and a code is required from this value set.  (error message = The provided code http://spms.min-saude.pt/iop/event-meta-tags#10911: MED PRESCRIPTION NEW is not in the value set 'http://hl7.org/fhir/ValueSet/common-tags')
