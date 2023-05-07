@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "xxxexample.fhir.uv.myig",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+  },
+  "url" : "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+  "version" : "0.1.0-test",
+  "name" : "hl7-pt-pem-h",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-05-07T19:12:46+00:00",
+  "publisher" : "HL7 TC",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "xxxhttp://hl7.org/Special/committees/[something]"
+    }]
+  }],
+  "description" : "xxxA brief description of what this IG is about ",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "fhirVersion" : "3.0.2",
+  "dependency" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId",
+      "valueId" : "hl7.terminology.r3"
+    },
+    {
+      "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version",
+      "valueString" : "5.0.0"
+    }],
+    "type" : "reference",
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"
+  }],
+  "page" : {
+    "source" : "toc.html",
+    "title" : "ìndice",
+    "kind" : "page",
+    "page" : [{
+      "source" : "index.html",
+      "title" : "Home Page",
+      "kind" : "page"
+    },
+    {
+      "source" : "downloads.html",
+      "title" : "Downloads",
+      "kind" : "page"
+    },
+    {
+      "source" : "changes.html",
+      "title" : "IG Change History",
+      "kind" : "page"
+    }]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "7898e419-6983-4afc-8163-a19274a12290",
+  "meta" : {
+    "lastUpdated" : "2019-10-10T23:10:23+00:00",
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest",
+    "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3"]
+  },
+  "type" : "message",
+  "entry" : [{
+    "fullUrl" : "http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "db6428bf-1e58-48d4-9102-b85d6c716bb1",
+      "meta" : {
+        "lastUpdated" : "2019-10-10T23:10:23+00:00",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/msh-profile",
+        "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"],
+        "tag" : [{
+          "system" : "http://spms.min-saude.pt/iop/event-meta-tags",
+          "code" : "10911",
+          "display" : "MED PRESCRIPTION NEW"
+        }]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"db6428bf-1e58-48d4-9102-b85d6c716bb1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;db6428bf-1e58-48d4-9102-b85d6c716bb1&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-msh-profile.html\">Perfil MessageHeader</a>, <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}\">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td></tr></table><p><b>sender</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href=\"#RequestGroup_25f1ea48-e0ef-405e-86fc-498ae907f6df\">See above (RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df)</a></p></div>"
+      },
+      "destination" : [{
+        "name" : "PEMH",
+        "endpoint" : "SPMS/PEMH"
+      }],
+      "sender" : {
+        "reference" : "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace",
+        "display" : "Organização Origem"
+      },
+      "source" : {
+        "name" : "Aplicação Origem",
+        "endpoint" : "Endpont_Aplicação_Origem"
+      },
+      "focus" : [{
+        "reference" : "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "25f1ea48-e0ef-405e-86fc-498ae907f6df",
+      "meta" : {
+        "lastUpdated" : "2019-10-10T23:10:23+00:00",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/content-profile"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RequestGroup</b><a name=\"25f1ea48-e0ef-405e-86fc-498ae907f6df\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RequestGroup &quot;25f1ea48-e0ef-405e-86fc-498ae907f6df&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>NÚMERO DE VIAS</b>: 1</p><p><b>MODALIDADE DE PRESCRIÇÃO</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (med-request-modality#RSP)</span></p><p><b>groupIdentifier</b>: id:\u00a06789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+            "code" : "RSP",
+            "display" : "Receita sem Papel"
+          }]
+        }
+      }],
+      "groupIdentifier" : {
+        "system" : "http://spms.min-saude.pt/his/<id-rnu-entidade>/identifiers/local-prescription-id",
+        "value" : "6789342"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "action" : [{
+        "timingPeriod" : {
+          "end" : "2019-01-27"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "e22942f3-a461-40b9-8449-30f7a7e9d0d5",
+      "meta" : {
+        "lastUpdated" : "2019-10-10T23:10:23+00:00",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/med-request-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"e22942f3-a461-40b9-8449-30f7a7e9d0d5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-med-request-profile.html\">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id:\u00a06789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication/a87cddf3-01de-4241-b9b27209f5f2bcab\">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>"
+      },
+      "groupIdentifier" : {
+        "system" : "http://spms.min-saude.pt/his/<id-rnuentidade>/identifiers/local-prescription-id",
+        "value" : "6789342"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "medicationReference" : {
+        "reference" : "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab"
+      },
+      "subject" : {
+        "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+      },
+      "authoredOn" : "2019-07-14T23:10:23+00:00",
+      "note" : [{
+        "text" : "Informação sobre a prescrição"
+      }],
+      "dosageInstruction" : [{
+        "text" : "500 mg daily for 5 days",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2019-07-16",
+              "end" : "2019-07-30"
+            },
+            "timeOfDay" : ["09:00:00"]
+          }
+        },
+        "route" : {
+          "coding" : [{
+            "system" : "http://www.infarmed.pt",
+            "code" : "255560000",
+            "display" : "Intravenous"
+          }]
+        }
+      }],
+      "dispenseRequest" : {
+        "quantity" : {
+          "value" : 30,
+          "unit" : "TAB",
+          "system" : "https://www.infarmed.pt",
+          "code" : "TAB"
+        }
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "a87cddf3-01de-4241-b9b2-7209f5f2bcab",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/med-pemh-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"a87cddf3-01de-4241-b9b2-7209f5f2bcab\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;a87cddf3-01de-4241-b9b2-7209f5f2bcab&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-med-pemh-profile.html\">Perfil Medicação</a></p></div><p><b>code</b>: Ibuprofeno 600 mg Comp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (infarmed.pt#10007274)</span></p><p><b>form</b>: Comprimido <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#10219000)</span></p></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://infarmed.pt",
+          "code" : "10007274",
+          "display" : "Ibuprofeno 600 mg Comp"
+        }]
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://www.infarmed.pt",
+          "code" : "10219000",
+          "display" : "Comprimido"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "3616b380-01be-465a-aa29-906337c6e7a4",
+      "meta" : {
+        "lastUpdated" : "2019-01-14T23:10:23+00:00",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/patient-pemh-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"3616b380-01be-465a-aa29-906337c6e7a4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;3616b380-01be-465a-aa29-906337c6e7a4&quot; Updated &quot;2019-01-14 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-pemh-profile.html\">Perfil Paciente</a></p></div><p><b>identifier</b>: NNU:\u00a011920641576</p><p><b>name</b>: Pedro Alvares Cabral</p><p><b>telecom</b>: <a href=\"mailto:PedroAlvaresCabral@dominio.pt\">PedroAlvaresCabral@dominio.pt</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1979-11-19</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "text" : "NNU"
+        },
+        "system" : "http://spms.min-saude.pt/rnu/identifiers/patient-id",
+        "value" : "11920641576"
+      }],
+      "name" : [{
+        "text" : "Pedro Alvares Cabral",
+        "family" : "Cabral",
+        "given" : ["Pedro"]
+      }],
+      "telecom" : [{
+        "system" : "email",
+        "value" : "PedroAlvaresCabral@dominio.pt"
+      }],
+      "gender" : "male",
+      "birthDate" : "1979-11-19"
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "f644ab44-7e32-4e05-972c-1f14bebf27a8",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f644ab44-7e32-4e05-972c-1f14bebf27a8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f644ab44-7e32-4e05-972c-1f14bebf27a8&quot; </p></div><p><b>identifier</b>: Medical License number: 33421535</p><p><b>name</b>: Dr. António da Cruz</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://h17.org/fhir/v2/0203",
+            "code" : "MD",
+            "display" : "Medical License number"
+          }]
+        },
+        "system" : "https://www.ordemdosmedicos.pt",
+        "value" : "33421535"
+      }],
+      "name" : [{
+        "text" : "Dr. António da Cruz"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&quot; </p></div><p><b>identifier</b>: id:\u00a03113408</p><p><b>name</b>: Provedor de Serviços de Cardiologia</p><p><b>telecom</b>: <a href=\"mailto:PedroAlvaresCabral@dominio.pt\">PedroAlvaresCabral@dominio.pt</a></p><p><b>partOf</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://spms.min-saude.pt/sges/identifiers/entity-id",
+        "value" : "3113408"
+      }],
+      "name" : "Provedor de Serviços de Cardiologia",
+      "telecom" : [{
+        "system" : "email",
+        "value" : "PedroAlvaresCabral@dominio.pt"
+      }],
+      "partOf" : {
+        "reference" : "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&quot; </p></div><p><b>identifier</b>: id:\u00a03113408</p><p><b>name</b>: Sclinico Hospitalar</p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://spms.min-saude.pt/sges/identifiers/entity-id",
+        "value" : "3113408"
+      }],
+      "name" : "Sclinico Hospitalar"
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "04f1ea48-e0ef-405e-86fc-498ae907f6d0",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/location-pemh-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id:\u00a02412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>managingOrganization</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://spms.min-saude.pt/sges/identifiers/entity-id",
+        "value" : "2412341-3"
+      }],
+      "name" : "Hospital São João",
+      "alias" : ["Centro Hospitalar Universitário de São João"],
+      "managingOrganization" : {
+        "reference" : "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "219eb473-8ee3-4e3d-b785-b204b71de77f",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade:\u00a0131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://spms.min-saude.pt/iop/identifiers/coverage",
+            "code" : "NBU",
+            "display" : "Número do Beneficiário na Entidade"
+          }],
+          "text" : "Descrição do número de Beneficiário do Utente na Entidade"
+        },
+        "system" : "http://spms.min-saude.pt/rnu/identifiers/nbu",
+        "value" : "131255890"
+      }],
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://h17.org/fhir/v3/ActCode",
+          "code" : "EHCPOL",
+          "display" : "Extended healthcare"
+        }]
+      },
+      "subscriber" : {
+        "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+      },
+      "subscriberId" : "874207420C",
+      "beneficiary" : {
+        "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+      },
+      "relationship" : {
+        "coding" : [{
+          "system" : "http://h17.org/fhir/policyholder-relationship",
+          "code" : "self",
+          "display" : "The Beneficiary is the Policyholder"
+        }]
+      },
+      "period" : {
+        "start" : "2019-01-14",
+        "end" : "2022-01-27"
+      },
+      "payor" : [{
+        "reference" : "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "2d3f8e19-205e-40c6-aeec7b17cbef8045",
+      "meta" : {
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id:\u00a01243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://spms.min-saude.pt/iop/identifiers/encounter",
+        "value" : "1243546"
+      }],
+      "status" : "in-progress",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "EMER",
+        "display" : "Emergency"
+      },
+      "subject" : {
+        "reference" : "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
+      },
+      "participant" : [{
+        "individual" : {
+          "reference" : "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+        }
+      }],
+      "period" : {
+        "end" : "2019-01-27"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
+      }
+    }
+  }],
+  "signature" : {
+    "type" : [{
+      "system" : "urn:iso-astm:E1762-95:2013",
+      "code" : "1.2.840.10065.1.12.1.1",
+      "display" : "Author's Signature"
+    }],
+    "when" : "2019-10-10T23:10:23+00:00"
+  }
+}

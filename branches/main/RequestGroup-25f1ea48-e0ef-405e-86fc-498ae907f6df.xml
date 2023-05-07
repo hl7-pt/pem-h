@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RequestGroup xmlns="http://hl7.org/fhir">
+  <id value="25f1ea48-e0ef-405e-86fc-498ae907f6df"/>
+  <meta>
+    <lastUpdated value="2019-10-10T23:10:23+00:00"/>
+    <profile value="http://example.com/fhir/example/StructureDefinition/content-profile"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RequestGroup</b><a name="25f1ea48-e0ef-405e-86fc-498ae907f6df"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RequestGroup &quot;25f1ea48-e0ef-405e-86fc-498ae907f6df&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-content-profile.html">Perfil Conteudo Receita</a></p></div><p><b>NÚMERO DE VIAS</b>: 1</p><p><b>MODALIDADE DE PRESCRIÇÃO</b>: Receita sem Papel <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (med-request-modality#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class="grid"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>
+  </text>
+  <extension url="http://spms.min-saude.pt/iop/extensions/prescription-duplicate">
+    <valuePositiveInt value="1"/>
+  </extension>
+  <extension url="http://spms.min-saude/pe/top/extensions/med-request-modality">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+        <code value="RSP"/>
+        <display value="Receita sem Papel"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <groupIdentifier>
+    <system value="http://spms.min-saude.pt/his/&lt;id-rnu-entidade&gt;/identifiers/local-prescription-id"/>
+    <value value="6789342"/>
+  </groupIdentifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <action>
+    <timingPeriod>
+      <end value="2019-01-27"/>
+    </timingPeriod>
+  </action>
+</RequestGroup>

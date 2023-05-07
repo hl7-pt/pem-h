@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "219eb473-8ee3-4e3d-b785-b204b71de77f",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade:\u00a0131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://spms.min-saude.pt/iop/identifiers/coverage",
+        "code" : "NBU",
+        "display" : "Número do Beneficiário na Entidade"
+      }],
+      "text" : "Descrição do número de Beneficiário do Utente na Entidade"
+    },
+    "system" : "http://spms.min-saude.pt/rnu/identifiers/nbu",
+    "value" : "131255890"
+  }],
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://h17.org/fhir/v3/ActCode",
+      "code" : "EHCPOL",
+      "display" : "Extended healthcare"
+    }]
+  },
+  "subscriber" : {
+    "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+  },
+  "subscriberId" : "874207420C",
+  "beneficiary" : {
+    "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+  },
+  "relationship" : {
+    "coding" : [{
+      "system" : "http://h17.org/fhir/policyholder-relationship",
+      "code" : "self",
+      "display" : "The Beneficiary is the Policyholder"
+    }]
+  },
+  "period" : {
+    "start" : "2019-01-14",
+    "end" : "2022-01-27"
+  },
+  "payor" : [{
+    "reference" : "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+  }]
+}
