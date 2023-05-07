@@ -98,7 +98,7 @@
           <profile value="http://example.com/fhir/example/StructureDefinition/med-request-profile"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="e22942f3-a461-40b9-8449-30f7a7e9d0d5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-med-request-profile.html">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="a87cddf3-01de-4241-b9b27209f5f2bcab">a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href="3616b380-01be-465a-aa29906337c6e7a4">3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="e22942f3-a461-40b9-8449-30f7a7e9d0d5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-med-request-profile.html">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href="a87cddf3-01de-4241-b9b27209f5f2bcab">a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href="3616b380-01be-465a-aa29906337c6e7a4">3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td><td><b>Dose[x]</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (www.infarmed.pt#255560000)</span></td><td>400 mg<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code mg = 'mg')</span></td></tr></table><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style="background: LightGoldenRodYellow"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>
         </text>
         <groupIdentifier>
           <system value="http://spms.min-saude.pt/his/&lt;id-rnuentidade&gt;/identifiers/local-prescription-id"/>
@@ -134,6 +134,12 @@
               <display value="Intravenous"/>
             </coding>
           </route>
+          <doseQuantity>
+            <value value="400"/>
+            <unit value="mg"/>
+            <system value="https://www.infarmed.pt"/>
+            <code value="mg"/>
+          </doseQuantity>
         </dosageInstruction>
         <dispenseRequest>
           <quantity>
