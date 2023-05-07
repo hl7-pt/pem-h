@@ -108,12 +108,23 @@ def transfrom_location(data):
     return data
 
 
+def transfrom_medreq(data):
+    print(data)
+    data["dosageInstruction"][0]["doseQuantity"] = data["dosageInstruction"][0][
+        "doseAndRate"
+    ][0]["doseQuantity"]
+    del data["dosageInstruction"][0]["doseAndRate"]
+    return data
+
+
 def transform_to_stu3(data, resourcetype):
     # print(resourcetype)
     if resourcetype == "MessageHeader":
         return transform_msh(data)
     if resourcetype == "Location":
         return transfrom_location(data)
+    if resourcetype == "MedicationRequest":
+        return transfrom_medreq(data)
     return data
 
 
