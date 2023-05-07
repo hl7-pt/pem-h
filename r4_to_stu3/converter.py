@@ -14,7 +14,7 @@ def transform_bundle_sd(data):
 
 def transfrom_extension(data):
 
-    data["context"] = ["DataElement"]
+    # data["context"] = ["DataElement"]
     data["contextType"] = "resource"
     # json_string = json.dumps(data)
 
