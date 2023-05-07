@@ -1,0 +1,38 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+  <a name="scope">  </a>
+	<p>
+    Este documento é um  FHIR Implementation Guide. Contem especificações desenvolvidas pela comunidade HL7 e pela SPMS para o uso de FHIR.
+   </p>
+	<blockquote class="stu-note">
+	<strong> Este documento e artefactos estão sob desenvolvimento.</strong>
+	Este conteúdo é para efeitos demonstrativos apenas.
+	</blockquote>
+	<p> </p>
+  <h3>Conteúdo</h3> <a name="content"> </a>
+	<p/>
+
+<p>Esta publicação contém as especificações técnicas sobre a Gestão de Medicação PEMH</p>
+<p></p>
+<p>Existe também uma introdução e motivação para esta especificação.</p>
+<p></p>
+
+<a name="navigation"> </a>
+<p>O menu no topo permite uma navegação rápida entre diferentes secções e o <a href="toc.html">Índice</a> contém uma listagem do conteudo total deste Implementation Guide. </p>
+<p></p>
+	<a name="ip"> </a>
+	<h3>Intellectual Property Considerations</h3>
+	<p>
+    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
+    as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
+    any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
+    licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
+  </p>
+
+	<a name="disclaimer"> </a>
+	<h3>Disclaimer</h3>
+	<p>
+    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
+    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
+    No liability can be inferred from the use or misuse of this specification, or its consequences.
+  </p>
+</div>

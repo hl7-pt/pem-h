@@ -1,0 +1,49 @@
+<ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Índice</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Intro.html">Introdução</a>
+			</li>
+			<li>
+				<a href="mensagem-envio.html">Envio de informação</a>
+			</li>
+			<li>
+				<a href="mensagem-resposta.html">Resposta</a>
+			</li>
+			<li>
+				<a href="recursos-suporte.html">Recursos de suporte / genéricos</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artefactos</a>
+			</li>
+			
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementação<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      

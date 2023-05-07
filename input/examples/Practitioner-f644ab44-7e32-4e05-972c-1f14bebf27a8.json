@@ -1,0 +1,1 @@
+{"resourceType": "Practitioner", "id": "f644ab44-7e32-4e05-972c-1f14bebf27a8", "identifier": [{"type": {"coding": [{"code": "MD", "system": "http://h17.org/fhir/v2/0203", "display": "Medical License number"}]}, "system": "https://www.ordemdosmedicos.pt", "value": "33421535"}], "name": [{"text": "Dr. Ant\u00f3nio da Cruz"}]}
