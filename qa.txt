@@ -1,12 +1,12 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 267, warn = 87, info = 28
+err = 267, warn = 87, info = 26
 IG Publisher Version: 1.3.8
-Generated Sun May 07 22:13:25 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
- Build Errors : 18 / 15 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 56 / 11 / 37
- /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 5 / 0 / 4
+Generated Sun May 07 22:29:59 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
+ Build Errors : 16 / 15 / 0
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 59 / 11 / 36
+ /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 2 / 0 / 3
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 1 / 0 / 1
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 1 / 0 / 1
  /github/workspace/input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 4
@@ -77,10 +77,8 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 814: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 980: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 1341: The link 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
-ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 233, column 966: The link 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8' for "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 1468: The link 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
+ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 233, column 966: The link 'f644ab44-7e324e05-972c-1f14bebf27a8' for "f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 714: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 844: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -151,16 +149,18 @@ INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[5].resour
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6].resource/*Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace*/.partOf: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource/*Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0*/.managingOrganization: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
-INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.type.coding[0]: Code System URI 'http://h17.org/fhir/v3/ActCode' is unknown so the code cannot be validated
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.beneficiary: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Invalid Resource target type. Found Encounter, but expected one of ([Patient, RelatedPerson])
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.beneficiary: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.beneficiary: Invalid Resource target type. Found Encounter, but expected one of ([Patient])
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.payor[0]: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.payor[0]: Relative URLs must be of the format [ResourceName]/[id].  Encountered dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.payor[0]: Unable to resolve resource with reference 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding] in profile Coverage.identifier:NBU - the discriminator http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test does not have fixed value, binding or existence assertions
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.type.coding[0].system: Value is 'http://h17.org/fhir/v3/ActCode' but must be 'http://hl7.org/fhir/v3/ActCode'
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.subject: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.subject: Invalid Resource target type. Found Encounter, but expected one of ([Group, Patient])
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.participant[0].individual: Unable to resolve resource with reference 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8'
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.participant[0].individual: Relative URLs must be of the format [ResourceName]/[id].  Encountered f644ab44-7e324e05-972c-1f14bebf27a8
+ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.participant[0].individual: Unable to resolve resource with reference 'f644ab44-7e324e05-972c-1f14bebf27a8'
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.serviceProvider: Entry 6 matches the reference Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.signature: Signature.who[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Signature)
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.signature: Bundle.signature.who[x]: minimum required = 1, but only found 0 (from http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest|0.1.0-test)
@@ -173,14 +173,10 @@ WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.meta.profile[1]: Pr
 == input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json ==
 ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding] in profile Coverage.identifier:NBU - the discriminator http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test does not have fixed value, binding or existence assertions
 INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
-INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.type.coding[0]: Code System URI 'http://h17.org/fhir/v3/ActCode' is unknown so the code cannot be validated
-ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.type.coding[0].system: Value is 'http://h17.org/fhir/v3/ActCode' but must be 'http://hl7.org/fhir/v3/ActCode'
-ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.subscriber: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
-ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.beneficiary: Unable to resolve resource with reference 'Patient/3616b380-01be-465a-aa29906337c6e7a4'
 INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
-ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.payor[0]: Unable to resolve resource with reference 'Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
+ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.payor[0]: Unable to resolve resource with reference 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
 == input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json ==
-ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.participant[0].individual: Unable to resolve resource with reference 'Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8'
+ERROR: Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045: Encounter.participant[0].individual: Unable to resolve resource with reference 'f644ab44-7e324e05-972c-1f14bebf27a8'
 == input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.json ==
 ERROR: Location.type: The property type must be an Object, not an Array (at Location.type)
 == input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab.json ==

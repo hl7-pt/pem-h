@@ -24,11 +24,12 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"db6428bf-1e58-48d4-9102-b85d6c716bb1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;db6428bf-1e58-48d4-9102-b85d6c716bb1&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-msh-profile.html\">Perfil MessageHeader</a>, <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}\">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><p><b>event</b>: 10724 (Details: http://spms.min-saude.pt/iop/events code 10724 = '10724', stated as 'null')</p><p><b>receiver</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><p><b>sender</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href=\"#RequestGroup_25f1ea48-e0ef-405e-86fc-498ae907f6df\">See above (RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df)</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"db6428bf-1e58-48d4-9102-b85d6c716bb1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;db6428bf-1e58-48d4-9102-b85d6c716bb1&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-msh-profile.html\">Perfil MessageHeader</a>, <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}\">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><p><b>event</b>: MED_PRESCRIPTION_SYNCHRONIZATION (Details: http://spms.min-saude.pt/iop/events code 10724 = '10724', stated as 'MED_PRESCRIPTION_SYNCHRONIZATION')</p><p><b>receiver</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><p><b>sender</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href=\"#RequestGroup_25f1ea48-e0ef-405e-86fc-498ae907f6df\">See above (RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df)</a></p></div>"
       },
       "event" : {
         "system" : "http://spms.min-saude.pt/iop/events",
-        "code" : "10724"
+        "code" : "10724",
+        "display" : "MED_PRESCRIPTION_SYNCHRONIZATION"
       },
       "receiver" : {
         "reference" : "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace",
@@ -303,7 +304,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade:\u00a0131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade:\u00a0131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
       },
       "identifier" : [{
         "type" : {
@@ -320,17 +321,17 @@
       "status" : "active",
       "type" : {
         "coding" : [{
-          "system" : "http://h17.org/fhir/v3/ActCode",
+          "system" : "http://hl7.org/fhir/v3/ActCode",
           "code" : "EHCPOL",
           "display" : "Extended healthcare"
         }]
       },
       "subscriber" : {
-        "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+        "reference" : "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
       },
       "subscriberId" : "874207420C",
       "beneficiary" : {
-        "reference" : "Patient/3616b380-01be-465a-aa29906337c6e7a4"
+        "reference" : "Patient/3616b380-01be-465a-aa29-906337c6e7a4"
       },
       "relationship" : {
         "coding" : [{
@@ -344,7 +345,7 @@
         "end" : "2022-01-27"
       },
       "payor" : [{
-        "reference" : "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+        "reference" : "dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
       }]
     }
   },
@@ -358,7 +359,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id:\u00a01243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id:\u00a01243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"f644ab44-7e324e05-972c-1f14bebf27a8\">f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
       },
       "identifier" : [{
         "system" : "http://spms.min-saude.pt/iop/identifiers/encounter",
@@ -375,7 +376,7 @@
       },
       "participant" : [{
         "individual" : {
-          "reference" : "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+          "reference" : "f644ab44-7e324e05-972c-1f14bebf27a8"
         }
       }],
       "period" : {
