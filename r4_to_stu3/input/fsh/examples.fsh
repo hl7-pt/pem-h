@@ -60,7 +60,7 @@ Description: "Exemplo Message Header"
 * meta.tag.display = "MED PRESCRIPTION NEW"
 * eventCoding.system =  "http://spms.min-saude.pt/iop/events" //#stu3 is not supported by SUSHI
 * eventCoding.code = #10724
-* eventCoding.display = "MED PRESCRIPTION SYNCHRONIZATION"
+* eventCoding.display = "MED_PRESCRIPTION_SYNCHRONIZATION"
 * destination.name = "PEMH"
 * destination.endpoint = "SPMS/PEMH"
 * destination.receiver = Reference(ExemploOrganization1)
@@ -162,11 +162,11 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * status = #in-progress
 * class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
 
-* subject = Reference(Patient/3616b380-01be-465a-aa29-906337c6e7a4)
-* participant.individual = Reference(Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8)
+* subject = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
+* participant.individual = Reference(f644ab44-7e324e05-972c-1f14bebf27a8)
 
 * period.end = "2019-01-27"
-* serviceProvider = Reference(Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* serviceProvider = Reference(fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 Instance: ExemploCoverage
 InstanceOf: PEMHCoverage
@@ -177,15 +177,15 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 * identifier.type.text = "Descrição do número de Beneficiário do Utente na Entidade"
 * identifier.system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
 * identifier.value = "131255890"
-* type = http://h17.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
+* type = http://hl7.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
 * subscriberId = "874207420C"
 
-* subscriber = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
+* subscriber = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
-* beneficiary = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
+* beneficiary = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
 * relationship =  http://h17.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
-* payor = Reference(Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace)
+* payor = Reference(dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace)
 * period.start = "2019-01-14"
 * period.end = "2022-01-27"
 * status = #active
@@ -201,7 +201,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Location"
 * name = "Hospital São João"
 * alias = "Centro Hospitalar Universitário de São João"
 * type = http://spms.min-saude.pt/prvr/valueset/location-type#urgencia "Urgência"
-* managingOrganization = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* managingOrganization = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 Instance: ExemploOrganization1
 InstanceOf: Organization
