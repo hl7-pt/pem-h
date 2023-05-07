@@ -1,0 +1,371 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Bundle/7898e419-6983-4afc-8163-a19274a12290> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "7898e419-6983-4afc-8163-a19274a12290"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2019-10-10T23:10:23+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest"^^xsd:anyURI ] [ fhir:v "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> )
+  ] ) ; # 
+  fhir:signature [
+     fhir:type ( [
+       fhir:system [ fhir:v "urn:iso-astm:E1762-95:2013"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1.2.840.10065.1.12.1.1" ] ;
+       fhir:display [ fhir:v "Author's Signature" ]
+     ] ) ;
+     fhir:when [ fhir:v "2019-10-10T23:10:23+00:00"^^xsd:dateTime ]
+  ] . # 
+
+<http://spms.min-saude.pt/fhir/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "db6428bf-1e58-48d4-9102-b85d6c716bb1"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2019-10-10T23:10:23+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/msh-profile"^^xsd:anyURI ] [ fhir:v "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3"^^xsd:anyURI ] ) ;
+     fhir:tag ( [
+       fhir:system [ fhir:v "http://spms.min-saude.pt/iop/event-meta-tags"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10911" ] ;
+       fhir:display [ fhir:v "MED PRESCRIPTION NEW" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"db6428bf-1e58-48d4-9102-b85d6c716bb1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;db6428bf-1e58-48d4-9102-b85d6c716bb1&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-msh-profile.html\">Perfil MessageHeader</a>, <code>http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3</code></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://spms.min-saude.pt/iop/event-meta-tags http://spms.min-saude.pt/iop/event-meta-tags}\">http://spms.min-saude.pt/iop/event-meta-tags</span></p></div><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PEMH</td><td><code>SPMS/PEMH</code></td></tr></table><p><b>sender</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace: Organização Origem)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Aplicação Origem</td><td><code>Endpont_Aplicação_Origem</code></td></tr></table><p><b>focus</b>: <a href=\"#RequestGroup_25f1ea48-e0ef-405e-86fc-498ae907f6df\">See above (RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df)</a></p></div>"
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "PEMH" ] ;
+     fhir:endpoint [ fhir:v "SPMS/PEMH"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ] ;
+     fhir:display [ fhir:v "Organização Origem" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "Aplicação Origem" ] ;
+     fhir:endpoint [ fhir:v "Endpont_Aplicação_Origem"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> ;
+     fhir:reference [ fhir:v "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ]
+  ] ) . # 
+
+<http://spms.min-saude.pt/fhir/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:RequestGroup ;
+  fhir:id [ fhir:v "25f1ea48-e0ef-405e-86fc-498ae907f6df"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2019-10-10T23:10:23+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/content-profile"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RequestGroup</b><a name=\"25f1ea48-e0ef-405e-86fc-498ae907f6df\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RequestGroup &quot;25f1ea48-e0ef-405e-86fc-498ae907f6df&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-content-profile.html\">Perfil Conteudo Receita</a></p></div><p><b>NÚMERO DE VIAS</b>: 1</p><p><b>MODALIDADE DE PRESCRIÇÃO</b>: Receita sem Papel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (med-request-modality#RSP)</span></p><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><h3>Actions</h3><table class=\"grid\"><tr><td>-</td><td><b>Timing[x]</b></td></tr><tr><td>*</td><td>?? --&gt; 2019-01-27</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://spms.min-saude.pt/iop/extensions/prescription-duplicate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:url [ fhir:v "http://spms.min-saude/pe/top/extensions/med-request-modality"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RSP" ] ;
+         fhir:display [ fhir:v "Receita sem Papel" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/his/<id-rnu-entidade>/identifiers/local-prescription-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "6789342" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:action ( [
+     fhir:timing [
+       a fhir:Period ;
+       fhir:end [ fhir:v "2019-01-27"^^xsd:date ]
+     ]
+  ] ) . # 
+
+<http://spms.min-saude.pt/fhir/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest ;
+  fhir:id [ fhir:v "e22942f3-a461-40b9-8449-30f7a7e9d0d5"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2019-10-10T23:10:23+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/med-request-profile"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"e22942f3-a461-40b9-8449-30f7a7e9d0d5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;e22942f3-a461-40b9-8449-30f7a7e9d0d5&quot; Updated &quot;2019-10-10 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-med-request-profile.html\">Perfil informação de receita</a></p></div><p><b>groupIdentifier</b>: id: 6789342</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: <a href=\"Medication/a87cddf3-01de-4241-b9b27209f5f2bcab\">Medication/a87cddf3-01de-4241-b9b27209f5f2bcab</a></p><p><b>subject</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>authoredOn</b>: 2019-07-14 23:10:23+0000</p><p><b>note</b>: Informação sobre a prescrição</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>500 mg daily for 5 days</td><td>Starting 2019-07-16, Once, Until 2019-07-30</td><td>Intravenous <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#255560000)</span></td></tr></table><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30 TAB<span style=\"background: LightGoldenRodYellow\"> (Details: https://www.infarmed.pt code TAB = 'TAB')</span></td></tr></table></div>"
+  ] ; # 
+  fhir:groupIdentifier [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/his/<id-rnuentidade>/identifiers/local-prescription-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "6789342" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab> ;
+     fhir:reference [ fhir:v "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2019-07-14T23:10:23+00:00"^^xsd:dateTime] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Informação sobre a prescrição" ]
+  ] ) ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "500 mg daily for 5 days" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2019-07-16"^^xsd:date ] ;
+           fhir:end [ fhir:v "2019-07-30"^^xsd:date ]
+         ] ;
+         fhir:timeOfDay ( [ fhir:v "09:00:00"^^xsd:time ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.infarmed.pt"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "255560000" ] ;
+         fhir:display [ fhir:v "Intravenous" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:quantity [
+       fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "TAB" ] ;
+       fhir:system [ fhir:v "https://www.infarmed.pt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TAB" ]
+     ]
+  ] . # 
+
+<http://spms.min-saude.pt/fhir/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab> a fhir:Medication ;
+  fhir:id [ fhir:v "a87cddf3-01de-4241-b9b2-7209f5f2bcab"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/med-pemh-profile"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"a87cddf3-01de-4241-b9b2-7209f5f2bcab\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;a87cddf3-01de-4241-b9b2-7209f5f2bcab&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-med-pemh-profile.html\">Perfil Medicação</a></p></div><p><b>code</b>: Ibuprofeno 600 mg Comp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (infarmed.pt#10007274)</span></p><p><b>form</b>: Comprimido <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#10219000)</span></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://infarmed.pt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10007274" ] ;
+       fhir:display [ fhir:v "Ibuprofeno 600 mg Comp" ]
+     ] )
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.infarmed.pt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10219000" ] ;
+       fhir:display [ fhir:v "Comprimido" ]
+     ] )
+  ] . # 
+
+<http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4> a fhir:Patient, fhir:Organization, fhir:Organization, fhir:Location, fhir:Coverage, fhir:Encounter ;
+  fhir:id [ fhir:v "3616b380-01be-465a-aa29-906337c6e7a4"], [ fhir:v "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"], [ fhir:v "dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"], [ fhir:v "04f1ea48-e0ef-405e-86fc-498ae907f6d0"], [ fhir:v "219eb473-8ee3-4e3d-b785-b204b71de77f"], [ fhir:v "2d3f8e19-205e-40c6-aeec7b17cbef8045"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2019-01-14T23:10:23+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile"^^xsd:anyURI ] )
+  ], [
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/location-pemh-profile"^^xsd:anyURI ] )
+  ], [
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile"^^xsd:anyURI ] )
+  ], [
+     fhir:profile ( [ fhir:v "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"3616b380-01be-465a-aa29-906337c6e7a4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;3616b380-01be-465a-aa29-906337c6e7a4&quot; Updated &quot;2019-01-14 23:10:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-pemh-profile.html\">Perfil Paciente</a></p></div><p><b>identifier</b>: NNU: 11920641576</p><p><b>name</b>: Pedro Alvares Cabral</p><p><b>telecom</b>: <a href=\"mailto:PedroAlvaresCabral@dominio.pt\">PedroAlvaresCabral@dominio.pt</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1979-11-19</p></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&quot; </p></div><p><b>identifier</b>: id: 3113408</p><p><b>name</b>: Provedor de Serviços de Cardiologia</p><p><b>telecom</b>: <a href=\"mailto:PedroAlvaresCabral@dominio.pt\">PedroAlvaresCabral@dominio.pt</a></p><p><b>partOf</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&quot; </p></div><p><b>identifier</b>: id: 3113408</p><p><b>name</b>: Sclinico Hospitalar</p></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>managingOrganization</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: Descrição do número de Beneficiário do Utente na Entidade: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ActCode#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"Patient/3616b380-01be-465a-aa29906337c6e7a4\">Patient/3616b380-01be-465a-aa29906337c6e7a4</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (policyholder-relationship#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace\">Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace</a></p></div>"
+  ], [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id: 1243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"#Organization_fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:text [ fhir:v "NNU" ]
+     ] ;
+     fhir:system [ fhir:v "http://spms.min-saude.pt/rnu/identifiers/patient-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "11920641576" ]
+  ] [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/sges/identifiers/entity-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3113408" ]
+  ] [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/sges/identifiers/entity-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3113408" ]
+  ] [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/sges/identifiers/entity-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2412341-3" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://spms.min-saude.pt/iop/identifiers/coverage"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "NBU" ] ;
+         fhir:display [ fhir:v "Número do Beneficiário na Entidade" ]
+       ] ) ;
+       fhir:text [ fhir:v "Descrição do número de Beneficiário do Utente na Entidade" ]
+     ] ;
+     fhir:system [ fhir:v "http://spms.min-saude.pt/rnu/identifiers/nbu"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "131255890" ]
+  ] [
+     fhir:system [ fhir:v "http://spms.min-saude.pt/iop/identifiers/encounter"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1243546" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Pedro Alvares Cabral" ] ;
+     fhir:family [ fhir:v "Cabral" ] ;
+     fhir:given ( [ fhir:v "Pedro" ] )
+  ] [ fhir:v "Provedor de Serviços de Cardiologia"] [ fhir:v "Sclinico Hospitalar"] [ fhir:v "Hospital São João"] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "PedroAlvaresCabral@dominio.pt" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "PedroAlvaresCabral@dominio.pt" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1979-11-19"^^xsd:date] ; # 
+  fhir:partOf [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+  ] ; # 
+  fhir:alias ( [ fhir:v "Centro Hospitalar Universitário de São João"] ) ; # 
+  fhir:managingOrganization [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"], [ fhir:v "in-progress"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://h17.org/fhir/v3/ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EHCPOL" ] ;
+       fhir:display [ fhir:v "Extended healthcare" ]
+     ] )
+  ] ; # 
+  fhir:subscriber [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ] ; # 
+  fhir:subscriberId [ fhir:v "874207420C"] ; # 
+  fhir:beneficiary [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
+  ] ; # 
+  fhir:relationship [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://h17.org/fhir/policyholder-relationship"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "self" ] ;
+       fhir:display [ fhir:v "The Beneficiary is the Policyholder" ]
+     ] )
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-01-14"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-01-27"^^xsd:date ]
+  ], [
+     fhir:end [ fhir:v "2019-01-27"^^xsd:date ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" ]
+  ] ) ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://hl7.org/fhir/v3/ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EMER" ] ;
+     fhir:display [ fhir:v "Emergency" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> ;
+     fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29-906337c6e7a4" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8> ;
+       fhir:reference [ fhir:v "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+  ] . # 
+
+<http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8> a fhir:Practitioner ;
+  fhir:id [ fhir:v "f644ab44-7e32-4e05-972c-1f14bebf27a8"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f644ab44-7e32-4e05-972c-1f14bebf27a8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f644ab44-7e32-4e05-972c-1f14bebf27a8&quot; </p></div><p><b>identifier</b>: Medical License number: 33421535</p><p><b>name</b>: Dr. António da Cruz</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://h17.org/fhir/v2/0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ] ;
+         fhir:display [ fhir:v "Medical License number" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://www.ordemdosmedicos.pt"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "33421535" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Dr. António da Cruz" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

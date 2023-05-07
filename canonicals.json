@@ -1,0 +1,240 @@
+[
+  {
+    "id" : "PEMHbundleRquest",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest",
+    "version" : "0.1.0-test",
+    "name" : "PEMHbundleRquest"
+  },
+  {
+    "id" : "bundle-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/bundle-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHbundleResponse"
+  },
+  {
+    "id" : "content-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/content-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHRequestGroup"
+  },
+  {
+    "id" : "content-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/content-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHRequestGroupResponse"
+  },
+  {
+    "id" : "coverage-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHCoverage"
+  },
+  {
+    "id" : "encounter-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHEncounter"
+  },
+  {
+    "id" : "location-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/location-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHLocation"
+  },
+  {
+    "id" : "med-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/med-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMedication"
+  },
+  {
+    "id" : "med-request-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/med-request-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMedicationRequest"
+  },
+  {
+    "id" : "msh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/msh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMSH"
+  },
+  {
+    "id" : "msh-response-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/msh-response-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHMessageHeaderResposta"
+  },
+  {
+    "id" : "patient-pemh-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/patient-pemh-profile",
+    "version" : "0.1.0-test",
+    "name" : "PEMHPatient"
+  },
+  {
+    "id" : "CardInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/coverage-card-info",
+    "version" : "0.1.0-test",
+    "name" : "CardInfo"
+  },
+  {
+    "id" : "episodeServiceSpecialty",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/episode-service-specialty",
+    "version" : "0.1.0-test",
+    "name" : "episodeServiceSpecialty"
+  },
+  {
+    "id" : "med-cost",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-cost",
+    "version" : "0.1.0-test",
+    "name" : "med-cost"
+  },
+  {
+    "id" : "ptPatientOtherInfo",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-patient-info",
+    "version" : "0.1.0-test",
+    "name" : "ptPatientOtherInfo"
+  },
+  {
+    "id" : "med-prescription-cancel-reason",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-cancel-reason"
+  },
+  {
+    "id" : "med-prescription-dosage-instruction",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-dosage-instruction"
+  },
+  {
+    "id" : "med-prescription-dosage-line",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line",
+    "version" : "0.1.0-test",
+    "name" : "MedPrescriptionDosageLine"
+  },
+  {
+    "id" : "med-prescription-framing-dispense",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense",
+    "version" : "0.1.0-test",
+    "name" : "med-prescription-framing-dispense"
+  },
+  {
+    "id" : "presc-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration",
+    "version" : "0.1.0-test",
+    "name" : "presc-administration"
+  },
+  {
+    "id" : "presc-local",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-local",
+    "version" : "0.1.0-test",
+    "name" : "presc-local"
+  },
+  {
+    "id" : "presc-print",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-print",
+    "version" : "0.1.0-test",
+    "name" : "presc-print"
+  },
+  {
+    "id" : "presc-transcription",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-prescription-transcript",
+    "version" : "0.1.0-test",
+    "name" : "presc-transcription"
+  },
+  {
+    "id" : "presc-type",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/med-request-type",
+    "version" : "0.1.0-test",
+    "name" : "presc-type"
+  },
+  {
+    "id" : "nextAppointmentDate",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date",
+    "version" : "0.1.0-test",
+    "name" : "nextAppointmentDate"
+  },
+  {
+    "id" : "prescription-duplicate",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/iop/extensions/prescription-duplicate",
+    "version" : "0.1.0-test",
+    "name" : "PrescriptionDuplicate"
+  },
+  {
+    "id" : "ptAddress",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/address",
+    "version" : "0.1.0-test",
+    "name" : "ptAddress"
+  },
+  {
+    "id" : "contactObservations",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/contact-observations",
+    "version" : "0.1.0-test",
+    "name" : "contactObservations"
+  },
+  {
+    "id" : "ptOccupation",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/occupation",
+    "version" : "0.1.0-test",
+    "name" : "ptOccupation"
+  },
+  {
+    "id" : "ptFilliation",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/patient-parents",
+    "version" : "0.1.0-test",
+    "name" : "ptFilliation"
+  },
+  {
+    "id" : "contactPreference",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude.pt/rnu/extensions/preferred-contact",
+    "version" : "0.1.0-test",
+    "name" : "contactPreference"
+  },
+  {
+    "id" : "meaning-order",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",
+    "version" : "0.1.0-test",
+    "name" : "MeaningOrder"
+  },
+  {
+    "id" : "xxxexample.fhir.uv.myig",
+    "type" : "ImplementationGuide",
+    "url" : "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+    "version" : "0.1.0-test",
+    "name" : "hl7-pt-pem-h"
+  }
+]

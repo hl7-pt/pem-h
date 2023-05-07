@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Medication",
+  "id" : "a87cddf3-01de-4241-b9b2-7209f5f2bcab",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/example/StructureDefinition/med-pemh-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"a87cddf3-01de-4241-b9b2-7209f5f2bcab\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;a87cddf3-01de-4241-b9b2-7209f5f2bcab&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-med-pemh-profile.html\">Perfil Medicação</a></p></div><p><b>code</b>: Ibuprofeno 600 mg Comp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (infarmed.pt#10007274)</span></p><p><b>form</b>: Comprimido <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (www.infarmed.pt#10219000)</span></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://infarmed.pt",
+      "code" : "10007274",
+      "display" : "Ibuprofeno 600 mg Comp"
+    }]
+  },
+  "form" : {
+    "coding" : [{
+      "system" : "http://www.infarmed.pt",
+      "code" : "10219000",
+      "display" : "Comprimido"
+    }]
+  }
+}
