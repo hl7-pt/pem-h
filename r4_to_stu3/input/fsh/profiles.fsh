@@ -80,8 +80,8 @@ Description: "Este recurso representa a receita (Número da receita, local e cen
 
 * extension contains PrescriptionDuplicate named PrescriptionDuplicate 0..1 
 * extension[PrescriptionDuplicate] ^short = "Extensão para indicar a via da receita prescrita"
+
 * extension contains meaning-order named MeaningOrder 0..1
-* extension[meaning-order] ^short = "Extensão para indicar a via da receita prescrita"
 * extension[meaning-order] ^short = "Extensão sobre a Modalidade de Prescrição. Receita com papel (RCP) ou receita sem papel (RSP) [MODALIDADE DE PRESCRIÇÃO]" 
 
 //* action.label ^short = "Número da linha da receita (1, 2, 3, ...). [NÚMERO LINHA]"
@@ -186,38 +186,32 @@ Description: "Utente a quem diz respeito a prescrição de medicação."
 * identifier ^slicing.discriminator.path = "type.coding"
 * identifier ^slicing.rules = #open
 * identifier contains VISTO 0..1 MS and  CC 0..1 MS and NIF 0..1 MS and SS 0..1 MS and NNU 0..1 MS and NP 0..1 MS
-* identifier.type.coding.system = "http://hl7.org/fhir/v2/0203"
-* identifier[VISTO].type.coding.code = #PRC
-* identifier[VISTO].type.coding.display = "Permanent Resident Card Number"
+
+* identifier[VISTO].type.coding = http://hl7.org/fhir/v2/0203#PRC "Permanent Resident Card Number"
 * identifier[VISTO].system = "http://www.sef.pt/identifiers/prc-card"
 * identifier[VISTO].value 1..1
 
-* identifier[CC].type.coding.code = #CZ
-* identifier[CC].type.coding.display = "Citizenship Card"
-//* identifier[CC].system = "http://www.sef.pt/identifiers/prc-card"
+* identifier[CC].type.coding = http://hl7.org/fhir/v2/0203#CZ "Citizenship Card"
+* identifier[CC].system = "http://www.sef.pt/identifiers/prc-card"
 * identifier[CC].value 1..1
 
 
-* identifier[NIF].type.coding.code = #TAX
-* identifier[NIF].type.coding.display = "Tax ID Number"
+* identifier[NIF].type.coding = http://hl7.org/fhir/v2/0203#TAX "Tax ID Number"
 * identifier[NIF].system = "http://autoridadetributaria.pt/identifiers/nif"
 * identifier[NIF].value 1..1
 
 
-* identifier[SS].type.coding.code = #SS
-* identifier[SS].type.coding.display = "Social Security Number"
+* identifier[SS].type.coding = http://hl7.org/fhir/v2/0203#SS  "Social Security Number"
 * identifier[SS].system = "http://www.seg-social.pt/pedido-de-niss1"
 * identifier[SS].value 1..1
 
 
-* identifier[NNU].type.coding.code = #HC
-* identifier[NNU].type.coding.display = "Health Card Number"
+* identifier[NNU].type.coding = http://hl7.org/fhir/v2/0203#HC "Health Card Number"
 * identifier[NNU].system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier[NNU].value 1..1
 
-* identifier[NP].type.coding.code = #MR
-* identifier[NP].type.coding.display = "Medical Record Number"
-//* identifier[NP].system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
+* identifier[NP].type.coding = http://hl7.org/fhir/v2/0203#MR "Medical Record Number"
+* identifier[NP].system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier[NP].value 1..1
 
 * name.text ^short = "Nome completo do utente"
@@ -277,8 +271,7 @@ Description: "Recurso que caracteriza o episódio a partir do qual a prescriçã
 * identifier ^short = "Número do episódio no âmbito do qual foi emitida a receita"
 * identifier.system = "http://spms.min-saude.pt/iop/identifiers/encounter"
 * status = #in-progress
-* class ^short = "Identificador do tipo de episódio que deu origem à prescrição - Módulo do Episódio
-e.g.: INT, CE, URG, EMER"
+* class ^short = "Identificador do tipo de episódio que deu origem à prescrição - Módulo do Episódio e.g.: INT, CE, URG, EMER"
 * subject ^short = "Referência para um resource que contém informações do utente"
 //* encounter.participant ^short = "Preencher com os profissionais envolvidos."
 //* encounter.participant.individual ^short = "Referência para um resource que contém informações do profissional de saúde"
@@ -304,8 +297,7 @@ Description: "Recurso utilizado para representar a relação entre beneficiário
 * identifier ^slicing.rules = #open
 * identifier contains NBU 0..1 MS
 * identifier[NBU].type.coding = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
-//* identifier[NBU].coding.display = "Número de Beneficiário do Utente"
-* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
+//* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
 * type ^short = "Designação da Entidade Responsável, enviar outros códigos se necessário, com o respetivo sistema de codificação [CÓDIGO (EFR) E DESIGNAÇÃO (EFR)]"
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "code"

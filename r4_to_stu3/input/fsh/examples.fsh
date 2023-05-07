@@ -139,7 +139,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Patient"
 
 * id = "3616b380-01be-465a-aa29-906337c6e7a4"
 * meta.lastUpdated = "2019-01-14T23:10:23+00:00"
-//* identifier.type.coding =  http://h17.org/fhir/v2/0203#HC "Health Card Number"
+//* identifier.type.coding =  http://hl7.org/fhir/v2/0203#HC "Health Card Number"
 * identifier.type.text = "NNU"
 * identifier.system = "http://spms.min-saude.pt/rnu/identifiers/patient-id"
 * identifier.value = "11920641576"
@@ -163,7 +163,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
 
 * subject = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
-* participant.individual = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
+* participant.individual = Reference(Patient/3616b380-01be-465a-aa29-906337c6e7a4)
 
 * period.end = "2019-01-27"
 * serviceProvider = Reference(fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
@@ -176,6 +176,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 //* identifier.type = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
 //* identifier.type.text = "Descrição do número de Beneficiário do Utente na Entidade"
 //* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
+* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
 * identifier[NBU].value = "131255890"
 * type = http://hl7.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
 * subscriberId = "874207420C"
@@ -184,7 +185,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 
 * beneficiary = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
-* relationship =  http://h17.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
+* relationship =  http://hl7.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
 * payor = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 * period.start = "2019-01-14"
 * period.end = "2022-01-27"
@@ -231,7 +232,7 @@ InstanceOf: Practitioner
 Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
 
 * id = "f644ab44-7e32-4e05-972c-1f14bebf27a8"
-* identifier.type = http://h17.org/fhir/v2/0203#MD "Medical License number"
+* identifier.type = http://hl7.org/fhir/v2/0203#MD "Medical License number"
 * identifier.system = "https://www.ordemdosmedicos.pt"
 * identifier.value = "33421535"
 * name.text = "Dr. António da Cruz"
