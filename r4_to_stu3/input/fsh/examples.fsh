@@ -100,8 +100,8 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 * groupIdentifier.value = "6789342"
 * status = #active
 * intent = #order
-* medicationReference = Reference(a87cddf3-01de-4241-b9b27209f5f2bcab)
-* subject = Reference(3616b380-01be-465a-aa29906337c6e7a4)
+* medicationReference = Reference(a87cddf3-01de-4241-b9b2-7209f5f2bcab)
+* subject = Reference(ExemploPatient)
 //* context.reference = "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045"
 * authoredOn = "2019-07-14T23:10:23+00:00"
 //* requester.agent.reference = "Practitioner/f644ab44-7e32-4e05972c-1f14bebf27a8"

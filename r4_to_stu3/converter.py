@@ -109,11 +109,19 @@ def transfrom_location(data):
 
 
 def transfrom_medreq(data):
-    print(data)
+    # print(data)
     data["dosageInstruction"][0]["doseQuantity"] = data["dosageInstruction"][0][
         "doseAndRate"
     ][0]["doseQuantity"]
     del data["dosageInstruction"][0]["doseAndRate"]
+    return data
+
+
+def transfrom_med_req_group(data):
+
+    #    //* action.label = 1
+    data["action"]["label"] = 1
+
     return data
 
 
@@ -125,6 +133,8 @@ def transform_to_stu3(data, resourcetype):
         return transfrom_location(data)
     if resourcetype == "MedicationRequest":
         return transfrom_medreq(data)
+    if resourcetype == "MedicationRequestGroup":
+        return transfrom_med_req_group(data)
     return data
 
 
