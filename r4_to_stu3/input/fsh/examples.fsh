@@ -89,6 +89,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - RequestGroup"
 * extension[MeaningOrder].valueCodeableConcept.coding = http://spms.min-saude.pt/bdnp/codesystem/med-request-modality#RSP "Receita sem Papel"
 //* action.label = 1
 * action.timingPeriod.end = "2019-01-27"
+* action.resource = Reference(ExemploMedicationRequest)
 
 Instance: ExemploMedicationRequest
 InstanceOf: PEMHMedicationRequest

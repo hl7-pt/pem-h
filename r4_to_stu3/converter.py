@@ -14,7 +14,7 @@ def transform_bundle_sd(data):
 
 def transfrom_extension(data):
 
-    # data["context"] = ["DataElement"]
+    data["context"] = ["Resource"]
     data["contextType"] = "resource"
     # json_string = json.dumps(data)
 
@@ -120,7 +120,7 @@ def transfrom_medreq(data):
 def transfrom_med_req_group(data):
 
     #    //* action.label = 1
-    data["action"]["label"] = 1
+    data["action"][0]["label"] = 1
 
     return data
 
