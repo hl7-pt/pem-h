@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id:\u00a01243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8\">Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\">Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a> &quot;Provedor de Serviços de Cardiologia&quot;</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"2d3f8e19-205e-40c6-aeec7b17cbef8045\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;2d3f8e19-205e-40c6-aeec7b17cbef8045&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-encounter-pemh-profile.html\">Perfil Episódio</a></p></div><p><b>identifier</b>: id:\u00a01243546</p><p><b>status</b>: in-progress</p><p><b>class</b>: Emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'Emergency')</p><p><b>subject</b>: <a href=\"Patient-3616b380-01be-465a-aa29-906337c6e7a4.html\">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a> &quot; CABRAL&quot;</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"f644ab44-7e324e05-972c-1f14bebf27a8\">f644ab44-7e324e05-972c-1f14bebf27a8</a></td></tr></table><p><b>period</b>: ?? --&gt; 2019-01-27</p><p><b>serviceProvider</b>: <a href=\"Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\">Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a> &quot;Provedor de Serviços de Cardiologia&quot;</p></div>"
   },
   "identifier" : [{
     "system" : "http://spms.min-saude.pt/iop/identifiers/encounter",
@@ -23,7 +23,7 @@
   },
   "participant" : [{
     "individual" : {
-      "reference" : "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8"
+      "reference" : "f644ab44-7e324e05-972c-1f14bebf27a8"
     }
   }],
   "period" : {
