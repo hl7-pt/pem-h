@@ -1,12 +1,12 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 267, warn = 87, info = 26
+err = 265, warn = 87, info = 29
 IG Publisher Version: 1.3.8
-Generated Sun May 07 22:29:59 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
+Generated Sun May 07 22:37:30 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
  Build Errors : 16 / 15 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 59 / 11 / 36
- /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 2 / 0 / 3
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 58 / 11 / 36
+ /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 1 / 0 / 3
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 1 / 0 / 1
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 1 / 0 / 1
  /github/workspace/input/examples/Medication-a87cddf3-01de-4241-b9b2-7209f5f2bcab : 0 / 0 / 4
@@ -43,7 +43,7 @@ Generated Sun May 07 22:29:59 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pe
  /github/workspace/input/profiles/StructureDefinition-bundle-response-profile : 2 / 2 / 1
  /github/workspace/input/profiles/StructureDefinition-content-profile : 6 / 1 / 1
  /github/workspace/input/profiles/StructureDefinition-content-response-profile : 6 / 2 / 1
- /github/workspace/input/profiles/StructureDefinition-coverage-pemh-profile : 3 / 1 / 1
+ /github/workspace/input/profiles/StructureDefinition-coverage-pemh-profile : 3 / 1 / 4
  /github/workspace/input/profiles/StructureDefinition-encounter-pemh-profile : 4 / 1 / 1
  /github/workspace/input/profiles/StructureDefinition-location-pemh-profile : 2 / 1 / 1
  /github/workspace/input/profiles/StructureDefinition-med-pemh-profile : 4 / 1 / 1
@@ -77,7 +77,7 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 1468: The link 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
+ERROR: /github/workspace/output/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 1413: The link 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace' for "dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" cannot be resolved
 ERROR: /github/workspace/output/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 233, column 966: The link 'f644ab44-7e324e05-972c-1f14bebf27a8' for "f644ab44-7e324e05-972c-1f14bebf27a8" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 714: The link 'Medication/a87cddf3-01de-4241-b9b27209f5f2bcab' for "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" cannot be resolved
 ERROR: /github/workspace/output/MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html#/html/body/div/div/div/div/div/div/p/a at Line 233, column 844: The link 'Patient/3616b380-01be-465a-aa29906337c6e7a4' for "Patient/3616b380-01be-465a-aa29906337c6e7a4" cannot be resolved
@@ -148,7 +148,6 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4].resource/*Pa
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[5].resource/*Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8*/.identifier[0].type.coding[0]: Code System URI 'http://h17.org/fhir/v2/0203' is unknown so the code cannot be validated
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6].resource/*Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace*/.partOf: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[8].resource/*Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0*/.managingOrganization: Entry 7 matches the reference Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by type and id but it's fullUrl http://spms.min-saude.pt/fhir/Patient/3616b380-01be-465a-aa29-906337c6e7a4 does not match the full target URL http://spms.min-saude.pt/fhir/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace by Bundle resolution rules
-INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.subscriber: Invalid Resource target type. Found Encounter, but expected one of ([Patient, RelatedPerson])
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.beneficiary: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
@@ -156,7 +155,7 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Co
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.payor[0]: Relative URLs must be of the format [ResourceName]/[id].  Encountered dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.payor[0]: Unable to resolve resource with reference 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
-ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding] in profile Coverage.identifier:NBU - the discriminator http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test does not have fixed value, binding or existence assertions
+INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[9].resource/*Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f*/.identifier[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.subject: Multiple matches in bundle for reference Patient/3616b380-01be-465a-aa29-906337c6e7a4
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.subject: Invalid Resource target type. Found Encounter, but expected one of ([Group, Patient])
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[10].resource/*Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045*/.participant[0].individual: Relative URLs must be of the format [ResourceName]/[id].  Encountered f644ab44-7e324e05-972c-1f14bebf27a8
@@ -171,8 +170,7 @@ WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[4]: Entry 'ht
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[6]: Entry 'http://spms.min-saude.pt/fhir/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.meta.profile[1]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.json ==
-ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding] in profile Coverage.identifier:NBU - the discriminator http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test does not have fixed value, binding or existence assertions
-INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0].type.coding[0]: Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
+INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.identifier[0]: This element does not match any known slice defined in the profile http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile|0.1.0-test
 INFORMATION: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.relationship.coding[0]: Code System URI 'http://h17.org/fhir/policyholder-relationship' is unknown so the code cannot be validated
 ERROR: Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f: Coverage.payor[0]: Unable to resolve resource with reference 'dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace'
 == input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.json ==
@@ -400,6 +398,9 @@ ERROR: /github/workspace/input/profiles/StructureDefinition-content-response-pro
 ERROR: StructureDefinition.differential.element[1].type[0].profile: This property must be a simple value, not an Array (profile at StructureDefinition.differential.element[1].type[0].profile)
 ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile'): Conformance resource /github/workspace/input/profiles/StructureDefinition-coverage-pemh-profile.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage-pemh-profile) does not match the URL (http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile)
 WARNING: StructureDefinition/coverage-pemh-profile: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
+INFORMATION: StructureDefinition/coverage-pemh-profile: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/coverage-pemh-profile: StructureDefinition.differential.element[5].pattern.ofType(Coding): Code System URI 'http://spms.min-saude.pt/iop/identifiers/coverage' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/coverage-pemh-profile: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 ERROR: /github/workspace/input/profiles/StructureDefinition-coverage-pemh-profile: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/coverage-pemh-profile vs http://example.com/fhir/example/StructureDefinition/coverage-pemh-profile
 == input/profiles/StructureDefinition-encounter-pemh-profile.json ==
 ERROR: StructureDefinition.differential.element[1].type[0].profile: This property must be a simple value, not an Array (profile at StructureDefinition.differential.element[1].type[0].profile)
