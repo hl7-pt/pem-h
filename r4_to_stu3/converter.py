@@ -93,11 +93,12 @@ def transform_to_stu3_sd(data, resourcetype):
 
 def transform_msh(data):
     # print(data)
-    print(data["eventCoding"])
+    # print(data["eventCoding"])
     #  print("HEERE")
     data["event"] = data["eventCoding"]
     del data["eventCoding"]
     data["receiver"] = data["destination"][0]["receiver"]
+    del data["destination"]
     return data
 
 
@@ -117,7 +118,7 @@ VOCAB_FOLDER = "../input/vocabulary/"
 
 # multiple elementsa
 for file in listdir(INPUT_FOLDER):
-    # print(file)
+    print(file)
     # n_file = file.split(".")[0]
     with open(INPUT_FOLDER + file) as jsonFile:
         data = json.load(jsonFile)
@@ -152,6 +153,14 @@ for file in listdir(INPUT_FOLDER):
         #    json.dump(data, file)
     else:
         print(type_, restype)
-        ndata = transform_to_stu3(data, restype)
+        if restype == "Bundle" and type_ != "StructureDefinition":
+            ndata = data.copy()
+            for entry in ndata["entry"]:
+                print(entry["resource"], "----")
+                entry["resource"] = transform_to_stu3(
+                    entry["resource"], entry["resource"]["resourceType"]
+                )
+        else:
+            ndata = transform_to_stu3(data, restype)
         with open(EXAMPLE_FOLDER + file, "w") as file:
             json.dump(ndata, file)
