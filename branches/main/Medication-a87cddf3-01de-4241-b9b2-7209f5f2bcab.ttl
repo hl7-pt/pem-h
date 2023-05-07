@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab> a fhir:Medication ;
+<http://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b2-7209f5f2bcab> a fhir:Medication ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "a87cddf3-01de-4241-b9b2-7209f5f2bcab"] ; # 
   fhir:meta [

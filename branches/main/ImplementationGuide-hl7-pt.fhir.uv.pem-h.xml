@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7-pt.fhir.uv.pem-h"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>
+</div></div>
+  </text>
+  <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
+  <version value="0.1.0-test"/>
+  <name value="hl7-pt-pem-h"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-05-07T22:12:24+00:00"/>
+  <publisher value="HL7 PT TC"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="A brief description of what this IG is about "/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="3.0.2"/>
+  <dependency id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId">
+      <valueId value="hl7.terminology.r3"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <type value="reference"/>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+  </dependency>
+  <page>
+    <source value="toc.html"/>
+    <title value="Índice"/>
+    <kind value="page"/>
+    <page>
+      <source value="index.html"/>
+      <title value="Home Page"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Downloads"/>
+      <kind value="page"/>
+    </page>
+    <page>
+      <source value="Intro.html"/>
+      <title value="Introdução"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="mensagem-envio.html"/>
+      <title value="Mensagem Envio"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="mensagem-resposta.html"/>
+      <title value="Mensagem Resposta"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="recursos-suporte.html"/>
+      <title value="Recursos Suporte"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="changes.html"/>
+      <title value="IG Change History"/>
+      <kind value="page"/>
+    </page>
+  </page>
+</ImplementationGuide>

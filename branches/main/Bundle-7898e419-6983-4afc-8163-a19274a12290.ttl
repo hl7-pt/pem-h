@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Bundle/7898e419-6983-4afc-8163-a19274a12290> a fhir:Bundle ;
+<http://somewhere.org/fhir/uv/myig/Bundle/7898e419-6983-4afc-8163-a19274a12290> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "7898e419-6983-4afc-8163-a19274a12290"] ; # 
   fhir:meta [
@@ -76,12 +76,12 @@
      fhir:code [ fhir:v "10724" ]
   ] ; # 
   fhir:receiver [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ] ;
      fhir:display [ fhir:v "Organização Origem" ]
   ] ; # 
   fhir:sender [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ] ;
      fhir:display [ fhir:v "Organização Origem" ]
   ] ; # 
@@ -90,7 +90,7 @@
      fhir:endpoint [ fhir:v "Endpont_Aplicação_Origem"^^xsd:anyURI ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> ;
      fhir:reference [ fhir:v "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ]
   ] ) . # 
 
@@ -149,11 +149,11 @@
   fhir:intent [ fhir:v "order"] ; # 
   fhir:medication [
      a fhir:Reference ;
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab> ;
      fhir:reference [ fhir:v "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
   ] ; # 
   fhir:subject [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:authoredOn [ fhir:v "2019-07-14T23:10:23+00:00"^^xsd:dateTime] ; # 
@@ -289,12 +289,12 @@
   fhir:gender [ fhir:v "male"] ; # 
   fhir:birthDate [ fhir:v "1979-11-19"^^xsd:date] ; # 
   fhir:partOf [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] ; # 
   fhir:alias ( [ fhir:v "Centro Hospitalar Universitário de São João"] ) ; # 
   fhir:managingOrganization [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] ; # 
   fhir:status [ fhir:v "active"], [ fhir:v "in-progress"] ; # 
@@ -306,12 +306,12 @@
      ] )
   ] ; # 
   fhir:subscriber [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:subscriberId [ fhir:v "874207420C"] ; # 
   fhir:beneficiary [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:relationship [
@@ -328,7 +328,7 @@
      fhir:end [ fhir:v "2019-01-27"^^xsd:date ]
   ] ; # 
   fhir:payor ( [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" ]
   ] ) ; # 
   fhir:class [
@@ -337,17 +337,17 @@
      fhir:display [ fhir:v "Emergency" ]
   ] ; # 
   fhir:subject [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29-906337c6e7a4" ]
   ] ; # 
   fhir:participant ( [
      fhir:individual [
-       fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8> ;
+       fhir:link <http://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8> ;
        fhir:reference [ fhir:v "Practitioner/f644ab44-7e324e05-972c-1f14bebf27a8" ]
      ]
   ] ) ; # 
   fhir:serviceProvider [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] . # 
 

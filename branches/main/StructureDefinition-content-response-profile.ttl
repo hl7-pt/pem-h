@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/content-response-profile> a fhir:StructureDefinition ;
+<http://somewhere.org/fhir/uv/myig/StructureDefinition/content-response-profile> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "content-response-profile"] ; # 
   fhir:text [
@@ -24,12 +24,12 @@
   fhir:name [ fhir:v "PEMHRequestGroupResponse"] ; # 
   fhir:title [ fhir:v "Perfil Conteudo Receita"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-07T22:07:44+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 TC"] ; # 
+  fhir:date [ fhir:v "2023-05-07T22:12:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "xxxhttp://hl7.org/Special/committees/[something]" ]
+       fhir:value [ fhir:v "http://hl7.org/Special/committees/[something]" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Este recurso representa o retorno da receita quando ocorre o sucesso na recepção/processamento da mensagem. Para além disso, esse recurso contêm elementos que compõem a receita gerados somente no retorno da receita, como o \"Número Central da\nReceita\" e o \"Pin da Receita\"."] ; # 

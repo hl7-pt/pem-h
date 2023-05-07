@@ -84,6 +84,13 @@
     "name" : "PEMHPatient"
   },
   {
+    "id" : "hl7-pt.fhir.uv.pem-h",
+    "type" : "ImplementationGuide",
+    "url" : "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
+    "version" : "0.1.0-test",
+    "name" : "hl7-pt-pem-h"
+  },
+  {
     "id" : "CardInfo",
     "type" : "StructureDefinition",
     "url" : "http://spms.min-saude.pt/iop/extensions/coverage-card-info",
@@ -229,12 +236,5 @@
     "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",
     "version" : "0.1.0-test",
     "name" : "MeaningOrder"
-  },
-  {
-    "id" : "xxxexample.fhir.uv.myig",
-    "type" : "ImplementationGuide",
-    "url" : "xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
-    "version" : "0.1.0-test",
-    "name" : "hl7-pt-pem-h"
   }
 ]

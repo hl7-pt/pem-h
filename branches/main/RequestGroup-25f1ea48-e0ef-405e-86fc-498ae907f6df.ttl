@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:RequestGroup ;
+<http://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> a fhir:RequestGroup ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "25f1ea48-e0ef-405e-86fc-498ae907f6df"] ; # 
   fhir:meta [

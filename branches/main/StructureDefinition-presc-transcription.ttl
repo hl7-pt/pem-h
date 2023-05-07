@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/presc-transcription> a fhir:StructureDefinition ;
+<http://somewhere.org/fhir/uv/myig/StructureDefinition/presc-transcription> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "presc-transcription"] ; # 
   fhir:text [
@@ -17,12 +17,12 @@
   fhir:name [ fhir:v "presc-transcription"] ; # 
   fhir:title [ fhir:v "RECEITA MANUSCRITA"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-07T22:07:44+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 TC"] ; # 
+  fhir:date [ fhir:v "2023-05-07T22:12:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "xxxhttp://hl7.org/Special/committees/[something]" ]
+       fhir:value [ fhir:v "http://hl7.org/Special/committees/[something]" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Indicar se trata-se de uma transcrição de uma receita manuscrita."] ; # 

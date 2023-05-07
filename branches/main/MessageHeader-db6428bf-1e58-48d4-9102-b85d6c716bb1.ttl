@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> a fhir:MessageHeader ;
+<http://somewhere.org/fhir/uv/myig/MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1> a fhir:MessageHeader ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "db6428bf-1e58-48d4-9102-b85d6c716bb1"] ; # 
   fhir:meta [
@@ -26,12 +26,12 @@
      fhir:code [ fhir:v "10724" ]
   ] ; # 
   fhir:receiver [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ] ;
      fhir:display [ fhir:v "Organização Origem" ]
   ] ; # 
   fhir:sender [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ] ;
      fhir:display [ fhir:v "Organização Origem" ]
   ] ; # 
@@ -40,7 +40,7 @@
      fhir:endpoint [ fhir:v "Endpont_Aplicação_Origem"^^xsd:anyURI ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df> ;
      fhir:reference [ fhir:v "RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df" ]
   ] ) . # 
 

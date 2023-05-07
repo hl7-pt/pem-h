@@ -1,5 +1,5 @@
 {
-  "package": "pem-h.fhir.uv.myig",
+  "package": "hl7-pt.fhir.uv.pem-h",
   "version": "0.1.0-test",
   "fhirVersion": "3.0.2",
   "jurisdiction": "001",

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> a fhir:Patient ;
+<http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "3616b380-01be-465a-aa29-906337c6e7a4"] ; # 
   fhir:meta [
