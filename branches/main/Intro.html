@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>XXXEXAMPLE.FHIR.UV.MYIG\Introdução - FHIR v3.0.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/affiliate.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a no-external="true" id="affiliate-logo" href="http://hl7.eu">
+    <img src="assets/images/affiliate.png" alt="Visit the HL7 affiliate website" height="71"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="30"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">PEM-H HL7PT</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-test - CI Build
+
+
+
+  Global (Whole world)
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Índice</a>
+	</li>
+  <!-- <li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li> -->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Intro.html">Introdução</a>
+			</li>
+			<li>
+				<a href="mensagem-envio.html">Envio de informação</a>
+			</li>
+			<li>
+				<a href="mensagem-resposta.html">Resposta</a>
+			</li>
+			<li>
+				<a href="recursos-suporte.html">Recursos de suporte / genéricos</a>
+			</li>
+			<li>
+				<a href="artifacts.html">Artefactos</a>
+			</li>
+			
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementação<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+</ul>      
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Índice</b></a></li><li><b>Introdução</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">PEM-H HL7PT - Local Development build (v0.1.0-test). See the <a href="xxxhttp://somewhere.org/fhir/uv/myig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Introdução</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introdução" id="markdown-toc-introdução">Introdução</a>    <ul>
+      <li><a href="#prescrição-de-medicação" id="markdown-toc-prescrição-de-medicação">Prescrição de Medicação</a></li>
+      <li><a href="#configuração-dos-canais" id="markdown-toc-configuração-dos-canais">Configuração dos canais</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="introdução">Introdução</h2>
+
+<p>O presente relatório diz respeito aos fluxos do Gestão de Medicação relativos às as regras de prescrição eletrónica de medicamentos a utentes
+em regime de ambulatório hospitalar e os procedimentos de dispensa pelos/através dos Serviços Farmacêuticos Hospitalares destes
+medicamentos, incluindo os que se destinam a ser administrados por profissionais de saúde nos serviços de ambulatório do hospital: hospital de
+dia, consulta externa, cirurgia de ambulatório e serviço de urgência. Os fluxos do Gestão de Medicação são controlados pela interoperabilidade através do grupo de canais “82XX”. Mais especificamente, a comunicação no âmbito da gestão de medicação é mediada pelo PNB, através dos seguintes fluxos:</p>
+<ul>
+  <li>Prescrição de medicação - 8200 - (fluxo síncrono).</li>
+  <li>Consulta de Prescrição - 8210 - (fluxo síncrono).</li>
+  <li>Dispensa de Medicação - 8220 - (fluxo síncrono).</li>
+</ul>
+
+<h3 id="prescrição-de-medicação">Prescrição de Medicação</h3>
+
+<p>O fluxo de Prescrição de Medicação é representado pelo Evento 10724 - MED_PRESCRIPTION_SYNCHRONIZATION, através das operações:</p>
+<ul>
+  <li>10911 - MED_PRESCRIPTION_NEW - Prescrever Medicação</li>
+  <li>10912 - MED_PRESCRIPTION_CANCEL - Cancelar Prescrição de Medicação</li>
+</ul>
+
+<p>Sempre que é efetuada uma nova prescrição/cancelamento pelas aplicações de origem, é enviado um pedido diretamente para o PNB, por
+parte da aplicação emissora, quer se trate de uma aplicação interno ou de um player externo.
+Sendo um fluxo síncrono, a aplicação emissora deve ficar a aguardar a resposta da PEMH pelo mesmo canal em que foi enviada a mensagem
+de prescrição/cancelamento.</p>
+
+<p>A arquitetura da integração do fluxo que passa pelo PNB, pode ser visualizado na Figura 1.</p>
+
+<p><img src="arch-pnb.png" width="80%"/>
+<br/></p>
+
+<p>A Aplicação Emissora envia uma mensagem para o PNB, o qual após validar estruturalmente a mensagem envia à PEMH. A resposta da mensagem será emitida pela PEMH, validada estruturalmente pela PNB, que encaminha a mensagem para a aplicação correspondente. Esse fluxo pode ser visualizado na Figura 2.</p>
+
+<p><img src="fig2.png" width="100%"/>
+<br/></p>
+
+<h3 id="configuração-dos-canais">Configuração dos canais</h3>
+
+<p><strong>Tabela 1. Caracterização dos fluxos e formato das mensagens trocadas.</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Diagrama de deployment</th>
+      <th>Nome do canal</th>
+      <th>&nbsp;</th>
+      <th>Source connector</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>Destination connector</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>Tipo de fluxo</td>
+      <td>Emissor</td>
+      <td>Tipo</td>
+      <td>Formato de mensagem de entrada</td>
+      <td>Formato de mensagem de saida</td>
+      <td>Nome</td>
+      <td>Tipo</td>
+      <td>Formato de mensagem de entrada</td>
+      <td>Formato de mensagem de saida</td>
+      <td>Recetor</td>
+    </tr>
+    <tr>
+      <td>Figura 1 Prescrição de medicação</td>
+      <td>8200_Router_FHIR_Prescription_Sync_PEMH</td>
+      <td>Síncrono</td>
+      <td>Aplicação Emissora (envio pedido 10911 /10912)</td>
+      <td>HTTP Listener</td>
+      <td>JSON</td>
+      <td>JSON</td>
+      <td>PEMH</td>
+      <td>HTTP Sender</td>
+      <td>JSON</td>
+      <td>JSON</td>
+      <td>PEMH</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Tabela 2. Operações possíveis para os fluxos de prescrição</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operação</th>
+      <th>Código</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MED_PRESCRIPTION_NEW</td>
+      <td>10911</td>
+      <td>Prescrever Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_ACK</td>
+      <td>10917</td>
+      <td>Retorno da Prescrição da Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_CANCEL</td>
+      <td>10912</td>
+      <td>Cancelar Prescrição de Medicação</td>
+    </tr>
+    <tr>
+      <td>MED_PRESCRIPTION_CANCEL_ACK</td>
+      <td>10923</td>
+      <td>Retorno de Cancelar Prescrição da Medicação</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l610">​</a>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="xxxhttp://hl7.org/Special/committees/[something]">HL7 TC</a>.  Package pem-h.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, May 7, 2023 21:39+0000">2023-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

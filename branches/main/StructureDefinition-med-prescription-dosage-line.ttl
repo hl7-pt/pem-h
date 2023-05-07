@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MedPrescriptionDosageLine"] ; # 
   fhir:title [ fhir:v "NÚMERO DE VIAS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-07T21:08:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-07T21:39:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [

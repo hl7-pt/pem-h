@@ -11,7 +11,7 @@
   <name value="hl7-pt-pem-h"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-05-07T21:08:14+00:00"/>
+  <date value="2023-05-07T21:39:12+00:00"/>
   <publisher value="HL7 TC"/>
   <contact>
     <telecom>
@@ -42,7 +42,7 @@
   </dependency>
   <page>
     <source value="toc.html"/>
-    <title value="ìndice"/>
+    <title value="Índice"/>
     <kind value="page"/>
     <page>
       <source value="index.html"/>
@@ -53,6 +53,26 @@
       <source value="downloads.html"/>
       <title value="Downloads"/>
       <kind value="page"/>
+    </page>
+    <page>
+      <source value="Intro.html"/>
+      <title value="Introdução"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="mensagem-envio.html"/>
+      <title value="Mensagem Envio"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="mensagem-resposta.html"/>
+      <title value="Mensagem Resposta"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="recursos-suporte.html"/>
+      <title value="Recursos Suporte"/>
+      <kind value="resource"/>
     </page>
     <page>
       <source value="changes.html"/>
