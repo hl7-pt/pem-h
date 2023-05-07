@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f> a fhir:Coverage ;
+<http://somewhere.org/fhir/uv/myig/Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f> a fhir:Coverage ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "219eb473-8ee3-4e3d-b785-b204b71de77f"] ; # 
   fhir:meta [
@@ -36,12 +36,12 @@
      ] )
   ] ; # 
   fhir:subscriber [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:subscriberId [ fhir:v "874207420C"] ; # 
   fhir:beneficiary [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:relationship [
@@ -56,7 +56,7 @@
      fhir:end [ fhir:v "2022-01-27"^^xsd:date ]
   ] ; # 
   fhir:payor ( [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace" ]
   ] ) . # 
 

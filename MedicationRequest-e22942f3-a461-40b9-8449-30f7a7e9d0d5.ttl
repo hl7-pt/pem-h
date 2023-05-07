@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest ;
+<http://somewhere.org/fhir/uv/myig/MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "e22942f3-a461-40b9-8449-30f7a7e9d0d5"] ; # 
   fhir:meta [
@@ -24,11 +24,11 @@
   fhir:intent [ fhir:v "order"] ; # 
   fhir:medication [
      a fhir:Reference ;
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Medication/a87cddf3-01de-4241-b9b27209f5f2bcab> ;
      fhir:reference [ fhir:v "Medication/a87cddf3-01de-4241-b9b27209f5f2bcab" ]
   ] ; # 
   fhir:subject [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29906337c6e7a4" ]
   ] ; # 
   fhir:authoredOn [ fhir:v "2019-07-14T23:10:23+00:00"^^xsd:dateTime] ; # 

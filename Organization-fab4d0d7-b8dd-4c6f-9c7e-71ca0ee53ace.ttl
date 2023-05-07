@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> a fhir:Organization ;
+<http://somewhere.org/fhir/uv/myig/Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"] ; # 
   fhir:text [
@@ -22,7 +22,7 @@
      fhir:value [ fhir:v "PedroAlvaresCabral@dominio.pt" ]
   ] ) ; # 
   fhir:partOf [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] . # 
 

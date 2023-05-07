@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-dosage-line> a fhir:StructureDefinition ;
+<http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-dosage-line> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "med-prescription-dosage-line"] ; # 
   fhir:text [
@@ -17,12 +17,12 @@
   fhir:name [ fhir:v "MedPrescriptionDosageLine"] ; # 
   fhir:title [ fhir:v "NÚMERO DE VIAS"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-07T22:07:44+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "HL7 TC"] ; # 
+  fhir:date [ fhir:v "2023-05-07T22:12:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "xxxhttp://hl7.org/Special/committees/[something]" ]
+       fhir:value [ fhir:v "http://hl7.org/Special/committees/[something]" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Via da receita no caso de ser renovável (1, 2, 3, ...)."] ; # 

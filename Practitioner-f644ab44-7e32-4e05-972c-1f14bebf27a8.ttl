@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8> a fhir:Practitioner ;
+<http://somewhere.org/fhir/uv/myig/Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "f644ab44-7e32-4e05-972c-1f14bebf27a8"] ; # 
   fhir:text [

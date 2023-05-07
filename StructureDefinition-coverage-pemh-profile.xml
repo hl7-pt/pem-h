@@ -35,12 +35,12 @@
   <name value="PEMHCoverage"/>
   <title value="Perfil Coverage"/>
   <status value="active"/>
-  <date value="2023-05-07T22:07:44+00:00"/>
-  <publisher value="HL7 TC"/>
+  <date value="2023-05-07T22:12:24+00:00"/>
+  <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="xxxhttp://hl7.org/Special/committees/[something]"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
   <description value="Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria."/>

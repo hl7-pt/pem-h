@@ -10,12 +10,12 @@
   "name" : "presc-type",
   "title" : "TIPO DE RECEITA",
   "status" : "active",
-  "date" : "2023-05-07T22:07:44+00:00",
-  "publisher" : "HL7 TC",
+  "date" : "2023-05-07T22:12:24+00:00",
+  "publisher" : "HL7 PT TC",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
-      "value" : "xxxhttp://hl7.org/Special/committees/[something]"
+      "value" : "http://hl7.org/Special/committees/[something]"
     }]
   }],
   "description" : "Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.",

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="xxxexample.fhir.uv.myig"/>
+  <id value="hl7-pt.fhir.uv.pem-h"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>
 </div></div>
   </text>
-  <url value="xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
+  <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
   <version value="0.1.0-test"/>
   <name value="hl7-pt-pem-h"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-05-07T22:07:44+00:00"/>
-  <publisher value="HL7 TC"/>
+  <date value="2023-05-07T22:12:24+00:00"/>
+  <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="xxxhttp://hl7.org/Special/committees/[something]"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="xxxA brief description of what this IG is about "/>
+  <description value="A brief description of what this IG is about "/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

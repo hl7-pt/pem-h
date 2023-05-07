@@ -30,12 +30,12 @@
   <name value="PEMHRequestGroupResponse"/>
   <title value="Perfil Conteudo Receita"/>
   <status value="active"/>
-  <date value="2023-05-07T22:07:44+00:00"/>
-  <publisher value="HL7 TC"/>
+  <date value="2023-05-07T22:12:24+00:00"/>
+  <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="xxxhttp://hl7.org/Special/committees/[something]"/>
+      <value value="http://hl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
   <description value="Este recurso representa o retorno da receita quando ocorre o sucesso na recepção/processamento da mensagem. Para além disso, esse recurso contêm elementos que compõem a receita gerados somente no retorno da receita, como o &quot;Número Central da&#xA;Receita&quot; e o &quot;Pin da Receita&quot;."/>

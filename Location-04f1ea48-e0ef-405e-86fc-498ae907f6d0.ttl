@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<xxxhttp://somewhere.org/fhir/uv/myig/Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0> a fhir:Location ;
+<http://somewhere.org/fhir/uv/myig/Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "04f1ea48-e0ef-405e-86fc-498ae907f6d0"] ; # 
   fhir:meta [
@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "Hospital São João"] ; # 
   fhir:alias ( [ fhir:v "Centro Hospitalar Universitário de São João"] ) ; # 
   fhir:managingOrganization [
-     fhir:link <xxxhttp://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] . # 
 
