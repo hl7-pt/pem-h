@@ -235,7 +235,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&quot; </p></div><p><b>identifier</b>: id: 3113408</p><p><b>name</b>: Sclinico Hospitalar</p></div>"
   ], [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>managingOrganization</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"04f1ea48-e0ef-405e-86fc-498ae907f6d0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-location-pemh-profile.html\">Perfil Location</a></p></div><p><b>identifier</b>: id: 2412341-3</p><p><b>name</b>: Hospital São João</p><p><b>alias</b>: Centro Hospitalar Universitário de São João</p><p><b>type</b>: Urgência <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (location-type#urgencia)</span></p><p><b>managingOrganization</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
   ], [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"219eb473-8ee3-4e3d-b785-b204b71de77f\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage &quot;219eb473-8ee3-4e3d-b785-b204b71de77f&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-coverage-pemh-profile.html\">Perfil Coverage</a></p></div><p><b>identifier</b>: id: 131255890</p><p><b>status</b>: active</p><p><b>type</b>: Extended healthcare <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode</a>#EHCPOL)</span></p><p><b>subscriber</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>subscriberId</b>: 874207420C</p><p><b>beneficiary</b>: <a href=\"#Patient_3616b380-01be-465a-aa29-906337c6e7a4\">See above (Patient/3616b380-01be-465a-aa29-906337c6e7a4)</a></p><p><b>relationship</b>: The Beneficiary is the Policyholder <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/STU3/codesystem-policyholder-relationship.html\">Policyholder Relationship Codes</a>#self)</span></p><p><b>period</b>: 2019-01-14 --&gt; 2022-01-27</p><p><b>payor</b>: <a href=\"#Organization_dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace\">See above (Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)</a></p></div>"
@@ -284,18 +284,24 @@
      fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
   ] ; # 
   fhir:alias ( [ fhir:v "Centro Hospitalar Universitário de São João"] ) ; # 
-  fhir:managingOrganization [
-     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
-     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
-  ] ; # 
-  fhir:status [ fhir:v "active"], [ fhir:v "in-progress"] ; # 
   fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://spms.min-saude.pt/prvr/valueset/location-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urgencia" ] ;
+       fhir:display [ fhir:v "Urgência" ]
+     ] )
+  ], [
      fhir:coding ( [
        fhir:system [ fhir:v "http://hl7.org/fhir/v3/ActCode"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "EHCPOL" ] ;
        fhir:display [ fhir:v "Extended healthcare" ]
      ] )
   ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://somewhere.org/fhir/uv/myig/Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace> ;
+     fhir:reference [ fhir:v "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"], [ fhir:v "in-progress"] ; # 
   fhir:subscriber [
      fhir:link <http://somewhere.org/fhir/uv/myig/Patient/3616b380-01be-465a-aa29-906337c6e7a4> ;
      fhir:reference [ fhir:v "Patient/3616b380-01be-465a-aa29-906337c6e7a4" ]

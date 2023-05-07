@@ -240,7 +240,7 @@
   },
   "<a href="http://hl7.org/fhir/STU3/location.html#Location.text">text</a>" : {
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location&lt;/b&gt;&lt;a name=\&quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Location &amp;quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-location-pemh-profile.html\&quot;&gt;Perfil Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a02412341-3&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Hospital São João&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: Centro Hospitalar Universitário de São João&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\&quot;&gt;Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&lt;/a&gt; &amp;quot;Sclinico Hospitalar&amp;quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location&lt;/b&gt;&lt;a name=\&quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Location &amp;quot;04f1ea48-e0ef-405e-86fc-498ae907f6d0&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-location-pemh-profile.html\&quot;&gt;Perfil Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:\u00a02412341-3&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Hospital São João&lt;/p&gt;&lt;p&gt;&lt;b&gt;alias&lt;/b&gt;: Centro Hospitalar Universitário de São João&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Urgência &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (location-type#urgencia)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: &lt;a href=\&quot;Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html\&quot;&gt;Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace&lt;/a&gt; &amp;quot;Sclinico Hospitalar&amp;quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/STU3/location.html#Location.identifier">identifier</a>" : [
     {
@@ -252,6 +252,15 @@
   "<a href="http://hl7.org/fhir/STU3/location.html#Location.alias">alias</a>" : [
     "Centro Hospitalar Universitário de São João"
   ],
+  "<a href="http://hl7.org/fhir/STU3/location.html#Location.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://spms.min-saude.pt/prvr/valueset/location-type",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "urgencia",
+        "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Urgência"
+      }
+    ]
+  },
   "<a href="http://hl7.org/fhir/STU3/location.html#Location.managingOrganization">managingOrganization</a>" : {
     "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
   }
@@ -285,7 +294,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 PT TC</a>.  Package hl7-pt.fhir.uv.pem-h#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, May 7, 2023 22:59+0000">2023-05-07</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 PT TC</a>.  Package hl7-pt.fhir.uv.pem-h#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, May 7, 2023 23:08+0000">2023-05-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

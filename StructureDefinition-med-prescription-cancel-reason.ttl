@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "med-prescription-cancel-reason"] ; # 
   fhir:title [ fhir:v "MOTIVO ANULAÇÃO"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-07T22:59:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-07T23:08:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
