@@ -163,7 +163,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
 
 * subject = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
-* participant.individual = Reference(Patient/3616b380-01be-465a-aa29-906337c6e7a4)
+* participant.individual = Reference(ExemploPractitioner)
 
 * period.end = "2019-01-27"
 * serviceProvider = Reference(ExemploOrganization1)
