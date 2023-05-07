@@ -92,10 +92,12 @@ def transform_to_stu3_sd(data, resourcetype):
 
 
 def transform_msh(data):
-    #  print(data["eventCoding"])
+    # print(data)
+    print(data["eventCoding"])
     #  print("HEERE")
     data["event"] = data["eventCoding"]
     del data["eventCoding"]
+    data["receiver"] = data["destination"][0]["receiver"]
     return data
 
 
@@ -133,6 +135,8 @@ for file in listdir(INPUT_FOLDER):
             with open(EXTENSION_FOLDER + file, "w") as file:
                 json.dump(ndata, file)
         else:
+            # print(type_)
+            # transform_to_stu3(data, type_)
             with open(OUTPUT_FOLDER + file, "w") as file:
                 json.dump(ndata, file)
 
