@@ -15,7 +15,7 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://h17.org/fhir/v2/0203"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/v2/0203"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "MD" ] ;
          fhir:display [ fhir:v "Medical License number" ]
        ] )
