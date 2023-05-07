@@ -100,13 +100,13 @@ Description: "Exemplo 1 - Nova prescrição de medicação - MedicationRequest"
 * groupIdentifier.value = "6789342"
 * status = #active
 * intent = #order
-* medicationReference = Reference(Medication/a87cddf3-01de-4241-b9b27209f5f2bcab)
-* subject = Reference(Patient/3616b380-01be-465a-aa29906337c6e7a4)
+* medicationReference = Reference(a87cddf3-01de-4241-b9b27209f5f2bcab)
+* subject = Reference(3616b380-01be-465a-aa29906337c6e7a4)
 //* context.reference = "Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045"
 * authoredOn = "2019-07-14T23:10:23+00:00"
 //* requester.agent.reference = "Practitioner/f644ab44-7e32-4e05972c-1f14bebf27a8"
 //* requester.agent.display = "Dr. António da Cruz"
-//* onBehalfof.reference = "Organization/dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace"
+//* onBehalfof.reference = "Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace"
 * note.text = "Informação sobre a prescrição"
 * dosageInstruction
   * text = "500 mg daily for 5 days"
@@ -163,7 +163,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Encounter"
 * class = http://hl7.org/fhir/v3/ActCode#EMER "Emergency"
 
 * subject = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
-* participant.individual = Reference(f644ab44-7e324e05-972c-1f14bebf27a8)
+* participant.individual = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
 * period.end = "2019-01-27"
 * serviceProvider = Reference(fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
@@ -173,10 +173,10 @@ InstanceOf: PEMHCoverage
 Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 
 * id = "219eb473-8ee3-4e3d-b785-b204b71de77f"
-* identifier.type = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
-* identifier.type.text = "Descrição do número de Beneficiário do Utente na Entidade"
-* identifier.system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
-* identifier.value = "131255890"
+//* identifier.type = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
+//* identifier.type.text = "Descrição do número de Beneficiário do Utente na Entidade"
+//* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
+* identifier[NBU].value = "131255890"
 * type = http://hl7.org/fhir/v3/ActCode#EHCPOL "Extended healthcare"
 * subscriberId = "874207420C"
 
@@ -185,7 +185,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Coverage"
 * beneficiary = Reference(3616b380-01be-465a-aa29-906337c6e7a4)
 
 * relationship =  http://h17.org/fhir/policyholder-relationship#self "The Beneficiary is the Policyholder"
-* payor = Reference(dec4d0d7-b8dd-4c6f9c7e-71ca0ee53ace)
+* payor = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 * period.start = "2019-01-14"
 * period.end = "2022-01-27"
 * status = #active
@@ -222,7 +222,7 @@ Description: "Exemplo 1 - Nova prescrição de medicação - Organization2"
 * name = "Provedor de Serviços de Cardiologia"
 * telecom.system = #email
 * telecom.value = "PedroAlvaresCabral@dominio.pt"
-* partOf = Reference(Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
+* partOf = Reference(dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace)
 
 
 

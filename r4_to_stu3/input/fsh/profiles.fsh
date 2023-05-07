@@ -303,9 +303,9 @@ Description: "Recurso utilizado para representar a relação entre beneficiário
 * identifier ^slicing.discriminator.path = "type.coding"
 * identifier ^slicing.rules = #open
 * identifier contains NBU 0..1 MS
-* identifier[NBU].type.coding.code = #NBU
+* identifier[NBU].type.coding = http://spms.min-saude.pt/iop/identifiers/coverage#NBU "Número do Beneficiário na Entidade"
 //* identifier[NBU].coding.display = "Número de Beneficiário do Utente"
-* identifier[NBU].system = "http://spms.min-saude.pt/iop/identifiers/coverage"
+* identifier[NBU].system = "http://spms.min-saude.pt/rnu/identifiers/nbu"
 * type ^short = "Designação da Entidade Responsável, enviar outros códigos se necessário, com o respetivo sistema de codificação [CÓDIGO (EFR) E DESIGNAÇÃO (EFR)]"
 * type.coding ^slicing.discriminator.type = #value
 * type.coding ^slicing.discriminator.path = "code"
