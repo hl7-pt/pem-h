@@ -11,7 +11,7 @@
   <name value="hl7-pt-pem-h"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-05-08T00:33:17+00:00"/>
+  <date value="2023-05-08T00:44:39+00:00"/>
   <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
@@ -27,15 +27,12 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="3.0.2"/>
-  <dependency id="hl7tx">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
-    </extension>
+  <dependency>
     <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId">
       <valueId value="hl7.terminology.r3"/>
     </extension>
     <extension url="http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version">
-      <valueString value="5.0.0"/>
+      <valueString value="4.0.0"/>
     </extension>
     <type value="reference"/>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
