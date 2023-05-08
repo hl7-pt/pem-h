@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "hl7-pt-pem-h"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-08T00:33:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T00:44:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -34,16 +34,12 @@
   ] ) ; # 
   fhir:fhirVersion [ fhir:v "3.0.2"] ; # 
   fhir:dependency ( [
-     fhir:id [ fhir:v "hl7tx" ] ;
      fhir:extension ( [
-       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
-     ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "hl7.terminology.r3" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "5.0.0" ]
+       fhir:value [ fhir:v "4.0.0" ]
      ] ) ;
      fhir:type [ fhir:v "reference" ] ;
      fhir:uri [ fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ]

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "PEMHMSH"] ; # 
   fhir:title [ fhir:v "Perfil MessageHeader"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-08T00:33:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T00:44:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
