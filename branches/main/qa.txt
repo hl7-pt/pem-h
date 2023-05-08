@@ -1,11 +1,11 @@
 ﻿hl7-pt-pem-h : Validation Results
 =========================================
 
-err = 233, warn = 88, info = 38
+err = 210, warn = 115, info = 38
 IG Publisher Version: 1.3.8
-Generated Sun May 07 23:40:44 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
- Build Errors : 13 / 16 / 0
- /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 41 / 10 / 39
+Generated Mon May 08 00:34:12 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pem-h#0.1.0-test (canonical = http://somewhere.org/fhir/uv/myig)
+ Build Errors : 27 / 17 / 0
+ /github/workspace/input/examples/Bundle-7898e419-6983-4afc-8163-a19274a12290 : 41 / 11 / 39
  /github/workspace/input/examples/Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f : 0 / 1 / 2
  /github/workspace/input/examples/Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045 : 0 / 0 / 1
  /github/workspace/input/examples/Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0 : 0 / 0 / 2
@@ -17,25 +17,25 @@ Generated Sun May 07 23:40:44 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pe
  /github/workspace/input/examples/Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace : 0 / 0 / 1
  /github/workspace/input/examples/Patient-3616b380-01be-465a-aa29-906337c6e7a4 : 0 / 1 / 2
  /github/workspace/input/examples/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8 : 0 / 0 / 1
- /github/workspace/input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 0 / 0 / 2
- /github/workspace/input/extensions/StructureDefinition-CardInfo : 8 / 2 / 1
+ /github/workspace/input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df : 0 / 1 / 2
+ /github/workspace/input/extensions/StructureDefinition-CardInfo : 4 / 6 / 1
  /github/workspace/input/extensions/StructureDefinition-contactObservations : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-contactPreference : 2 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-episodeServiceSpecialty : 5 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-meaning-order : 5 / 1 / 1
- /github/workspace/input/extensions/StructureDefinition-med-cost : 5 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-med-prescription-cancel-reason : 5 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-instruction : 8 / 2 / 1
+ /github/workspace/input/extensions/StructureDefinition-episodeServiceSpecialty : 3 / 4 / 1
+ /github/workspace/input/extensions/StructureDefinition-meaning-order : 3 / 3 / 1
+ /github/workspace/input/extensions/StructureDefinition-med-cost : 3 / 4 / 1
+ /github/workspace/input/extensions/StructureDefinition-med-prescription-cancel-reason : 3 / 4 / 1
+ /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-instruction : 4 / 6 / 1
  /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-line : 2 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-med-prescription-framing-dispense : 8 / 2 / 1
+ /github/workspace/input/extensions/StructureDefinition-med-prescription-framing-dispense : 4 / 6 / 1
  /github/workspace/input/extensions/StructureDefinition-nextAppointmentDate : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-presc-administration : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-presc-local : 3 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-presc-print : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-presc-transcription : 2 / 2 / 1
- /github/workspace/input/extensions/StructureDefinition-presc-type : 5 / 2 / 1
+ /github/workspace/input/extensions/StructureDefinition-presc-type : 3 / 4 / 1
  /github/workspace/input/extensions/StructureDefinition-prescription-duplicate : 2 / 1 / 1
- /github/workspace/input/extensions/StructureDefinition-ptAddress : 8 / 2 / 1
+ /github/workspace/input/extensions/StructureDefinition-ptAddress : 7 / 4 / 1
  /github/workspace/input/extensions/StructureDefinition-ptFilliation : 4 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-ptOccupation : 2 / 2 / 1
  /github/workspace/input/extensions/StructureDefinition-ptPatientOtherInfo : 2 / 2 / 1
@@ -54,6 +54,7 @@ Generated Sun May 07 23:40:44 UTC 2023. FHIR version 3.0.2 for hl7-pt.fhir.uv.pe
  /github/workspace/input/profiles/StructureDefinition-patient-pemh-profile : 9 / 1 / 7
 </table>
 == n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be hl7-pt.fhir.uv.pem-h
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -80,6 +81,20 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-med-cost-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 287, column 117: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 366, column 117: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 475, column 117: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 354, column 1805: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 376, column 1799: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 461, column 1805: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-med-cost.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 483, column 1799: The link 'urn:iso:std:iso:4217' for "urn:iso:std:iso:4217" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 520, column 117: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1225, column 117: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1914, column 117: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 442, column 1787: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 550, column 1795: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 786, column 1787: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-ptAddress.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 894, column 1795: The link 'urn:iso:std:iso:3166' for "urn:iso:std:iso:3166" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
@@ -120,6 +135,7 @@ ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*Me
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.focus[0]: Unable to find a match for profile RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df among choices: http://example.com/fhir/example/StructureDefinition/content-profile
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.focus[0]: Details for RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df matching against profile http://example.com/fhir/example/StructureDefinition/content-profile|0.1.0-test
 WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[0].resource/*MessageHeader/db6428bf-1e58-48d4-9102-b85d6c716bb1*/.meta.profile[1]: Profile reference 'http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-msh/v1-0-3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.extension[1].value.ofType(CodeableConcept): ValueSet http://example.com/fhir/example/ValueSet/MeaningOrderVS not found by validator
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
 ERROR: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.action[0].resource: Unable to find a match for profile MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5 among choices: http://example.com/fhir/example/StructureDefinition/med-request-profile
 INFORMATION: Bundle/7898e419-6983-4afc-8163-a19274a12290: Bundle.entry[1].resource/*RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df*/.action[0].resource: Details for MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5 matching against profile http://example.com/fhir/example/StructureDefinition/med-request-profile|0.1.0-test
@@ -179,16 +195,17 @@ INFORMATION: Patient/3616b380-01be-465a-aa29-906337c6e7a4: Patient.identifier[0]
 WARNING: Patient/3616b380-01be-465a-aa29-906337c6e7a4: Patient.identifier[0].type: No code provided, and a code should be provided from the value set 'Identifier Type Codes' (http://hl7.org/fhir/ValueSet/identifier-type|3.0.2)
 == input/examples/Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.json ==
 == input/examples/RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.json ==
+WARNING: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept): ValueSet http://example.com/fhir/example/ValueSet/MeaningOrderVS not found by validator
 INFORMATION: RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df: RequestGroup.extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://spms.min-saude.pt/bdnp/codesystem/med-request-modality' is unknown so the code cannot be validated
 == input/extensions/StructureDefinition-CardInfo.json ==
-ERROR: StructureDefinition.differential.element[5].binding: Unrecognized property 'valueSet'
-ERROR: StructureDefinition.differential.element[9].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/coverage-card-info'): Conformance resource /github/workspace/input/extensions/StructureDefinition-CardInfo.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/CardInfo) does not match the URL (http://spms.min-saude.pt/iop/extensions/coverage-card-info)
 WARNING: StructureDefinition/CardInfo: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[7].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[12].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/CardInfo: StructureDefinition.differential.element[5].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/CardInfo: StructureDefinition.differential.element[9].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[7].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/CardInfoTypeVS'
+ERROR: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[12].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/CardCountryVS'
+WARNING: StructureDefinition/CardInfo: StructureDefinition.differential.element[5].binding: The valueSet reference http://example.com/fhir/example/ValueSet/CardInfoTypeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/CardInfo: StructureDefinition.differential.element[9].binding: The valueSet reference http://example.com/fhir/example/ValueSet/CardCountryVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://example.com/fhir/example/ValueSet/CardInfoTypeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/CardInfo: StructureDefinition.snapshot.element[12].binding: The valueSet reference http://example.com/fhir/example/ValueSet/CardCountryVS on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/coverage-card-info'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-CardInfo: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/CardInfo vs http://spms.min-saude.pt/iop/extensions/coverage-card-info
 == input/extensions/StructureDefinition-contactObservations.json ==
@@ -202,45 +219,45 @@ WARNING: StructureDefinition/contactPreference: StructureDefinition.jurisdiction
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/rnu/extensions/preferred-contact'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-contactPreference: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/contactPreference vs http://spms.min-saude.pt/rnu/extensions/preferred-contact
 == input/extensions/StructureDefinition-episodeServiceSpecialty.json ==
-ERROR: StructureDefinition.differential.element[3].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/episode-service-specialty'): Conformance resource /github/workspace/input/extensions/StructureDefinition-episodeServiceSpecialty.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/episodeServiceSpecialty) does not match the URL (http://spms.min-saude.pt/iop/extensions/episode-service-specialty)
 WARNING: StructureDefinition/episodeServiceSpecialty: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/episodeServiceSpecialty: StructureDefinition.snapshot.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/episodeServiceSpecialty: StructureDefinition.differential.element[3].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/episodeServiceSpecialty: StructureDefinition.snapshot.element[4].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS'
+WARNING: StructureDefinition/episodeServiceSpecialty: StructureDefinition.differential.element[3].binding: The valueSet reference http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/episodeServiceSpecialty: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/episode-service-specialty'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-episodeServiceSpecialty: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/episodeServiceSpecialty vs http://spms.min-saude.pt/iop/extensions/episode-service-specialty
 == input/extensions/StructureDefinition-meaning-order.json ==
-ERROR: StructureDefinition.differential.element[3].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude/pe/top/extensions/med-request-modality'): Conformance resource /github/workspace/input/extensions/StructureDefinition-meaning-order.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/meaning-order) does not match the URL (http://spms.min-saude/pe/top/extensions/med-request-modality)
 WARNING: StructureDefinition/meaning-order: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/meaning-order: StructureDefinition.snapshot.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/meaning-order: StructureDefinition.differential.element[3].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/meaning-order: StructureDefinition.snapshot.element[4].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MeaningOrderVS'
+WARNING: StructureDefinition/meaning-order: StructureDefinition.differential.element[3].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MeaningOrderVS on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/meaning-order: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MeaningOrderVS on element Extension.value[x] could not be resolved
 ERROR: /github/workspace/input/extensions/StructureDefinition-meaning-order: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/meaning-order vs http://spms.min-saude/pe/top/extensions/med-request-modality
 == input/extensions/StructureDefinition-med-cost.json ==
-ERROR: StructureDefinition.differential.element[5].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-cost'): Conformance resource /github/workspace/input/extensions/StructureDefinition-med-cost.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/med-cost) does not match the URL (http://spms.min-saude.pt/iop/extensions/med-cost)
 WARNING: StructureDefinition/med-cost: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/med-cost: StructureDefinition.snapshot.element[7].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-cost: StructureDefinition.differential.element[5].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/med-cost: StructureDefinition.snapshot.element[7].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'urn:iso:std:iso:4217'
+WARNING: StructureDefinition/med-cost: StructureDefinition.differential.element[5].binding: The valueSet reference urn:iso:std:iso:4217 on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-cost: StructureDefinition.snapshot.element[7].binding: The valueSet reference urn:iso:std:iso:4217 on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-cost'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-med-cost: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/med-cost vs http://spms.min-saude.pt/iop/extensions/med-cost
 == input/extensions/StructureDefinition-med-prescription-cancel-reason.json ==
-ERROR: StructureDefinition.differential.element[3].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason'): Conformance resource /github/workspace/input/extensions/StructureDefinition-med-prescription-cancel-reason.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-cancel-reason) does not match the URL (http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason)
 WARNING: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.snapshot.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.differential.element[3].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.snapshot.element[4].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS'
+WARNING: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.differential.element[3].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-cancel-reason: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-med-prescription-cancel-reason: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-cancel-reason vs http://spms.min-saude.pt/iop/extensions/med-prescription-cancel-reason
 == input/extensions/StructureDefinition-med-prescription-dosage-instruction.json ==
-ERROR: StructureDefinition.differential.element[5].binding: Unrecognized property 'valueSet'
-ERROR: StructureDefinition.differential.element[9].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction'): Conformance resource /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-instruction.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-dosage-instruction) does not match the URL (http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction)
 WARNING: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[7].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[12].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.differential.element[5].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.differential.element[9].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[7].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS'
+ERROR: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[12].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS'
+WARNING: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.differential.element[5].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.differential.element[9].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-dosage-instruction: StructureDefinition.snapshot.element[12].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-instruction: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-dosage-instruction vs http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction
 == input/extensions/StructureDefinition-med-prescription-dosage-line.json ==
@@ -249,14 +266,14 @@ WARNING: StructureDefinition/med-prescription-dosage-line: StructureDefinition.j
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-med-prescription-dosage-line: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-dosage-line vs http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-line
 == input/extensions/StructureDefinition-med-prescription-framing-dispense.json ==
-ERROR: StructureDefinition.differential.element[4].binding: Unrecognized property 'valueSet'
-ERROR: StructureDefinition.differential.element[8].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense'): Conformance resource /github/workspace/input/extensions/StructureDefinition-med-prescription-framing-dispense.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-framing-dispense) does not match the URL (http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense)
 WARNING: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[7].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[12].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.differential.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.differential.element[8].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[7].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS'
+ERROR: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[12].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS'
+WARNING: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.differential.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.differential.element[8].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS on element Extension.extension.value[x] could not be resolved
+WARNING: StructureDefinition/med-prescription-framing-dispense: StructureDefinition.snapshot.element[12].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS on element Extension.extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-med-prescription-framing-dispense: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/med-prescription-framing-dispense vs http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense
 == input/extensions/StructureDefinition-nextAppointmentDate.json ==
@@ -286,11 +303,11 @@ WARNING: StructureDefinition/presc-transcription: StructureDefinition.jurisdicti
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-prescription-transcript'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-presc-transcription: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/presc-transcription vs http://spms.min-saude.pt/iop/extensions/med-prescription-transcript
 == input/extensions/StructureDefinition-presc-type.json ==
-ERROR: StructureDefinition.differential.element[3].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-request-type'): Conformance resource /github/workspace/input/extensions/StructureDefinition-presc-type.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/presc-type) does not match the URL (http://spms.min-saude.pt/iop/extensions/med-request-type)
 WARNING: StructureDefinition/presc-type: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/presc-type: StructureDefinition.snapshot.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/presc-type: StructureDefinition.differential.element[3].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/presc-type: StructureDefinition.snapshot.element[4].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS'
+WARNING: StructureDefinition/presc-type: StructureDefinition.differential.element[3].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS on element Extension.value[x] could not be resolved
+WARNING: StructureDefinition/presc-type: StructureDefinition.snapshot.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-request-type'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-presc-type: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/presc-type vs http://spms.min-saude.pt/iop/extensions/med-request-type
 == input/extensions/StructureDefinition-prescription-duplicate.json ==
@@ -298,14 +315,15 @@ ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/
 WARNING: StructureDefinition/prescription-duplicate: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
 ERROR: /github/workspace/input/extensions/StructureDefinition-prescription-duplicate: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/prescription-duplicate vs http://spms.min-saude.pt/iop/extensions/prescription-duplicate
 == input/extensions/StructureDefinition-ptAddress.json ==
-ERROR: StructureDefinition.differential.element[4].binding: Unrecognized property 'valueSet'
-ERROR: StructureDefinition.differential.element[76].binding: Unrecognized property 'valueSet'
 ERROR: StructureDefinition.where(url = 'http://spms.min-saude.pt/rnu/extensions/address'): Conformance resource /github/workspace/input/extensions/StructureDefinition-ptAddress.json - the canonical URL (http://somewhere.org/fhir/uv/myig/StructureDefinition/ptAddress) does not match the URL (http://spms.min-saude.pt/rnu/extensions/address)
 WARNING: StructureDefinition/ptAddress: StructureDefinition.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[7].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[97].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/ptAddress: StructureDefinition.differential.element[4].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
-ERROR: StructureDefinition/ptAddress: StructureDefinition.differential.element[76].binding: Rule eld-12: 'ValueSet as a URI SHALL start with http:// or https:// or urn:' Failed
+ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[7].binding.valueSet.ofType(Reference): Unable to resolve resource with reference 'http://example.com/fhir/example/ValueSet/AddressTypeVS'
+ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[97].binding.valueSet.ofType(Reference): Unable to find a match for profile urn:iso:std:iso:3166 (by type) among choices: ; [CanonicalType[http://hl7.org/fhir/StructureDefinition/ValueSet]]
+ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[97].binding.valueSet.ofType(Reference): Invalid Resource target type. Found CodeSystem, but expected one of ([ValueSet])
+WARNING: StructureDefinition/ptAddress: StructureDefinition.differential.element[4].binding: The valueSet reference http://example.com/fhir/example/ValueSet/AddressTypeVS on element Extension.extension.value[x] could not be resolved
+ERROR: StructureDefinition/ptAddress: StructureDefinition.differential.element[76].binding: The valueSet reference urn:iso:std:iso:3166 on element Extension.extension.value[x] points to something that is not a value set (CodeSystem)
+WARNING: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://example.com/fhir/example/ValueSet/AddressTypeVS on element Extension.extension.value[x] could not be resolved
+ERROR: StructureDefinition/ptAddress: StructureDefinition.snapshot.element[97].binding: The valueSet reference urn:iso:std:iso:3166 on element Extension.extension.value[x] points to something that is not a value set (CodeSystem)
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/rnu/extensions/address'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-ptAddress: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/ptAddress vs http://spms.min-saude.pt/rnu/extensions/address
 == input/extensions/StructureDefinition-ptFilliation.json ==
@@ -326,13 +344,13 @@ WARNING: StructureDefinition/ptPatientOtherInfo: StructureDefinition.jurisdictio
 WARNING: StructureDefinition.where(url = 'http://spms.min-saude.pt/iop/extensions/med-patient-info'): The Implementation Guide contains no examples for this extension
 ERROR: /github/workspace/input/extensions/StructureDefinition-ptPatientOtherInfo: URL Mismatch http://somewhere.org/fhir/uv/myig/StructureDefinition/ptPatientOtherInfo vs http://spms.min-saude.pt/iop/extensions/med-patient-info
 == input/myig.xml ==
-ERROR: ImplementationGuide.where(url = 'http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7-pt.fhir.uv.pem-h) does not match the URL (http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)
-ERROR: ImplementationGuide.url: Resource id/url mismatch: hl7-pt.fhir.uv.pem-h/http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
-WARNING: ImplementationGuide/hl7-pt.fhir.uv.pem-h: ImplementationGuide.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
-ERROR: ImplementationGuide/hl7-pt.fhir.uv.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [ImplementationGuide.dependency, BackboneElement])
-WARNING: ImplementationGuide/hl7-pt.fhir.uv.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
-WARNING: ImplementationGuide/hl7-pt.fhir.uv.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
-ERROR: /github/workspace/input/myig: URL Mismatch http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7-pt.fhir.uv.pem-h vs http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
+ERROR: ImplementationGuide.where(url = 'http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h) does not match the URL (http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: hl7.fhir.pt.pem-h/http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
+WARNING: ImplementationGuide/hl7.fhir.pt.pem-h: ImplementationGuide.jurisdiction[0].coding[0]: Error performing tx3 operation 'validate-code: null' (parameters = "")
+ERROR: ImplementationGuide/hl7.fhir.pt.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [ImplementationGuide.dependency, BackboneElement])
+WARNING: ImplementationGuide/hl7.fhir.pt.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
+WARNING: ImplementationGuide/hl7.fhir.pt.pem-h: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version from FHIR version {3} is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement]; this is a warning since contexts may be renamed between FHIR versions)
+ERROR: /github/workspace/input/myig: URL Mismatch http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h vs http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
 == input/profiles/StructureDefinition-PEMHbundleRquest.json ==
 ERROR: StructureDefinition.differential.element[1]: Unrecognized property 'patternCanonical'
 ERROR: StructureDefinition.differential.element[5].type[0].profile: This property must be a simple value, not an Array (profile at StructureDefinition.differential.element[5].type[0].profile)

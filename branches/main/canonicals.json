@@ -84,7 +84,7 @@
     "name" : "PEMHPatient"
   },
   {
-    "id" : "hl7-pt.fhir.uv.pem-h",
+    "id" : "hl7.fhir.pt.pem-h",
     "type" : "ImplementationGuide",
     "url" : "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
     "version" : "0.1.0-test",
