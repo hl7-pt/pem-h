@@ -189,15 +189,15 @@ for file in listdir(INPUT_FOLDER):
     #  with open(EXTENSION_FOLDER + file, "w") as file:
     #      json.dump(data, file)
     elif data["resourceType"] == "ValueSet":
-        pass
-        # ndata = transform_terminologies(data)
-        # with open(VOCAB_FOLDER + file, "w") as file:
-        #    json.dump(ndata, file)
+        # pass
+        ndata = transform_terminologies(data)
+        with open(VOCAB_FOLDER + file, "w") as file:
+            json.dump(ndata, file)
     elif data["resourceType"] == "CodeSystem":
-        pass
-        # ndata = transform_terminologies(data)
-        # with open(VOCAB_FOLDER + file, "w") as file:
-        #    json.dump(ndata, file)
+        # pass
+        ndata = transform_terminologies(data)
+        with open(VOCAB_FOLDER + file, "w") as file:
+            json.dump(ndata, file)
     else:
         print(type_, restype)
         if restype == "Bundle" and type_ != "StructureDefinition":

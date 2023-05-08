@@ -1,0 +1,1 @@
+{"resourceType": "ValueSet", "status": "active", "name": "MedPrescriptionFramingDispenseVS", "id": "MedPrescriptionFramingDispenseVS", "version": "3.0.2", "url": "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS", "compose": {"include": [{"system": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"}]}}

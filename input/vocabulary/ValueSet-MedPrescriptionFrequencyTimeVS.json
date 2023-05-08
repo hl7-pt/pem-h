@@ -1,0 +1,1 @@
+{"resourceType": "ValueSet", "status": "active", "name": "MedPrescriptionFrequencyTimeVS", "id": "MedPrescriptionFrequencyTimeVS", "version": "3.0.2", "url": "http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS", "compose": {"include": [{"system": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"}]}}

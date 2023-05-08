@@ -1,0 +1,1 @@
+{"resourceType": "ValueSet", "status": "active", "name": "MedPrescriptionTypeVS", "id": "MedPrescriptionTypeVS", "version": "3.0.2", "url": "http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS", "compose": {"include": [{"system": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"}]}}
