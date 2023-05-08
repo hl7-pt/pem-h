@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7-pt.fhir.uv.pem-h"/>
+  <id value="hl7.fhir.pt.pem-h"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>
 </div></div>
@@ -11,7 +11,7 @@
   <name value="hl7-pt-pem-h"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-05-07T23:39:48+00:00"/>
+  <date value="2023-05-08T00:33:17+00:00"/>
   <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>

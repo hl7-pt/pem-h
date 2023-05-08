@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7-pt.fhir.uv.pem-h",
+  "id" : "hl7.fhir.pt.pem-h",
   "text" : {
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>\n</div></div>"
@@ -10,7 +10,7 @@
   "name" : "hl7-pt-pem-h",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-05-07T23:39:48+00:00",
+  "date" : "2023-05-08T00:33:17+00:00",
   "publisher" : "HL7 PT TC",
   "contact" : [{
     "telecom" : [{

@@ -17,7 +17,7 @@
 "Extension.extension:med-currency.url","Extension.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""med-currency""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Extension.extension:med-currency.value[x]","Extension.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","","",,,,"Extension.value[x]",0,1,"","","N/A"
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","","urn:iso:std:iso:4217","",,,,"Extension.value[x]",0,1,"","","N/A"
 "Extension.extension:med-value","Extension.extension","med-value","","",1,1,"Y","","","Extension {[]} {[]}
 ","Sub-extensão referente ao valor da terapêutica","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"",""
 "Extension.extension:med-value.id","Extension.extension.id","","","",0,1,"","","","string {[]} {[]}
