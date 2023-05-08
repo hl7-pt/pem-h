@@ -17,7 +17,18 @@ def transfrom_extension(data):
     data["context"] = ["Resource"]
     data["contextType"] = "resource"
     # json_string = json.dumps(data)
-
+    ndif = []
+    for entry in data["differential"]["element"]:
+        print(entry)
+        # n_entry = entry.copy()
+        if (
+            entry.get("binding") is not None
+            and entry.get("binding").get("valueSet") is not None
+        ):
+            entry["binding"]["valueSetUri"] = entry["binding"]["valueSet"]
+            del entry["binding"]["valueSet"]
+    # ndif.append(n_entry)
+    # data["differential"] = ndif
     # newdata = json_string.replace("Extension.url", "Extension.url")  # print(newdata)
     return data
 
@@ -125,6 +136,12 @@ def transfrom_med_req_group(data):
     return data
 
 
+def transform_terminologies(data):
+
+    data["version"] = "3.0.2"
+    return data
+
+
 def transform_to_stu3(data, resourcetype):
     # print(resourcetype)
     if resourcetype == "MessageHeader":
@@ -173,12 +190,14 @@ for file in listdir(INPUT_FOLDER):
     #      json.dump(data, file)
     elif data["resourceType"] == "ValueSet":
         pass
-    # with open(VOCAB_FOLDER + file, "w") as file:
-    #    json.dump(data, file)
+        # ndata = transform_terminologies(data)
+        # with open(VOCAB_FOLDER + file, "w") as file:
+        #    json.dump(ndata, file)
     elif data["resourceType"] == "CodeSystem":
         pass
+        # ndata = transform_terminologies(data)
         # with open(VOCAB_FOLDER + file, "w") as file:
-        #    json.dump(data, file)
+        #    json.dump(ndata, file)
     else:
         print(type_, restype)
         if restype == "Bundle" and type_ != "StructureDefinition":
