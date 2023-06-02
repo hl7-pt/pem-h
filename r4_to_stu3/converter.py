@@ -1,7 +1,11 @@
 import json
 from os import listdir
 
+# ToDO:
 
+# profle  - value instead of array
+# patternCanonical does not exist
+# valueset - > valueSetReference
 def transform_bundle_sd(data):
 
     json_string = json.dumps(data)
@@ -91,6 +95,21 @@ def transform_msh_sd(data):
     return json.loads(newdata)
 
 
+def transform_req_group_sd(data):
+    ndif = []
+    for i in data["differential"]:
+        if i.get("patternCanonical") is not None:
+            del i["patternCanonical"]
+            ndif.append(i)
+        if i.get("type"):
+            nt = {}
+            for t in i["type"]:
+                if t.get("profile"):
+                    nt["profile"] = t["profile"][0]
+
+    return data
+
+
 def transform_to_stu3_sd(data, resourcetype):
     # print(resourcetype)
     if resourcetype == "MessageHeader":
@@ -99,6 +118,8 @@ def transform_to_stu3_sd(data, resourcetype):
         return transform_med_req_sd(data)
     if resourcetype == "Bundle":
         return transform_bundle_sd(data)
+    if resourcetype == "MedicationRequestGroup":
+        return transform_req_group_sd(data)
     return data
 
 

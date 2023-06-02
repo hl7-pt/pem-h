@@ -1,0 +1,134 @@
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-bundle-response-profile.json 09:34:51
+[-1, -1] n/a: Information - All OK
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-content-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.action.resource'): Warning - Cannot check whether the target profile http://example.com/fhir/example/StructureDefinition/med-request-profile is valid constraint on the base because it is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.extension:MeaningOrder'): Warning - The type of profile http://spms.min-saude/pe/top/extensions/med-request-modality cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.extension:PrescriptionDuplicate'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/prescription-duplicate cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[10].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/med-request-profile
+[-1, -1] StructureDefinition.differential.element[4].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/prescription-duplicate
+[-1, -1] StructureDefinition.differential.element[5].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude/pe/top/extensions/med-request-modality
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-msh-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.author'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.focus'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.source.endpoint'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.source.name'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element[13].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/content-profile
+[-1, -1] StructureDefinition.differential.element[2].binding: Warning - The valueSet reference http://example.com/fhir/example/ValueSet/EventagsVS on element MessageHeader.meta.tag could not be resolved
+[-1, -1] StructureDefinition.differential.element[5].binding: Warning - The valueSet reference http://example.com/fhir/example/ValueSet/EventCodeVS on element MessageHeader.event.code could not be resolved
+[-1, -1] StructureDefinition: Error - The profile http://example.com/fhir/example/StructureDefinition/msh-profile has 4 elements in the differential (id: MessageHeader.author, id: MessageHeader.source.name, id: MessageHeader.source.endpoint, id: MessageHeader.focus) that don't have a matching element in the snapshot: check that the path and definitions are legal in the differential (including order)
+[94, 42] StructureDefinition.differential.element[8]: Error - Unrecognized property 'patternUrl'
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-location-pemh-profile.json 09:34:51
+[-1, -1] n/a: Information - All OK
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-med-request-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.authoredOn'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.context'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:med-cost'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-cost cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:med-prescription-dosage-instruction'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:med-prescription-framing-dispense'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:presc-administration'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:presc-local'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-local cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:presc-print'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-print cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:presc-transcription'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-prescription-transcript cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.extension:presc-type'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-request-type cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.intent'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.medication[x]'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.requester.agent'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.requester.agent.onBehalfOf'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.status'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MedicationRequest.subject'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element[11].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-cost
+[-1, -1] StructureDefinition.differential.element[14].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/med-pemh-profile
+[-1, -1] StructureDefinition.differential.element[15].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/patient-pemh-profile
+[-1, -1] StructureDefinition.differential.element[16].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/encounter-pemh-profile
+[-1, -1] StructureDefinition.differential.element[3].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-dosage-instruction
+[-1, -1] StructureDefinition.differential.element[4].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-print
+[-1, -1] StructureDefinition.differential.element[5].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-internal-administration
+[-1, -1] StructureDefinition.differential.element[6].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-transcript
+[-1, -1] StructureDefinition.differential.element[7].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-request-type
+[-1, -1] StructureDefinition.differential.element[8].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-local
+[-1, -1] StructureDefinition.differential.element[9].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-prescription-framing-dispense
+[-1, -1] StructureDefinition: Error - The profile http://example.com/fhir/example/StructureDefinition/med-request-profile has 8 elements in the differential (id: MedicationRequest.status, id: MedicationRequest.intent, id: MedicationRequest.medication[x], id: MedicationRequest.subject, id: MedicationRequest.context, id: MedicationRequest.authoredOn, id: MedicationRequest.requester.agent, id: MedicationRequest.requester.agent.onBehalfOf) that don't have a matching element in the snapshot: check that the path and definitions are legal in the differential (including order)
+[184, 26] StructureDefinition.differential.element[10].type[0].profile: Error - This property must be a simple value, not an Array (profile at StructureDefinition.differential.element[10].type[0].profile)
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-med-pemh-profile.json 09:34:51
+[72, 14] StructureDefinition.differential.element[4]: Error - Rule eld-16: 'sliceName must be composed of proper tokens separated by "/"' Failed
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-coverage-pemh-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'Coverage.extension:CardInfo'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/coverage-card-info cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[1].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/coverage-card-info
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-PEMHbundleRquest.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'Bundle.entry:messageheader.resource'): Warning - The type of profile http://example.com/fhir/example/StructureDefinition/msh-profile cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Bundle.entry:request.resource'): Warning - The type of profile http://example.com/fhir/example/StructureDefinition/content-profile cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[5].type[0].profile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/msh-profile
+[-1, -1] StructureDefinition.differential.element[7].type[0].profile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/content-profile
+[49, 121] StructureDefinition.differential.element[1]: Error - There is an extra comma at the end of the Object in the JSON
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-patient-pemh-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.address.extension:ptAddress'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/address cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.contact.address.extension:ptAddress'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/address cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.contact.extension:contactObservations'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/contact-observations cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.contact.extension:contactPreference'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/preferred-contact cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.extension:ptFilliation'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/patient-parents cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.extension:ptOccupation'): Warning - The type of profile http://spms.min-saude.pt/rnu/extensions/occupation cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Patient.extension:ptPatientOtherInfo'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/med-patient-info cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[1].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/occupation
+[-1, -1] StructureDefinition.differential.element[2].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/patient-parents
+[-1, -1] StructureDefinition.differential.element[35].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/address
+[-1, -1] StructureDefinition.differential.element[39].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/contact-observations
+[-1, -1] StructureDefinition.differential.element[3].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/med-patient-info
+[-1, -1] StructureDefinition.differential.element[40].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/preferred-contact
+[-1, -1] StructureDefinition.differential.element[43].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/rnu/extensions/address
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-encounter-pemh-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'Encounter.extension:episodeServiceSpecialty'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/episode-service-specialty cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'Encounter.extension:nextAppointmentDate'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[1].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/episode-service-specialty
+[-1, -1] StructureDefinition.differential.element[2].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/next-specialty-appointment-date
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-msh-response-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.author'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.focus'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element.where(path = 'MessageHeader.response.details'): Error - No match found in the generated snapshot: check that the path and definitions are legal in the differential (including order)
+[-1, -1] StructureDefinition.differential.element[4].binding: Warning - The valueSet reference http://example.com/fhir/example/ValueSet/EventCodeVS on element MessageHeader.event.code could not be resolved
+[-1, -1] StructureDefinition: Error - Element MessageHeader.event: derived min (0) cannot be less than the base min (1) in http://hl7.org/fhir/StructureDefinition/MessageHeader
+[-1, -1] StructureDefinition: Error - The profile http://example.com/fhir/example/StructureDefinition/msh-response-profile has 3 elements in the differential (id: MessageHeader.author, id: MessageHeader.response.details, id: MessageHeader.focus) that don't have a matching element in the snapshot: check that the path and definitions are legal in the differential (including order)
+[38, 133] StructureDefinition.differential.element[0]: Error - Unrecognized property 'patternCanonical'
+
+
+----------------------------------------------------------------------------------
+input/profiles/StructureDefinition-content-response-profile.json 09:34:51
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.action.resource'): Warning - Cannot check whether the target profile http://example.com/fhir/example/StructureDefinition/med-request-profile is valid constraint on the base because it is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.extension:MeaningOrder'): Warning - The type of profile http://spms.min-saude/pe/top/extensions/med-request-modality cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element.where(path = 'RequestGroup.extension:PrescriptionDuplicate'): Warning - The type of profile http://spms.min-saude.pt/iop/extensions/prescription-duplicate cannot be checked as the profile is not known
+[-1, -1] StructureDefinition.differential.element[10].type[0].targetProfile: Warning - Unable to resolve profile http://example.com/fhir/example/StructureDefinition/med-request-profile
+[-1, -1] StructureDefinition.differential.element[4].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude.pt/iop/extensions/prescription-duplicate
+[-1, -1] StructureDefinition.differential.element[5].type[0].profile: Warning - Unable to resolve profile http://spms.min-saude/pe/top/extensions/med-request-modality
+[47, 53] StructureDefinition.differential.element[2]: Error - There is an extra comma at the end of the Object in the JSON
+

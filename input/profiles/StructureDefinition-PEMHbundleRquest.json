@@ -1,1 +1,143 @@
-{"resourceType": "StructureDefinition", "id": "PEMHbundleRquest", "url": "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest", "version": "1.0.0", "name": "PEMHbundleRquest", "title": "Perfil Bundle de mensagem", "status": "active", "description": "O Bundle da mensagem deve ser do tipo 'message', deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.", "fhirVersion": "3.0.2", "mapping": [{"identity": "v2", "uri": "http://hl7.org/v2", "name": "HL7 v2 Mapping"}, {"identity": "rim", "uri": "http://hl7.org/v3", "name": "RIM Mapping"}, {"identity": "cda", "uri": "http://hl7.org/v3/cda", "name": "CDA (R2)"}, {"identity": "w5", "uri": "http://hl7.org/fhir/fivews", "name": "FiveWs Pattern Mapping"}], "kind": "resource", "abstract": false, "type": "Bundle", "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle", "derivation": "constraint", "differential": {"element": [{"id": "Bundle.id", "path": "Bundle.id", "short": "Deve ser \u00fanico e mudar sempre que a mensagem for enviada.", "min": 1}, {"id": "Bundle.meta.profile", "path": "Bundle.meta.profile", "short": "Deve ser indicada a vers\u00e3o da especifica\u00e7\u00e3o FHIR a que a mensagem corresponde", "patternCanonical": "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization/v1-0-3"}, {"id": "Bundle.type", "path": "Bundle.type", "patternCode": "message"}, {"id": "Bundle.entry", "path": "Bundle.entry", "slicing": {"discriminator": [{"type": "value", "path": "name"}], "rules": "open"}, "short": "Dever\u00e1 existir obrigatoriamente uma entrada para cada um dos seguintes recursos, e pela ordem indicada: MessageHeader, RequestGroup.", "min": 3, "mustSupport": true}, {"id": "Bundle.entry:messageheader", "path": "Bundle.entry", "sliceName": "messageheader", "min": 1, "max": "1", "mustSupport": true}, {"id": "Bundle.entry:messageheader.resource", "path": "Bundle.entry.resource", "type": [{"code": "MessageHeader", "profile": ["http://example.com/fhir/example/StructureDefinition/msh-profile"]}]}, {"id": "Bundle.entry:request", "path": "Bundle.entry", "sliceName": "request", "min": 1, "max": "1", "mustSupport": true}, {"id": "Bundle.entry:request.resource", "path": "Bundle.entry.resource", "type": [{"code": "RequestGroup", "profile": ["http://example.com/fhir/example/StructureDefinition/content-profile"]}]}, {"id": "Bundle.signature", "path": "Bundle.signature", "short": "Assinatura da receita", "min": 1, "mustSupport": true}, {"id": "Bundle.signature.type", "path": "Bundle.signature.type", "mustSupport": true}, {"id": "Bundle.signature.when", "path": "Bundle.signature.when", "mustSupport": true}, {"id": "Bundle.signature.whoReference", "path": "Bundle.signature.whoReference", "type": [{"code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Practitioner"]}]}]}}
+{
+    "resourceType": "StructureDefinition",
+    "id": "PEMHbundleRquest",
+    "url": "http://example.com/fhir/example/StructureDefinition/PEMHbundleRquest",
+    "version": "1.0.0",
+    "name": "PEMHbundleRquest",
+    "title": "Perfil Bundle de mensagem",
+    "status": "active",
+    "description": "O Bundle da mensagem deve ser do tipo 'message', deve ter como primeira entrada o recurso MessageHeader, e como segunda o recurso.",
+    "fhirVersion": "3.0.2",
+    "mapping": [
+        {
+            "identity": "v2",
+            "uri": "http://hl7.org/v2",
+            "name": "HL7 v2 Mapping"
+        },
+        {
+            "identity": "rim",
+            "uri": "http://hl7.org/v3",
+            "name": "RIM Mapping"
+        },
+        {
+            "identity": "cda",
+            "uri": "http://hl7.org/v3/cda",
+            "name": "CDA (R2)"
+        },
+        {
+            "identity": "w5",
+            "uri": "http://hl7.org/fhir/fivews",
+            "name": "FiveWs Pattern Mapping"
+        }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "Bundle",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Bundle.id",
+                "path": "Bundle.id",
+                "short": "Deve ser \u00fanico e mudar sempre que a mensagem for enviada.",
+                "min": 1
+            },
+            {
+                "id": "Bundle.meta.profile",
+                "path": "Bundle.meta.profile",
+                "short": "Deve ser indicada a vers\u00e3o da especifica\u00e7\u00e3o FHIR a que a mensagem corresponde",
+            },
+            {
+                "id": "Bundle.type",
+                "path": "Bundle.type",
+                "patternCode": "message"
+            },
+            {
+                "id": "Bundle.entry",
+                "path": "Bundle.entry",
+                "slicing": {
+                    "discriminator": [
+                        {
+                            "type": "value",
+                            "path": "name"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "short": "Dever\u00e1 existir obrigatoriamente uma entrada para cada um dos seguintes recursos, e pela ordem indicada: MessageHeader, RequestGroup.",
+                "min": 3,
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.entry:messageheader",
+                "path": "Bundle.entry",
+                "sliceName": "messageheader",
+                "min": 1,
+                "max": "1",
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.entry:messageheader.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "MessageHeader",
+                        "profile": 
+                            "http://example.com/fhir/example/StructureDefinition/msh-profile"
+                        
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.entry:request",
+                "path": "Bundle.entry",
+                "sliceName": "request",
+                "min": 1,
+                "max": "1",
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.entry:request.resource",
+                "path": "Bundle.entry.resource",
+                "type": [
+                    {
+                        "code": "RequestGroup",
+                        "profile": 
+                            "http://example.com/fhir/example/StructureDefinition/content-profile"
+                        
+                    }
+                ]
+            },
+            {
+                "id": "Bundle.signature",
+                "path": "Bundle.signature",
+                "short": "Assinatura da receita",
+                "min": 1,
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.signature.type",
+                "path": "Bundle.signature.type",
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.signature.when",
+                "path": "Bundle.signature.when",
+                "mustSupport": true
+            },
+            {
+                "id": "Bundle.signature.whoReference",
+                "path": "Bundle.signature.whoReference",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": 
+                            "http://hl7.org/fhir/StructureDefinition/Practitioner"
+                        
+                    }
+                ]
+            }
+        ]
+    }
+}

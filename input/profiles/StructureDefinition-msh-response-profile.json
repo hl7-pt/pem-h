@@ -1,1 +1,168 @@
-{"resourceType": "StructureDefinition", "id": "msh-response-profile", "url": "http://example.com/fhir/example/StructureDefinition/msh-response-profile", "version": "1.0.0", "name": "PEMHMessageHeaderResposta", "title": "Perfil Bundle de mensagem de resposta", "status": "active", "description": "Este recurso deve ser a primeira entrada no Bundledas mensagens resposta de ACK de transporte e aplicacional, e deve trazer informa\u00e7\u00e3o sobre o resultado da recep\u00e7\u00e3o ou processamento da mensagem pelo cliente destino.", "fhirVersion": "3.0.2", "mapping": [{"identity": "v2", "uri": "http://hl7.org/v2", "name": "HL7 v2 Mapping"}, {"identity": "rim", "uri": "http://hl7.org/v3", "name": "RIM Mapping"}, {"identity": "w5", "uri": "http://hl7.org/fhir/fivews", "name": "FiveWs Pattern Mapping"}], "kind": "resource", "abstract": false, "type": "MessageHeader", "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader", "derivation": "constraint", "differential": {"element": [{"id": "MessageHeader.meta.profile", "path": "MessageHeader.meta.profile", "patternCanonical": "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-outcome-msh/v1-0-3"}, {"id": "MessageHeader.meta.tag.system", "path": "MessageHeader.meta.tag.system", "patternUri": "http://spms.min-saude.pt/iop/event-meta-tags"}, {"id": "MessageHeader.event", "path": "MessageHeader.event", "min": 0, "max": "1", "type": [{"code": "Coding"}]}, {"id": "MessageHeader.event.system", "path": "MessageHeader.event.system", "patternUri": "http://spms.min-saude.pt/iop/events"}, {"id": "MessageHeader.event.code", "path": "MessageHeader.event.code", "binding": {"strength": "required", "valueSet": "http://example.com/fhir/example/ValueSet/EventCodeVS"}}, {"id": "MessageHeader.event.display", "path": "MessageHeader.event.display", "patternString": "MED_PRESCRIPTION_SYNCHRONIZATION"}, {"id": "MessageHeader.destination.name", "path": "MessageHeader.destination.name", "short": "<Aplica\u00e7\u00e3o de Origem>"}, {"id": "MessageHeader.destination.endpoint", "path": "MessageHeader.destination.endpoint", "short": "<Fornecedor da Aplica\u00e7\u00e3o/Aplica\u00e7\u00e3o de Origem>"}, {"id": "MessageHeader.receiver", "path": "MessageHeader.receiver", "short": "Corresponde \u00e0 organiza\u00e7\u00e3o que recebe a prescri\u00e7\u00e3o de medica\u00e7\u00e3o.", "type": [{"code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Organization"]}]}, {"id": "MessageHeader.sender", "path": "MessageHeader.sender", "short": "Corresponde \u00e0 organiza\u00e7\u00e3o que envia a a prescri\u00e7\u00e3o de medica\u00e7\u00e3o.", "type": [{"code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Organization"]}]}, {"id": "MessageHeader.author", "path": "MessageHeader.author", "short": "Profissional que fez a prescri\u00e7\u00e3o de medica\u00e7\u00e3o para o utente."}, {"id": "MessageHeader.response.details", "path": "MessageHeader.response.details", "short": "Obrigat\u00f3rio enviar apenas em caso de erro /problemas na recep\u00e7\u00e3o/processamento da mensagem."}, {"id": "MessageHeader.focus", "path": "MessageHeader.focus", "short": "Corresponde ao retorno da receita contendo o identidicador central da receita e o Pin da receita.\nObrigat\u00f3rio enviar apenas em caso de sucesso na recep\u00e7\u00e3o/processamento da mensagem.\nS\u00f3 deve ser enviada uma refer\u00eancia para o recurso\nRequestGroup por mensagem.", "min": 1, "max": "1", "type": [{"code": "Reference", "targetProfile": ["http://hl7.org/fhir/StructureDefinition/RequestGroup"]}], "mustSupport": true}, {"id": "MessageHeader.timestamp", "path": "MessageHeader.timestamp", "short": "Time that the message was sent", "definition": "The time that the message was sent.", "requirements": "Allows limited detection of out-of-order and delayed transmission.  Also supports audit.", "min": 1, "max": "1", "type": [{"code": "instant"}], "isSummary": true, "mapping": [{"identity": "v2", "map": "MSH-7"}, {"identity": "rim", "map": "./creationTime[isNormalDatatype()]"}, {"identity": "w5", "map": "when.init"}]}]}}
+{
+    "resourceType": "StructureDefinition",
+    "id": "msh-response-profile",
+    "url": "http://example.com/fhir/example/StructureDefinition/msh-response-profile",
+    "version": "1.0.0",
+    "name": "PEMHMessageHeaderResposta",
+    "title": "Perfil Bundle de mensagem de resposta",
+    "status": "active",
+    "description": "Este recurso deve ser a primeira entrada no Bundledas mensagens resposta de ACK de transporte e aplicacional, e deve trazer informa\u00e7\u00e3o sobre o resultado da recep\u00e7\u00e3o ou processamento da mensagem pelo cliente destino.",
+    "fhirVersion": "3.0.2",
+    "mapping": [
+        {
+            "identity": "v2",
+            "uri": "http://hl7.org/v2",
+            "name": "HL7 v2 Mapping"
+        },
+        {
+            "identity": "rim",
+            "uri": "http://hl7.org/v3",
+            "name": "RIM Mapping"
+        },
+        {
+            "identity": "w5",
+            "uri": "http://hl7.org/fhir/fivews",
+            "name": "FiveWs Pattern Mapping"
+        }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "MessageHeader",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "MessageHeader.meta.profile",
+                "path": "MessageHeader.meta.profile",
+                "patternCanonical": "http://spms.min-saude.pt/fhir/iop/profiles/med-prescription-synchronization-outcome-msh/v1-0-3"
+            },
+            {
+                "id": "MessageHeader.meta.tag.system",
+                "path": "MessageHeader.meta.tag.system",
+                "patternUri": "http://spms.min-saude.pt/iop/event-meta-tags"
+            },
+            {
+                "id": "MessageHeader.event",
+                "path": "MessageHeader.event",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "id": "MessageHeader.event.system",
+                "path": "MessageHeader.event.system",
+                "patternUri": "http://spms.min-saude.pt/iop/events"
+            },
+            {
+                "id": "MessageHeader.event.code",
+                "path": "MessageHeader.event.code",
+                "binding": {
+                    "strength": "required",
+                    "valueSetReference":  {
+                        "reference" : "http://example.com/fhir/example/ValueSet/EventCodeVS"}
+                }
+            },
+            {
+                "id": "MessageHeader.event.display",
+                "path": "MessageHeader.event.display",
+                "patternString": "MED_PRESCRIPTION_SYNCHRONIZATION"
+            },
+            {
+                "id": "MessageHeader.destination.name",
+                "path": "MessageHeader.destination.name",
+                "short": "<Aplica\u00e7\u00e3o de Origem>"
+            },
+            {
+                "id": "MessageHeader.destination.endpoint",
+                "path": "MessageHeader.destination.endpoint",
+                "short": "<Fornecedor da Aplica\u00e7\u00e3o/Aplica\u00e7\u00e3o de Origem>"
+            },
+            {
+                "id": "MessageHeader.receiver",
+                "path": "MessageHeader.receiver",
+                "short": "Corresponde \u00e0 organiza\u00e7\u00e3o que recebe a prescri\u00e7\u00e3o de medica\u00e7\u00e3o.",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": 
+                            "http://hl7.org/fhir/StructureDefinition/Organization"
+                        
+                    }
+                ]
+            },
+            {
+                "id": "MessageHeader.sender",
+                "path": "MessageHeader.sender",
+                "short": "Corresponde \u00e0 organiza\u00e7\u00e3o que envia a a prescri\u00e7\u00e3o de medica\u00e7\u00e3o.",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": 
+                            "http://hl7.org/fhir/StructureDefinition/Organization"
+                        
+                    }
+                ]
+            },
+            {
+                "id": "MessageHeader.author",
+                "path": "MessageHeader.author",
+                "short": "Profissional que fez a prescri\u00e7\u00e3o de medica\u00e7\u00e3o para o utente."
+            },
+            {
+                "id": "MessageHeader.response.details",
+                "path": "MessageHeader.response.details",
+                "short": "Obrigat\u00f3rio enviar apenas em caso de erro /problemas na recep\u00e7\u00e3o/processamento da mensagem."
+            },
+            {
+                "id": "MessageHeader.focus",
+                "path": "MessageHeader.focus",
+                "short": "Corresponde ao retorno da receita contendo o identidicador central da receita e o Pin da receita.\nObrigat\u00f3rio enviar apenas em caso de sucesso na recep\u00e7\u00e3o/processamento da mensagem.\nS\u00f3 deve ser enviada uma refer\u00eancia para o recurso\nRequestGroup por mensagem.",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": 
+                            "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+                        
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
+                "id": "MessageHeader.timestamp",
+                "path": "MessageHeader.timestamp",
+                "short": "Time that the message was sent",
+                "definition": "The time that the message was sent.",
+                "requirements": "Allows limited detection of out-of-order and delayed transmission.  Also supports audit.",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "instant"
+                    }
+                ],
+                "isSummary": true,
+                "mapping": [
+                    {
+                        "identity": "v2",
+                        "map": "MSH-7"
+                    },
+                    {
+                        "identity": "rim",
+                        "map": "./creationTime[isNormalDatatype()]"
+                    },
+                    {
+                        "identity": "w5",
+                        "map": "when.init"
+                    }
+                ]
+            }
+        ]
+    }
+}

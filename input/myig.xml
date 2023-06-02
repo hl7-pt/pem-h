@@ -33,12 +33,12 @@
       -->
     </coding>
   </jurisdiction>
-  <packageId value="hl7-pt.fhir.uv.pem-h"/>
+  <packageId value="hl7.fhir.pt.pem-h"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="3.0.2"/>
-  	<dependsOn>
+  <dependsOn>
 		<!-- This dependency was added to resolve build validation messages for missing DICOM value sets from the base ImagingStudy resource (not the IPS ImagingStudy profile). -->
 		<uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
 		<packageId value="hl7.terminology.r3"/>
