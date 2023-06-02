@@ -336,6 +336,13 @@
     "name" : "contactPreference"
   },
   {
+    "id" : "MeaningOrder",
+    "type" : "StructureDefinition",
+    "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",
+    "version" : "0.1.0-test",
+    "name" : "MeaningOrder"
+  },
+  {
     "id" : "meaning-order",
     "type" : "StructureDefinition",
     "url" : "http://spms.min-saude/pe/top/extensions/med-request-modality",

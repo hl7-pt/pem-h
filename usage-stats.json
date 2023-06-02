@@ -439,6 +439,14 @@
       "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
       "title": "MODALIDADE DE PRESCRIÇÃO",
       "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://spms.min-saude/pe/top/extensions/med-request-modality",
+      "title": "MODALIDADE DE PRESCRIÇÃO",
+      "types": [
         "CodeableConcept"
       ]
     }

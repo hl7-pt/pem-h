@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -209,38 +209,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-location-pemh-profile.html"
-                     title="StructureDefinition/location-pemh-profile">Perfil Location</a>
+                  <a href="StructureDefinition-bundle-response-profile.html"
+                     title="StructureDefinition/bundle-response-profile">Perfil Bundle de mensagem de resposta</a>
                </td>
                <td>
-<p>Recurso utilizado para representar informação sobre o local de prescrição da medicação.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-med-request-profile.html"
-                     title="StructureDefinition/med-request-profile">Perfil informação de receita</a>
-               </td>
-               <td>
-<p>Este recurso contém informações da linha da receita.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-msh-profile.html"
-                     title="StructureDefinition/msh-profile">Perfil MessageHeader</a>
-               </td>
-               <td>
-<p>Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-encounter-pemh-profile.html"
-                     title="StructureDefinition/encounter-pemh-profile">Perfil Episódio</a>
-               </td>
-               <td>
-<p>Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.</p>
+<p>O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.</p>
 </td>
             </tr>
             <tr>
@@ -281,20 +254,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-coverage-pemh-profile.html"
-                     title="StructureDefinition/coverage-pemh-profile">Perfil Coverage</a>
+                  <a href="StructureDefinition-encounter-pemh-profile.html"
+                     title="StructureDefinition/encounter-pemh-profile">Perfil Episódio</a>
                </td>
                <td>
-<p>Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-patient-pemh-profile.html"
-                     title="StructureDefinition/patient-pemh-profile">Perfil Paciente</a>
-               </td>
-               <td>
-<p>Utente a quem diz respeito a prescrição de medicação.</p>
+<p>Recurso que caracteriza o episódio a partir do qual a prescrição de medicação está a ser solicitada.</p>
 </td>
             </tr>
             <tr>
@@ -309,11 +273,47 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-bundle-response-profile.html"
-                     title="StructureDefinition/bundle-response-profile">Perfil Bundle de mensagem de resposta</a>
+                  <a href="StructureDefinition-location-pemh-profile.html"
+                     title="StructureDefinition/location-pemh-profile">Perfil Location</a>
                </td>
                <td>
-<p>O fluxo de prescrição de medicação é um fluxo síncronopara a aplicação emissora.</p>
+<p>Recurso utilizado para representar informação sobre o local de prescrição da medicação.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-pemh-profile.html"
+                     title="StructureDefinition/patient-pemh-profile">Perfil Paciente</a>
+               </td>
+               <td>
+<p>Utente a quem diz respeito a prescrição de medicação.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-msh-profile.html"
+                     title="StructureDefinition/msh-profile">Perfil MessageHeader</a>
+               </td>
+               <td>
+<p>Este recurso deve ser a primeira entrada no Bundle e deve referenciar (focus) o recurso MedicationRequest.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-pemh-profile.html"
+                     title="StructureDefinition/coverage-pemh-profile">Perfil Coverage</a>
+               </td>
+               <td>
+<p>Recurso utilizado para representar a relação entre beneficiário (utente) e a entidade responsável. Este recurso é referenciado no recurso Patient numa extensão própria.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-request-profile.html"
+                     title="StructureDefinition/med-request-profile">Perfil informação de receita</a>
+               </td>
+               <td>
+<p>Este recurso contém informações da linha da receita.</p>
 </td>
             </tr>
          </tbody>
@@ -330,24 +330,6 @@ Receita” e o “Pin da Receita”.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-presc-type.html"
-                     title="StructureDefinition/presc-type">TIPO DE RECEITA</a>
-               </td>
-               <td>
-<p>Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-meaning-order.html"
-                     title="StructureDefinition/meaning-order">MODALIDADE DE PRESCRIÇÃO</a>
-               </td>
-               <td>
-<p>Receita com papel (RCP) ou receita sem papel (RSP).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-ptOccupation.html"
                      title="StructureDefinition/ptOccupation">Profissão do utente</a>
                </td>
@@ -357,47 +339,11 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ptPatientOtherInfo.html"
-                     title="StructureDefinition/ptPatientOtherInfo">OUTRA INDICAÇÃO</a>
+                  <a href="StructureDefinition-presc-type.html"
+                     title="StructureDefinition/presc-type">TIPO DE RECEITA</a>
                </td>
                <td>
-<p>Extensão referente a informações sobre o utente</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-med-cost.html"
-                     title="StructureDefinition/med-cost">Custo</a>
-               </td>
-               <td>
-<p>Extensão referente ao valor e a moeda da terapêutica</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-contactPreference.html"
-                     title="StructureDefinition/contactPreference">Contacto preferencial</a>
-               </td>
-               <td>
-<p>Extensão para informar se o contacto atual é o preferencial</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-prescription-duplicate.html"
-                     title="StructureDefinition/prescription-duplicate">NÚMERO DE VIAS</a>
-               </td>
-               <td>
-<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-CardInfo.html"
-                     title="StructureDefinition/CardInfo">Informações sobre o cartão do beneficiário relativo a entidade</a>
-               </td>
-               <td>
-<p>Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição</p>
+<p>Tipo de prescrição: e.g.: FH, RE, BIO ou OUT.</p>
 </td>
             </tr>
             <tr>
@@ -411,65 +357,11 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-presc-administration.html"
-                     title="StructureDefinition/presc-administration">ADMINISTRAÇÃO</a>
+                  <a href="StructureDefinition-contactPreference.html"
+                     title="StructureDefinition/contactPreference">Contacto preferencial</a>
                </td>
                <td>
-<p>Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-ptAddress.html"
-                     title="StructureDefinition/ptAddress">Endereço</a>
-               </td>
-               <td>
-<p>Extensão referente ao endereço</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-presc-local.html"
-                     title="StructureDefinition/presc-local">LOCAL</a>
-               </td>
-               <td>
-<p>Referência para um resource que contém informações do local de prescrição</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-nextAppointmentDate.html"
-                     title="StructureDefinition/nextAppointmentDate">DATA PROXIMA CONSULTA</a>
-               </td>
-               <td>
-<p>Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-contactObservations.html"
-                     title="StructureDefinition/contactObservations">Observações relacionadas com o bloco dos contactos do Utente</a>
-               </td>
-               <td>
-<p>Extensão para Observações relacionadas com o bloco dos contactos do Utente</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-presc-transcription.html"
-                     title="StructureDefinition/presc-transcription">RECEITA MANUSCRITA</a>
-               </td>
-               <td>
-<p>Indicar se trata-se de uma transcrição de uma receita manuscrita.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-med-prescription-dosage-line.html"
-                     title="StructureDefinition/med-prescription-dosage-line">NÚMERO DE VIAS</a>
-               </td>
-               <td>
-<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
+<p>Extensão para informar se o contacto atual é o preferencial</p>
 </td>
             </tr>
             <tr>
@@ -483,6 +375,69 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-med-cost.html"
+                     title="StructureDefinition/med-cost">Custo</a>
+               </td>
+               <td>
+<p>Extensão referente ao valor e a moeda da terapêutica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contactObservations.html"
+                     title="StructureDefinition/contactObservations">Observações relacionadas com o bloco dos contactos do Utente</a>
+               </td>
+               <td>
+<p>Extensão para Observações relacionadas com o bloco dos contactos do Utente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MeaningOrder.html"
+                     title="StructureDefinition/MeaningOrder">MODALIDADE DE PRESCRIÇÃO</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-meaning-order.html"
+                     title="StructureDefinition/meaning-order">MODALIDADE DE PRESCRIÇÃO</a>
+               </td>
+               <td>
+<p>Receita com papel (RCP) ou receita sem papel (RSP).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ptFilliation.html"
+                     title="StructureDefinition/ptFilliation">Filiação do utente</a>
+               </td>
+               <td>
+<p>Extensão Filiação do utente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-local.html"
+                     title="StructureDefinition/presc-local">LOCAL</a>
+               </td>
+               <td>
+<p>Referência para um resource que contém informações do local de prescrição</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-med-prescription-dosage-line.html"
+                     title="StructureDefinition/med-prescription-dosage-line">NÚMERO DE VIAS</a>
+               </td>
+               <td>
+<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-med-prescription-framing-dispense.html"
                      title="StructureDefinition/med-prescription-framing-dispense">Tipo enquadramento</a>
                </td>
@@ -492,11 +447,20 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-presc-print.html"
-                     title="StructureDefinition/presc-print">IMPRESSÃO</a>
+                  <a href="StructureDefinition-ptPatientOtherInfo.html"
+                     title="StructureDefinition/ptPatientOtherInfo">OUTRA INDICAÇÃO</a>
                </td>
                <td>
-<p>Indicar se a receita foi impressa</p>
+<p>Extensão referente a informações sobre o utente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ptAddress.html"
+                     title="StructureDefinition/ptAddress">Endereço</a>
+               </td>
+               <td>
+<p>Extensão referente ao endereço</p>
 </td>
             </tr>
             <tr>
@@ -510,11 +474,56 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ptFilliation.html"
-                     title="StructureDefinition/ptFilliation">Filiação do utente</a>
+                  <a href="StructureDefinition-presc-transcription.html"
+                     title="StructureDefinition/presc-transcription">RECEITA MANUSCRITA</a>
                </td>
                <td>
-<p>Extensão Filiação do utente</p>
+<p>Indicar se trata-se de uma transcrição de uma receita manuscrita.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nextAppointmentDate.html"
+                     title="StructureDefinition/nextAppointmentDate">DATA PROXIMA CONSULTA</a>
+               </td>
+               <td>
+<p>Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-print.html"
+                     title="StructureDefinition/presc-print">IMPRESSÃO</a>
+               </td>
+               <td>
+<p>Indicar se a receita foi impressa</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CardInfo.html"
+                     title="StructureDefinition/CardInfo">Informações sobre o cartão do beneficiário relativo a entidade</a>
+               </td>
+               <td>
+<p>Extensão para indicar a data e hora da próxima consulta da mesma especialidade no mesmo âmbito da emissão da prescrição</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-presc-administration.html"
+                     title="StructureDefinition/presc-administration">ADMINISTRAÇÃO</a>
+               </td>
+               <td>
+<p>Indicar se a prescrição é para administração interna ou SFH; true: administração interna; false: SFH</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-prescription-duplicate.html"
+                     title="StructureDefinition/prescription-duplicate">NÚMERO DE VIAS</a>
+               </td>
+               <td>
+<p>Via da receita no caso de ser renovável (1, 2, 3, …).</p>
 </td>
             </tr>
          </tbody>
@@ -531,47 +540,12 @@ Receita” e o “Pin da Receita”.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-MedPrescriptionLegalDiplomaVS.html"
-                     title="ValueSet/MedPrescriptionLegalDiplomaVS">ValueSet/MedPrescriptionLegalDiplomaVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-MedPrescriptionFrequencyTimeVS.html"
-                     title="ValueSet/MedPrescriptionFrequencyTimeVS">ValueSet/MedPrescriptionFrequencyTimeVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-episodeServiceSpecialtyVS.html"
-                     title="ValueSet/episodeServiceSpecialtyVS">ValueSet/episodeServiceSpecialtyVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-CardCountryVS.html" title="ValueSet/CardCountryVS">ValueSet/CardCountryVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-MedPrescriptionFramingDispenseVS.html"
-                     title="ValueSet/MedPrescriptionFramingDispenseVS">ValueSet/MedPrescriptionFramingDispenseVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-EventagsVS.html" title="ValueSet/EventagsVS">ValueSet/EventagsVS</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-CardInfoTypeVS.html" title="ValueSet/CardInfoTypeVS">ValueSet/CardInfoTypeVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-MedPrescriptionFramingTypeVS.html"
-                     title="ValueSet/MedPrescriptionFramingTypeVS">ValueSet/MedPrescriptionFramingTypeVS</a>
+                  <a href="ValueSet-EventCodeVS.html" title="ValueSet/EventCodeVS">ValueSet/EventCodeVS</a>
                </td>
             </tr>
             <tr>
@@ -582,13 +556,8 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-MedPrescriptionDurationVS.html"
-                     title="ValueSet/MedPrescriptionDurationVS">ValueSet/MedPrescriptionDurationVS</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-MeaningOrderVS.html" title="ValueSet/MeaningOrderVS">ValueSet/MeaningOrderVS</a>
+                  <a href="ValueSet-MedPrescriptionLegalDiplomaVS.html"
+                     title="ValueSet/MedPrescriptionLegalDiplomaVS">ValueSet/MedPrescriptionLegalDiplomaVS</a>
                </td>
             </tr>
             <tr>
@@ -599,12 +568,52 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-AddressTypeVS.html" title="ValueSet/AddressTypeVS">ValueSet/AddressTypeVS</a>
+                  <a href="ValueSet-CardInfoTypeVS.html" title="ValueSet/CardInfoTypeVS">ValueSet/CardInfoTypeVS</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-EventCodeVS.html" title="ValueSet/EventCodeVS">ValueSet/EventCodeVS</a>
+                  <a href="ValueSet-episodeServiceSpecialtyVS.html"
+                     title="ValueSet/episodeServiceSpecialtyVS">ValueSet/episodeServiceSpecialtyVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-MeaningOrderVS.html" title="ValueSet/MeaningOrderVS">ValueSet/MeaningOrderVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CardCountryVS.html" title="ValueSet/CardCountryVS">ValueSet/CardCountryVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-MedPrescriptionFrequencyTimeVS.html"
+                     title="ValueSet/MedPrescriptionFrequencyTimeVS">ValueSet/MedPrescriptionFrequencyTimeVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-MedPrescriptionDurationVS.html"
+                     title="ValueSet/MedPrescriptionDurationVS">ValueSet/MedPrescriptionDurationVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-MedPrescriptionFramingTypeVS.html"
+                     title="ValueSet/MedPrescriptionFramingTypeVS">ValueSet/MedPrescriptionFramingTypeVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-MedPrescriptionFramingDispenseVS.html"
+                     title="ValueSet/MedPrescriptionFramingDispenseVS">ValueSet/MedPrescriptionFramingDispenseVS</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-AddressTypeVS.html" title="ValueSet/AddressTypeVS">ValueSet/AddressTypeVS</a>
                </td>
             </tr>
          </tbody>
@@ -638,20 +647,14 @@ Receita” e o “Pin da Receita”.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html"
-                     title="MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5">MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Practitioner-f644ab44-7e32-4e05-972c-1f14bebf27a8.html"
                      title="Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8">Practitioner/f644ab44-7e32-4e05-972c-1f14bebf27a8</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html"
-                     title="Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f">Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f</a>
+                  <a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac.html"
+                     title="Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac">Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac</a>
                </td>
             </tr>
             <tr>
@@ -662,20 +665,14 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html"
-                     title="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a>
+                  <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html"
+                     title="Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045">Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.html"
-                     title="Patient/3616b380-01be-465a-aa29-906337c6e7a4">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.html"
-                     title="Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0">Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0</a>
+                  <a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.html"
+                     title="RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df</a>
                </td>
             </tr>
             <tr>
@@ -698,20 +695,32 @@ Receita” e o “Pin da Receita”.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Encounter-2d3f8e19-205e-40c6-aeec7b17cbef8045.html"
-                     title="Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045">Encounter/2d3f8e19-205e-40c6-aeec7b17cbef8045</a>
+                  <a href="MedicationRequest-e22942f3-a461-40b9-8449-30f7a7e9d0d5.html"
+                     title="MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5">MedicationRequest/e22942f3-a461-40b9-8449-30f7a7e9d0d5</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="RequestGroup-25f1ea48-e0ef-405e-86fc-498ae907f6df.html"
-                     title="RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df">RequestGroup/25f1ea48-e0ef-405e-86fc-498ae907f6df</a>
+                  <a href="Patient-3616b380-01be-465a-aa29-906337c6e7a4.html"
+                     title="Patient/3616b380-01be-465a-aa29-906337c6e7a4">Patient/3616b380-01be-465a-aa29-906337c6e7a4</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac.html"
-                     title="Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac">Organization/fab4d0d7-b8dd-4c6f-9c7e-71ca0ee53ac</a>
+                  <a href="Coverage-219eb473-8ee3-4e3d-b785-b204b71de77f.html"
+                     title="Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f">Coverage/219eb473-8ee3-4e3d-b785-b204b71de77f</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace.html"
+                     title="Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace">Organization/dec4d0d7-b8dd-4c6f-9c7e-71ca0ee53ace</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-04f1ea48-e0ef-405e-86fc-498ae907f6d0.html"
+                     title="Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0">Location/04f1ea48-e0ef-405e-86fc-498ae907f6d0</a>
                </td>
             </tr>
          </tbody>
@@ -741,7 +750,7 @@ Receita” e o “Pin da Receita”.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 PT TC</a>.  Package hl7-pt.fhir.uv.pem-h#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Mon, May 8, 2023 00:44+0000">2023-05-08</span>
+          IG &#169; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org/Special/committees/[something]">HL7 PT TC</a>.  Package hl7-pt.fhir.uv.pem-h#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Jun 2, 2023 10:26+0000">2023-06-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

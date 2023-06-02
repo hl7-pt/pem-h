@@ -1,261 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b44634be-44db-476e-9add-d50f5a4dc963",
+  "id" : "4d847a6a-6a8f-4098-a519-296445d451ba",
   "meta" : {
-    "lastUpdated" : "2023-05-08T00:44:39.577+00:00"
+    "lastUpdated" : "2023-06-02T10:26:30.249+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionLegalDiplomaVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:18b075b7-f1f4-4792-8538-ae10e162e8b9",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionFrequencyTimeVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:a0c3ede4-13d1-4c23-87ed-9e94d31dc8c5",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS",
-      "version" : "0.1.0-test",
-      "name" : "episodeServiceSpecialtyVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:d6d370c0-e97f-48cf-8ef6-95d2f4019e10",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/CardCountryVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/CardCountryVS",
-      "version" : "0.1.0-test",
-      "name" : "CardCountryVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:01992aff-322a-4483-acbd-f84fbbdf1585",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionFramingDispenseVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:1bbc4c9c-f9d6-4a98-bf1d-c95620b0c92d",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://example.com/fhir/example/ValueSet/EventagsVS",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -267,13 +17,7 @@
       "version" : "0.1.0-test",
       "name" : "EventagsVS",
       "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
+      "date" : "2023-06-02T10:26:30+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -281,358 +25,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:04cd9cf5-e655-4ac7-a038-50a48c4a1d2e",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/CardInfoTypeVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/CardInfoTypeVS",
-      "version" : "0.1.0-test",
-      "name" : "CardInfoTypeVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:d71fadcf-533f-498a-99f9-2cd7c7be8f0c",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionFramingTypeVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:0fe381bc-e2fc-4a6f-9908-4641dc4c5264",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionCancelReasonVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:14cfc648-6d24-4753-9cfe-667148842773",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionDurationVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:65cbf8e3-af0f-44d2-b8e5-68e5823de42d",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
-      "version" : "0.1.0-test",
-      "name" : "MeaningOrderVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:b52a900e-9398-4a43-896b-ae180eea681e",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS",
-      "version" : "0.1.0-test",
-      "name" : "MedPrescriptionTypeVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:e326ba34-c35d-415d-a4e7-e7397c1d774a",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RSP",
-          "display" : "Receita sem papel"
-        },
-        {
-          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
-          "code" : "RCP",
-          "display" : "Receita com papel"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://example.com/fhir/example/ValueSet/AddressTypeVS",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
-      },
-      "url" : "http://example.com/fhir/example/ValueSet/AddressTypeVS",
-      "version" : "0.1.0-test",
-      "name" : "AddressTypeVS",
-      "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:d6548763-ce13-4640-af47-73452d3e6630",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
+        "identifier" : "urn:uuid:4ebd4af2-9b52-485b-b49b-9bfedcbda847",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -667,13 +61,7 @@
       "version" : "0.1.0-test",
       "name" : "EventCodeVS",
       "status" : "active",
-      "date" : "2023-05-08T00:44:39+00:00",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://hl7.org/Special/committees/[something]"
-        }]
-      }],
+      "date" : "2023-06-02T10:26:30+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -681,8 +69,536 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:970cfa14-5888-490f-8bf6-2cfed73c37b5",
-        "timestamp" : "2023-05-08T00:45:21+00:00",
+        "identifier" : "urn:uuid:8bb7d2d6-e733-4e7d-a161-aaacd151610c",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionCancelReasonVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:0b411331-d3e0-4738-bf39-143338a71fa1",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionLegalDiplomaVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:bac2e812-4fa0-4ecb-9546-7f569496968c",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionTypeVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:46096a5f-e3bc-4044-8fa3-93f351db06c7",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/CardInfoTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/CardInfoTypeVS",
+      "version" : "0.1.0-test",
+      "name" : "CardInfoTypeVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:54dd3b28-84d0-40c8-a831-0835a793c69b",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS",
+      "version" : "0.1.0-test",
+      "name" : "episodeServiceSpecialtyVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1381dfb8-fbc4-4468-9e39-2918023c886a",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MeaningOrderVS",
+      "version" : "0.1.0-test",
+      "name" : "MeaningOrderVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:02a0353e-60bf-4578-8783-d63f1e16e039",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/CardCountryVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/CardCountryVS",
+      "version" : "0.1.0-test",
+      "name" : "CardCountryVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ff74f854-7574-4e53-9d15-8f52f68d188a",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionFrequencyTimeVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2e560fd9-e6be-4909-9880-b32ada89a4e1",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionDurationVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:181305b5-05a9-4cbd-bc27-b72e36da2580",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionFramingTypeVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:7e5238d8-c7fe-4f3c-9ce7-fe868de5873c",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS",
+      "version" : "0.1.0-test",
+      "name" : "MedPrescriptionFramingDispenseVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4c13e6f6-7e78-4d14-93b4-93eaf0e46475",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RSP",
+          "display" : "Receita sem papel"
+        },
+        {
+          "system" : "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality",
+          "code" : "RCP",
+          "display" : "Receita com papel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/AddressTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-MeaningOrderCS.html\">MeaningOrderCS v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP\">RSP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita sem papel</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP\">RCP</a></td><td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td><td>Receita com papel</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/AddressTypeVS",
+      "version" : "0.1.0-test",
+      "name" : "AddressTypeVS",
+      "status" : "active",
+      "date" : "2023-06-02T10:26:30+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:dd7fe6e1-edeb-4e4b-99ed-5385fa2b674f",
+        "timestamp" : "2023-06-02T10:27:14+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
