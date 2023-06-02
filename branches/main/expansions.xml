@@ -1,436 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b44634be-44db-476e-9add-d50f5a4dc963"/>
+  <id value="4d847a6a-6a8f-4098-a519-296445d451ba"/>
   <meta>
-    <lastUpdated value="2023-05-08T00:44:39.577+00:00"/>
+    <lastUpdated value="2023-06-02T10:26:30.249+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionLegalDiplomaVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:18b075b7-f1f4-4792-8538-ae10e162e8b9"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionFrequencyTimeVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:a0c3ede4-13d1-4c23-87ed-9e94d31dc8c5"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS"/>
-        <version value="0.1.0-test"/>
-        <name value="episodeServiceSpecialtyVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:d6d370c0-e97f-48cf-8ef6-95d2f4019e10"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/CardCountryVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/CardCountryVS"/>
-        <version value="0.1.0-test"/>
-        <name value="CardCountryVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:01992aff-322a-4483-acbd-f84fbbdf1585"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionFramingDispenseVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:1bbc4c9c-f9d6-4a98-bf1d-c95620b0c92d"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://example.com/fhir/example/ValueSet/EventagsVS"/>
     <resource>
@@ -477,13 +52,7 @@
         <version value="0.1.0-test"/>
         <name value="EventagsVS"/>
         <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
+        <date value="2023-06-02T10:26:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -491,603 +60,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:04cd9cf5-e655-4ac7-a038-50a48c4a1d2e"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/CardInfoTypeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/CardInfoTypeVS"/>
-        <version value="0.1.0-test"/>
-        <name value="CardInfoTypeVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:d71fadcf-533f-498a-99f9-2cd7c7be8f0c"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionFramingTypeVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:0fe381bc-e2fc-4a6f-9908-4641dc4c5264"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionCancelReasonVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:14cfc648-6d24-4753-9cfe-667148842773"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionDurationVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:65cbf8e3-af0f-44d2-b8e5-68e5823de42d"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MeaningOrderVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:b52a900e-9398-4a43-896b-ae180eea681e"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS"/>
-        <version value="0.1.0-test"/>
-        <name value="MedPrescriptionTypeVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:e326ba34-c35d-415d-a4e7-e7397c1d774a"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RSP"/>
-            <display value="Receita sem papel"/>
-          </contains>
-          <contains>
-            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
-            <code value="RCP"/>
-            <display value="Receita com papel"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.com/fhir/example/ValueSet/AddressTypeVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita sem papel</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
-                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
-                </td>
-                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
-                <td>Receita com papel</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.com/fhir/example/ValueSet/AddressTypeVS"/>
-        <version value="0.1.0-test"/>
-        <name value="AddressTypeVS"/>
-        <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:d6548763-ce13-4640-af47-73452d3e6630"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
+          <identifier value="urn:uuid:4ebd4af2-9b52-485b-b49b-9bfedcbda847"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1157,13 +131,7 @@
         <version value="0.1.0-test"/>
         <name value="EventCodeVS"/>
         <status value="active"/>
-        <date value="2023-05-08T00:44:39+00:00"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="http://hl7.org/Special/committees/[something]"/>
-          </telecom>
-        </contact>
+        <date value="2023-06-02T10:26:30+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1171,8 +139,956 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:970cfa14-5888-490f-8bf6-2cfed73c37b5"/>
-          <timestamp value="2023-05-08T00:45:21+00:00"/>
+          <identifier value="urn:uuid:8bb7d2d6-e733-4e7d-a161-aaacd151610c"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionCancelReasonVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0b411331-d3e0-4738-bf39-143338a71fa1"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionLegalDiplomaVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionLegalDiplomaVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bac2e812-4fa0-4ecb-9546-7f569496968c"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionTypeVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionTypeVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:46096a5f-e3bc-4044-8fa3-93f351db06c7"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/CardInfoTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/CardInfoTypeVS"/>
+        <version value="0.1.0-test"/>
+        <name value="CardInfoTypeVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:54dd3b28-84d0-40c8-a831-0835a793c69b"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/episodeServiceSpecialtyVS"/>
+        <version value="0.1.0-test"/>
+        <name value="episodeServiceSpecialtyVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1381dfb8-fbc4-4468-9e39-2918023c886a"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MeaningOrderVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MeaningOrderVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:02a0353e-60bf-4578-8783-d63f1e16e039"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/CardCountryVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/CardCountryVS"/>
+        <version value="0.1.0-test"/>
+        <name value="CardCountryVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ff74f854-7574-4e53-9d15-8f52f68d188a"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFrequencyTimeVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionFrequencyTimeVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2e560fd9-e6be-4909-9880-b32ada89a4e1"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionDurationVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionDurationVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:181305b5-05a9-4cbd-bc27-b72e36da2580"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingTypeVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionFramingTypeVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7e5238d8-c7fe-4f3c-9ce7-fe868de5873c"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/MedPrescriptionFramingDispenseVS"/>
+        <version value="0.1.0-test"/>
+        <name value="MedPrescriptionFramingDispenseVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4c13e6f6-7e78-4d14-93b4-93eaf0e46475"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RSP"/>
+            <display value="Receita sem papel"/>
+          </contains>
+          <contains>
+            <system value="http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"/>
+            <code value="RCP"/>
+            <display value="Receita com papel"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.com/fhir/example/ValueSet/AddressTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-MeaningOrderCS.html">MeaningOrderCS v0.1.0-test (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RSP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RSP">RSP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita sem papel</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---spms.min-saude.pt-bdnp-codesystem-med-request-modality-RCP"> </a>  
+                  <a href="CodeSystem-MeaningOrderCS.html#MeaningOrderCS-RCP">RCP</a>
+                </td>
+                <td>http://spms.min-saude.pt/bdnp/codesystem/med-request-modality</td>
+                <td>Receita com papel</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.com/fhir/example/ValueSet/AddressTypeVS"/>
+        <version value="0.1.0-test"/>
+        <name value="AddressTypeVS"/>
+        <status value="active"/>
+        <date value="2023-06-02T10:26:30+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:dd7fe6e1-edeb-4e4b-99ed-5385fa2b674f"/>
+          <timestamp value="2023-06-02T10:27:14+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
