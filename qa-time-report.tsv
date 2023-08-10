@@ -1,17 +1,2 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/input/myig.xml	4857	-	0	0	0	0	0	0	1	34	0	0	0	0	0	0	0	1	0	0	25	39	0	0	0	2	0	0
-input/vocabulary/ValueSet-MedPrescriptionLegalDiplomaVS.json	332	7	1	0	0	1	0	0	0	27	0	0	0	0	0	0	0	0	0	0	16	6547	0	0	0	0	0	0
-input/vocabulary/ValueSet-MedPrescriptionTypeVS.json	308	4	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	14	48	0	0	0	1	0	0
-input/vocabulary/ValueSet-CardCountryVS.json	284	5	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	48	0	0	0	0	0	0
-input/vocabulary/ValueSet-EventCodeVS.json	278	4	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	6	43	0	0	0	0	0	0
-input/vocabulary/ValueSet-MedPrescriptionFrequencyTimeVS.json	335	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	13	48	0	0	0	0	0	0
-input/vocabulary/ValueSet-MedPrescriptionFramingTypeVS.json	329	4	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	42	0	0	0	0	0	0
-input/vocabulary/ValueSet-episodeServiceSpecialtyVS.json	320	4	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	5	68	0	0	0	1	0	0
-input/vocabulary/ValueSet-MedPrescriptionDurationVS.json	320	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	64	0	0	0	0	0	0
-input/vocabulary/CodeSystem-MeaningOrderCS.json	338	4	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	15	63	0	0	0	0	0	0
-input/vocabulary/ValueSet-CardInfoTypeVS.json	287	3	0	0	0	0	0	0	0	4	0	0	1	0	0	0	0	0	0	0	5	58	0	0	0	0	0	0
-input/vocabulary/ValueSet-MedPrescriptionFramingDispenseVS.json	341	18	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	19	35	0	0	0	0	0	0
-input/vocabulary/ValueSet-MeaningOrderVS.json	287	4	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	18	34	0	0	0	1	0	0
-input/vocabulary/ValueSet-MedPrescriptionCancelReasonVS.json	332	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	14	118	0	0	0	0	0	0
-input/vocabulary/ValueSet-AddressTypeVS.json	284	4	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	17	52	0	0	0	0	0	0
-input/vocabulary/ValueSet-EventagsVS.json	275	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	11	58	0	0	0	0	0	0
+Source File	Size	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/input/myig.xml	4857	0	0	0	0	0	0	1	45	0	0	0	0	0	0	0	1	0	0	18	35	0	0	0	1	0	0
