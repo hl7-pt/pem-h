@@ -62,21 +62,6 @@
         <title value="Downloads"/>
         <generation value="html"/>
       </page>
-            <page>
-        <nameUrl value="Intro.html"/>
-        <title value="Introdução"/>
-        <generation value="markdown"/>
-      </page>
-            <page>
-        <nameUrl value="mensagem-envio.html"/>
-        <title value="Mensagem Envio"/>
-        <generation value="markdown"/>
-      </page>
-            <page>
-        <nameUrl value="mensagem-resposta.html"/>
-        <title value="Mensagem Resposta"/>
-        <generation value="markdown"/>
-      </page>
               <page>
         <nameUrl value="recursos-suporte.html"/>
         <title value="Recursos Suporte"/>
