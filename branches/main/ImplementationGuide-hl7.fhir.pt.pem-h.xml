@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.pt.pem-h"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h</pre><div><p>A brief description of what this IG is about</p>
 </div></div>
   </text>
-  <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"/>
+  <url value="http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h"/>
   <version value="0.1.0-test"/>
   <name value="hl7-pt-pem-h"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-06-02T10:26:30+00:00"/>
+  <date value="2023-08-10T18:35:32+00:00"/>
   <publisher value="HL7 PT TC"/>
   <contact>
     <telecom>
@@ -50,21 +50,6 @@
       <source value="downloads.html"/>
       <title value="Downloads"/>
       <kind value="page"/>
-    </page>
-    <page>
-      <source value="Intro.html"/>
-      <title value="Introdução"/>
-      <kind value="resource"/>
-    </page>
-    <page>
-      <source value="mensagem-envio.html"/>
-      <title value="Mensagem Envio"/>
-      <kind value="resource"/>
-    </page>
-    <page>
-      <source value="mensagem-resposta.html"/>
-      <title value="Mensagem Resposta"/>
-      <kind value="resource"/>
     </page>
     <page>
       <source value="recursos-suporte.html"/>

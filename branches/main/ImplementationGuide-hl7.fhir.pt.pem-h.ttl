@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "hl7.fhir.pt.pem-h"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</pre><div><p>A brief description of what this IG is about</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>hl7-pt-pem-h</h2><p>The official URL for this implementation guide is: </p><pre>http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h</pre><div><p>A brief description of what this IG is about</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://somewhere.org/fhir/uv/myig/ImplementationGuide/hl7.fhir.pt.pem-h"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0-test"] ; # 
   fhir:name [ fhir:v "hl7-pt-pem-h"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-06-02T10:26:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-10T18:35:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 PT TC"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -56,18 +56,6 @@
        fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
        fhir:title [ fhir:v "Downloads" ] ;
        fhir:kind [ fhir:v "page" ]
-     ] [
-       fhir:source [ fhir:v "Intro.html"^^xsd:anyURI ] ;
-       fhir:title [ fhir:v "Introdução" ] ;
-       fhir:kind [ fhir:v "resource" ]
-     ] [
-       fhir:source [ fhir:v "mensagem-envio.html"^^xsd:anyURI ] ;
-       fhir:title [ fhir:v "Mensagem Envio" ] ;
-       fhir:kind [ fhir:v "resource" ]
-     ] [
-       fhir:source [ fhir:v "mensagem-resposta.html"^^xsd:anyURI ] ;
-       fhir:title [ fhir:v "Mensagem Resposta" ] ;
-       fhir:kind [ fhir:v "resource" ]
      ] [
        fhir:source [ fhir:v "recursos-suporte.html"^^xsd:anyURI ] ;
        fhir:title [ fhir:v "Recursos Suporte" ] ;

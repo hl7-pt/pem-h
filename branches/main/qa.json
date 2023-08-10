@@ -1,12 +1,12 @@
 {
   "url" : "http://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig",
   "name" : "hl7-pt-pem-h",
-  "package-id" : "hl7-pt.fhir.uv.pem-h",
+  "package-id" : "hl7.fhir.pt.pem-h",
   "ig-ver" : "0.1.0-test",
-  "date" : "Fri, 02 Jun, 2023 10:26:30 +0000",
-  "errs" : 249,
-  "warnings" : 171,
-  "hints" : 37,
+  "date" : "Thu, 10 Aug, 2023 18:35:32 +0000",
+  "errs" : 45,
+  "warnings" : 82,
+  "hints" : 1,
   "version" : "3.0.2",
   "tool" : "5.0.0 (3)"
 }
