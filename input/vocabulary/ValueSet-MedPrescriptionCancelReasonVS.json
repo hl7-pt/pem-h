@@ -1,1 +1,0 @@
-{"resourceType": "ValueSet", "status": "active", "name": "MedPrescriptionCancelReasonVS", "id": "MedPrescriptionCancelReasonVS", "version": "3.0.2", "url": "http://example.com/fhir/example/ValueSet/MedPrescriptionCancelReasonVS", "compose": {"include": [{"system": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"}]}}

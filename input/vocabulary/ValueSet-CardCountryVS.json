@@ -1,1 +1,0 @@
-{"resourceType": "ValueSet", "status": "active", "name": "CardCountryVS", "id": "CardCountryVS", "version": "3.0.2", "url": "http://example.com/fhir/example/ValueSet/CardCountryVS", "compose": {"include": [{"system": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality"}]}}

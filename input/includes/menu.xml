@@ -22,18 +22,7 @@
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
-			<li>
-				<a href="Intro.html">Introdução</a>
-			</li>
-			<li>
-				<a href="mensagem-envio.html">Envio de informação</a>
-			</li>
-			<li>
-				<a href="mensagem-resposta.html">Resposta</a>
-			</li>
-			<li>
-				<a href="recursos-suporte.html">Recursos de suporte / genéricos</a>
-			</li>
+
 			<li>
 				<a href="artifacts.html">Artefactos</a>
 			</li>

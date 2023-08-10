@@ -1,1 +1,0 @@
-{"resourceType": "CodeSystem", "status": "active", "content": "complete", "name": "MeaningOrderCS", "id": "MeaningOrderCS", "version": "3.0.2", "url": "http://spms.min-saude.pt/bdnp/codesystem/med-request-modality", "concept": [{"code": "RSP", "display": "Receita sem papel"}, {"code": "RCP", "display": "Receita com papel"}], "count": 2}
